@@ -1,0 +1,38 @@
+.ALIASES
+U_DSTM1          DSTM1(VCC=$G_DPWR GND=$G_DGND 1=N06221 ) CN @ADC.counter(sch_1):INS2778@DATACONV.DigClock.Normal(chips)
+U_J             J(VCC=$G_DPWR GND=$G_DGND OUT=N06368 ) CN @ADC.counter(sch_1):INS2934@SOURCSTM.DigStim1.Normal(chips)
+X_U6            U6(J=N06368 CLK=N06221 K=N06368 Q=Q0 Qbar=M_UN0001 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS4939@DIG_PRIM.JKFF.Normal(chips)
+X_U7            U7(J=N06450 CLK=N06221 K=N06450 Q=Q1 Qbar=M_UN0002 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5542@DIG_PRIM.JKFF.Normal(chips)
+X_U8            U8(J=N06684 CLK=N06221 K=N06684 Q=Q2 Qbar=M_UN0003 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5604@DIG_PRIM.JKFF.Normal(chips)
+X_U9            U9(J=N06707 CLK=N06221 K=N06707 Q=Q3 Qbar=M_UN0004 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5666@DIG_PRIM.JKFF.Normal(chips)
+X_U10           U10(J=N07500 CLK=N06221 K=N07500 Q=Q4 Qbar=M_UN0005 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5728@DIG_PRIM.JKFF.Normal(chips)
+X_U11           U11(J=N06730 CLK=N06221 K=N06730 Q=Q5 Qbar=M_UN0006 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5814@DIG_PRIM.JKFF.Normal(chips)
+X_U12           U12(J=N06753 CLK=N06221 K=N06753 Q=Q6 Qbar=M_UN0007 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5876@DIG_PRIM.JKFF.Normal(chips)
+X_U13           U13(J=N06782 CLK=N06221 K=N06782 Q=Q7 Qbar=N08553 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS5938@DIG_PRIM.JKFF.Normal(chips)
+X_U14           U14(I0=Q0 I1=N08553 O=N06450 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS5989@DATACONV.AND2.Normal(chips)
+X_U15           U15(I0=Q0 I1=Q1 O=N06684 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS6015@DATACONV.AND2.Normal(chips)
+X_U16           U16(I0=Q0 I1=Q2 O=N06707 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS6041@DATACONV.AND2.Normal(chips)
+X_U17           U17(I0=Q0 I1=Q4 O=N06730 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS6067@DATACONV.AND2.Normal(chips)
+X_U18           U18(I0=Q0 I1=Q5 O=N06753 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS6093@DATACONV.AND2.Normal(chips)
+X_U19           U19(I0=N06753 I1=Q6 O=N08307 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS6119@DATACONV.AND2.Normal(chips)
+X_U20           U20(I0=Q0 I1=Q3 O=N07500 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS7388@DATACONV.AND2.Normal(chips)
+X_U21           U21(I0=Q7 I1=Q0 O=N08322 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.counter(sch_1):INS8222@DATACONV.AND2.Normal(chips)
+X_U22           U22(I0=N08322 I1=N08307 O=N06782 VCC=$G_DPWR GND=$G_DGND ) CN
++@ADC.counter(sch_1):INS8263@DATACONV.OR2.Normal(chips)
+_    _(Q[0]=Q[0])
+_    _(Q[1]=Q[1])
+_    _(Q[2]=Q[2])
+_    _(Q[3]=Q[3])
+_    _(Q[4]=Q[4])
+_    _(Q[5]=Q[5])
+_    _(Q[6]=Q[6])
+_    _(Q[7]=Q[7])
+.ENDALIASES

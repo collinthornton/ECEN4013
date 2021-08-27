@@ -1,0 +1,137 @@
+
+**** 08/20/21 12:24:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "counter-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\circuits\schematic\adc-PSpiceFiles\counter\counter.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "counter.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\local\college\classes\2021bF\ECEN4013\ADC\circuits\schematic\adc-PSpiceFiles\counter\counter\counter_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+
+**** INCLUDING counter_profile.inc ****
+.STMLIB ".\counter.stl" 
+
+**** RESUMING counter.cir ****
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10u 0 10n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\counter.net" 
+
+
+
+**** INCLUDING counter.net ****
+* source ADC
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N02794 IO_STM IO_LEVEL=0 
++ 0 0
++ +.5uS 1
++REPEAT FOREVER
++ +.5uS 0
++  +.5uS 1
++ ENDREPEAT
+U_J         STIM(1,0) $G_DPWR $G_DGND N04545 IO_STM STIMULUS=B
+E_U4A          N03728 0 VALUE {IF(((V(M_UN0001) >= 0.8) & (V(N03693) >= 0.8)),
++  0.4, 3.5)}
+E_U4B          N03693 0 VALUE {IF(((V(N03728) >= 0.8) & (V(M_UN0002) >= 0.8)),
++  0.4, 3.5)}
+U_K         STIM(1,0) $G_DPWR $G_DGND N04602 IO_STM STIMULUS=C
+V_V1         M_UN0003 0 0
+
+**** RESUMING counter.cir ****
+.END
+
+;! CLK Digital B Digital C Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS A STIM (1, 1)
++   +0s 0
++   58ns 1
++   155ns 0
++   159ns 1
++   201ns 0
++   298ns 1
++   401ns 0
++   424ns 1
++   460ns 0
++   498ns 1
++   554ns 0
++   659ns 1
++   662ns 0
++   674ns 1
++   678ns 0
++   681ns 1
++   688ns 0
++   691ns 1
++   697ns 0
++   730ns 1
++   928ns 0
++   975ns 1
++   1.046us 0
++   1.379us 1
++   2.141us 0
++   2.477us 1
++   2.48us 0
++   2.484us 1
++   2.487us 0
++   2.5us 1
++   2.503us 0
++   2.506us 1
++   2.522us 0
++   2.59us 1
++   2.597us 0
++   2.619us 1
++   2.623us 0
++   2.855us 1
++   2.858us 0
++   2.884us 1
++   2.965us 0
++   3.391us 1
++   3.394us 0
++   3.734us 1
++   3.782us 0
++   3.785us 1
++   3.892us 0
+.STIMULUS CLK STIM (1, 1) ;! CLOCK 1e6 0.5 0 0
++   +0s 0
++   +500ns 1
++   Repeat Forever
++      +500ns 0
++      +500ns 1
++   EndRepeat
+.STIMULUS B STIM (1, 1)
++   +0s 0
++   432ns 1
++   2.473us 0
+.STIMULUS C STIM (1, 1)
++   +0s 0
++   1.477us 1
++   3.437us 0
+
+ERROR(ORPSIM-15141): Less than 2 connections at node M_UN0001.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node M_UN0002.
+
+ERROR(ORPSIM-15142): Node M_UN0001 is floating
+
+ERROR(ORPSIM-15142): Node M_UN0002 is floating
+

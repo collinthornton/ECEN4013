@@ -1,0 +1,350 @@
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "counter.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter\counter_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+
+**** INCLUDING counter_profile.inc ****
+.STMLIB ".\counter.stl" 
+
+**** RESUMING counter.cir ****
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 150u 0 1n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ADC
+E_U1         N00165 0 VALUE {LIMIT(V(0,N01900)*1E6,-15V,+15V)}
+C_C1         N01900 N00165  2n IC=0 TC=0,0 
+R_R1         N01900 VIN  10k TC=0,0 
+E_U2         N02733 0 VALUE {LIMIT(V(VREF,N00165)*1E6,0V,+5V)}
+V_Vref         VREF 0 0
+V_V1         N03699 0  
++PULSE 5 0 0 0 0 0.5m 1m
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N10767 IO_STM IO_LEVEL=0 
++ 0 0
++ +0 1
++REPEAT FOREVER
++ +250n 0
++  +250n 1
++ ENDREPEAT
+U_DSTM4         STIM(1,0) $G_DPWR $G_DGND N08706 IO_STM STIMULUS=RST
+X_U7         N09684 N08706 Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 M_UN0001 M_UN0002 M_UN0003
++  M_UN0004 $G_CD4000_VDD $G_CD4000_VSS CD4040B PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8         N02733 N10767 N09684  $G_DPWR $G_DGND AND2
+V_V2         VIN 0 5
+
+**** RESUMING counter.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node N02733
+*
+* Moving X_U8.U1:IN1 from analog node N02733 to new digital node N02733$AtoD
+X$N02733_AtoD1
++ N02733
++ N02733$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoDdefault
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+* E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-PSpiceFiles\SCHEMATIC1\counter\counter.stl written on Thu Aug 26 16:01:46 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! B Digital LOW Digital RST Digital HIGH Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 300ns
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS B STIM (1, 1)
++   +0s 0
++   56ns 1
+.STIMULUS LOW STIM (1, 1)
++   +0s 0
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   253ns 0
+.STIMULUS HIGH STIM (1, 1)
++   +0s 1
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO74            
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI    2            
+       S0VLO     .8          
+      S1NAME 0               
+       S1VHI     .8          
+       S1VLO   -1.5          
+      S2NAME R               
+       S2VHI    1.4          
+       S2VLO     .8          
+      S3NAME R               
+       S3VHI    2            
+       S3VLO    1.3          
+      S4NAME X               
+       S4VHI    2            
+       S4VLO     .8          
+      S5NAME 1               
+       S5VHI    7            
+       S5VLO    2            
+      S6NAME F               
+       S6VHI    2            
+       S6VLO    1.3          
+      S7NAME F               
+       S7VHI    1.4          
+       S7VLO     .8          
+
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_CD4040B_1     D_PLD_GATE      
+      TPLHMN    0              40.000000E-09    0            
+      TPLHTY    0             100.000000E-09    0            
+      TPLHMX    0             200.000000E-09    0            
+      TPHLMN    0              40.000000E-09    0            
+      TPHLTY    0             100.000000E-09    0            
+      TPHLMX    0             200.000000E-09    0            
+
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4040B_2     D_CD4040B_3     D_CD4040B_4     
+  TPCLKQLHMN   32.000000E-09    0              72.000000E-09 
+  TPCLKQLHTY   80.000000E-09    0             180.000000E-09 
+  TPCLKQLHMX  160.000000E-09    0             360.000000E-09 
+  TPCLKQHLMN   32.000000E-09    0              72.000000E-09 
+  TPCLKQHLTY   80.000000E-09    0             180.000000E-09 
+  TPCLKQHLMX  160.000000E-09    0             360.000000E-09 
+   TPPCQLHMN    0               0               0            
+   TPPCQLHTY    0               0               0            
+   TPPCQLHMX    0               0               0            
+   TPPCQHLMN    0              16.000000E-09   56.000000E-09 
+   TPPCQHLTY    0              40.000000E-09  140.000000E-09 
+   TPPCQHLMX    0              80.000000E-09  280.000000E-09 
+    TWCLKLMN  140.000000E-09    0             140.000000E-09 
+    TWCLKLTY  140.000000E-09    0             140.000000E-09 
+    TWCLKLMX  140.000000E-09    0             140.000000E-09 
+    TWCLKHMN  140.000000E-09    0             140.000000E-09 
+    TWCLKHTY  140.000000E-09    0             140.000000E-09 
+    TWCLKHMX  140.000000E-09    0             140.000000E-09 
+     TWPCLMN  200.000000E-09  200.000000E-09  200.000000E-09 
+     TWPCLTY  200.000000E-09  200.000000E-09  200.000000E-09 
+     TWPCLMX  200.000000E-09  200.000000E-09  200.000000E-09 
+   TSUDCLKMN    0               0               0            
+   TSUDCLKTY    0               0               0            
+   TSUDCLKMX    0               0               0            
+ TSUPCCLKHMN  350.000000E-09    0             350.000000E-09 
+ TSUPCCLKHTY  350.000000E-09    0             350.000000E-09 
+ TSUPCCLKHMX  350.000000E-09    0             350.000000E-09 
+    THDCLKMN    0               0               0            
+    THDCLKTY    0               0               0            
+    THDCLKMX    0               0               0            
+  TSUCECLKMN    0               0               0            
+  TSUCECLKTY    0               0               0            
+  TSUCECLKMX    0               0               0            
+   THCECLKMN    0               0               0            
+   THCECLKTY    0               0               0            
+   THCECLKMX    0               0               0            
+
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_4000B_ST     IO_4000B        IO_PLD          
+        DRVL    0               1.443000E+03    1.443000E+03                 
+        DRVH    0               1.443000E+03    1.443000E+03                 
+       AtoD1                 AtoD_4000B_ST   AtoD_4000B                      
+       AtoD2                 AtoD_4000B_ST   AtoD_4000B_NX                   
+       AtoD3                 AtoD_4000B_ST   AtoD_4000B                      
+       AtoD4                 AtoD_4000B_ST   AtoD_4000B_NX                   
+       DtoA1 DtoA_STM        DtoA_4000B      DtoA_4000B                      
+       DtoA2 DtoA_STM        DtoA_4000B      DtoA_4000B                      
+       DtoA3 DtoA_STM        DtoA_4000B      DtoA_4000B                      
+       DtoA4 DtoA_STM        DtoA_4000B      DtoA_4000B                      
+    DIGPOWER                 CD4000_PWR      CD4000_PWR                      
+      TSWHL1                    7.720000E-09    7.720000E-09                 
+      TSWHL2                    7.860000E-09    7.860000E-09                 
+      TSWHL3                    9.710000E-09    9.710000E-09                 
+      TSWHL4                    9.630000E-09    9.630000E-09                 
+      TSWLH1                    7.560000E-09    7.560000E-09                 
+      TSWLH2                    7.400000E-09    7.400000E-09                 
+      TSWLH3                    9.410000E-09    9.410000E-09                 
+      TSWLH4                    9.240000E-09    9.240000E-09                 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+               IO_DFT          
+       AtoD1 AtoD_STD        
+       AtoD2 AtoD_STD_NX     
+       AtoD3 AtoD_STD        
+       AtoD4 AtoD_STD_NX     
+       DtoA1 DtoA_STD        
+       DtoA2 DtoA_STD        
+       DtoA3 DtoA_STD        
+       DtoA4 DtoA_STD        
+       TPWRT  100.000000E+03 
+
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    5.0000  ( VREF)    0.0000  (N00165)-1.000E-06 (N01900) 1.000E-12     
+
+(N02733)    1.0000 (N03699)    5.0000 ($G_DGND)    0.0000                       
+
+($G_DPWR)    5.0000                   
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(      Q7) : 0     (      Q4) : 0     (X_U7.Q9I) : 0     (X_U7.Q2I) : 0         
+
+(M_UN0003) : 0     (X_U7.Q11I) : 0    ( X_U7.T9) : 0     (      Q1) : 0         
+
+( X_U7.IN) : X     (X_U7.Q4I) : 0     (X_U7.Q3I) : 0     (X_U7.Q12I) : 0        
+
+(   $D_HI) : 1     ( X_U7.T7) : 0     (X_U7.T11) : 0     (X_U7.Q1ID) : 0        
+
+(X_U7.T12) : 0     (X_U7.Q5I) : 0     (      Q5) : 0     (M_UN0004) : 0         
+
+(      Q2) : 0     (M_UN0001) : 0     (N02733$AtoD) : X  (  N09684) : X         
+
+(X_U7.Q6I) : 0     ( X_U7.T4) : 0     (  N10767) : 1     (   $D_NC) : Z         
+
+(X_U7.Q7I) : 0     (  N08706) : 1     (      Q6) : 0     (X_U7.CLRB) : 0        
+
+(      Q3) : 0     (M_UN0002) : 0     ( X_U7.T8) : 0     (      Q0) : 0         
+
+( X_U7.T5) : 0     (X_U7.Q1I) : 0     (X_U7.Q8I) : 0     (X_U7.Q10I) : 0        
+
+( X_U7.T6) : 0     (X_U7.T10) : 0     ( X_U7.T3) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vref       0.000E+00
+    V_V1         0.000E+00
+    V_V2        -5.000E-04
+    X$DIGIFPWR.VDPWR  -5.000E-06
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.53E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/27/21 18:21:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        4.66
+  Total job time (using Solver 1)   =        1.22
+

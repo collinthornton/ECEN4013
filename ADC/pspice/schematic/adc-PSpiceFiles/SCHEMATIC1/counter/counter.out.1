@@ -1,0 +1,70 @@
+
+**** 08/26/21 16:27:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "counter.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter\counter_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+
+**** INCLUDING counter_profile.inc ****
+.STMLIB "./counter.stl" 
+
+**** RESUMING counter.cir ****
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1m 0 1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ADC
+E_U1         N00165 0 VALUE {LIMIT(V(0,N01900)*1E6,-15V,+15V)}
+C_C1         N01900 N00165  100n IC=0 TC=0,0 
+R_R1         N01900 VIN  1k TC=0,0 
+R_R2         N01900 N00165  1k TC=0,0 
+E_U2         N02733 0 VALUE {LIMIT(V(VREF,N00165)*1E6,0V,+5V)}
+V_Vref         VREF 0 0
+V_Vin         VIN 0  
++SIN 0 1 5k 0 0 0
+E_U3A          N10857 0 VALUE {IF(((V(N03699) >= 0.8) & (V(N02733) >= 0.8)),
++  3.5, 0.4)}
+V_V1         N03699 0  
++PULSE 5 0 0 0 0 0.5m 1m
+U_DSTM1         STIM(1,1)   N10767 IO_STM IO_LEVEL=0 
++ 0 0
++ +0 1
++REPEAT FOREVER
++ +10u 0
++  +10u 1
++ ENDREPEAT
+U_DSTM4         STIM(1,0)   N08706 IO_STM STIMULUS=RST
+X_U7         N09684 N08706 Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 M_UN0001 M_UN0002 M_UN0003
+$
+ERROR(ORPSIM-16015): Unknown parameter.
++  M_UN0004 $G_CD4000_VDD $G_CD4000_VSS CD4040B PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8         N10857 N10767 N09684  N09684 N09684 AND2
+
+**** RESUMING counter.cir ****
+.END
+

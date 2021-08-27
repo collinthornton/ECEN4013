@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-counter"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter.sim ] 
+
+** Creating circuit file "counter.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "E:\local\college\classes\2021bF\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\schematic1\counter\counter_profile.inc" 
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 150u 0 1n 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

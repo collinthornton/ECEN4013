@@ -1,0 +1,96 @@
+
+**** 08/20/21 09:33:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\circuits\schematic\adc-PSpiceFiles\SCHEMATIC1\time.sim
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "time.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100m  0 50u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source ADC
+E_U1         N00165 0 VALUE {LIMIT(V(0,N01900)*1E6,-15V,+15V)}
+C_C1         N01900 N00165  100n IC=0 TC=0,0 
+R_R1         N01900 VIN  1k TC=0,0 
+R_R2         N01900 N00165  1k TC=0,0 
+E_U2         N02733 0 VALUE {LIMIT(V(VREF,N00165)*1E6,0V,+5V)}
+V_Vref         VREF 0 0
+V_Vin         VIN 0  
++SIN 0 1 50 0 0 0
+** Floating/unmodeled pin fixups **
+R__UC0001   N02733  0   {1/GMIN}
+
+**** RESUMING time.cir ****
+.END
+
+**** 08/20/21 09:33:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\circuits\schematic\adc-PSpiceFiles\SCHEMATIC1\time.sim
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VREF)    0.0000  (N00165)    0.0000 (N01900)    0.0000     
+
+(N02733)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_Vref       0.000E+00
+    V_Vin        0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/20/21 09:33:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-time"  [ E:\local\college\classes\2021bF\ECEN4013\ADC\circuits\schematic\adc-PSpiceFiles\SCHEMATIC1\time.sim
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        3.44
+  Total job time (using Solver 1)   =         .02
+

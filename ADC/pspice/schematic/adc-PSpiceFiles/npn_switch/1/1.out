@@ -1,0 +1,280 @@
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 275u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\npn_switch.net" 
+
+
+
+**** INCLUDING npn_switch.net ****
+* source ADC
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N19677 IO_STM STIMULUS=switch
+V_V1         N19952 0 5V
+E_U1         N26502 0 VALUE {LIMIT(V(0,N23210)*1E6,-5V,+5V)}
+C_C1         N23210 N26502  12.8n IC=0 TC=0,0 
+R_R1         N23210 N19952  20k TC=0,0 
+X_M1         N23210 N19677 N26502 2N7269
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node N19677
+*
+* Moving U_DSTM1:OUT1 from analog node N19677 to new digital node N19677$DtoA
+X$N19677_DtoA1
++ N19677$DtoA
++ N19677
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\ADC.stl written on Sun Aug 29 03:57:59 2021
+* by Stimulus Editor -- Serial Number: -65536 -- Version 17.4.0
+;!Stimulus Get
+;! switch Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 260us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS switch STIM (1, 1)
++   +0s 0
++   258.406us 1
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.MD         X_M1.MD1        X_M1.MD2        X_M1.MD3        
+          IS   14.481200E-09    0             100.000000E-12  100.000000E-12 
+           N    1.5            50                .406203         .406203     
+          BV  200                                                            
+         IBV   10                                                            
+          RS     .014174                        3.000010E-06                 
+         CJO    2.528380E-09    3.806860E-09                                 
+          VJ    2.35965          .711884                                     
+           M     .680717         .9                                          
+          FC     .468796       10.000000E-09                                 
+          EG    1                                                            
+         XTI    1                                                            
+
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M1.MM         
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    4.07963      
+          KP   50.7447       
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    3.678010E-03 
+          IS    0            
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO   43.120000E-06 
+        CGDO   10.000000E-12 
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DINSTM          
+      S0NAME 0               
+       S0TSW  500.000000E-12 
+       S0RLO     .5          
+       S0RHI    1.000000E+03 
+      S1NAME 1               
+       S1TSW  500.000000E-12 
+       S1RLO    1.000000E+03 
+       S1RHI     .5          
+      S2NAME X               
+       S2TSW  500.000000E-12 
+       S2RLO     .429        
+       S2RHI    1.16         
+      S3NAME R               
+       S3TSW  500.000000E-12 
+       S3RLO     .429        
+       S3RHI    1.16         
+      S4NAME F               
+       S4TSW  500.000000E-12 
+       S4RLO     .429        
+       S4RHI    1.16         
+      S5NAME Z               
+       S5TSW  500.000000E-12 
+       S5RLO    1.000000E+06 
+       S5RHI    1.000000E+06 
+
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          
+        DRVL    0            
+        DRVH    0            
+       DtoA1 DtoA_STM        
+       DtoA2 DtoA_STM        
+       DtoA3 DtoA_STM        
+       DtoA4 DtoA_STM        
+       TPWRT  100.000000E+03 
+
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N19677)     .0025 (N19952)    5.0000 (N23210) 500.0E-15 (N26502)-500.0E-09     
+
+(X_M1.4)    0.0000 (X_M1.5)    -.0025 (X_M1.6)    -.0025 (X_M1.7)     .0025     
+
+(X_M1.8)-500.0E-09 (X_M1.9) 500.2E-15 ($G_DGND)    0.0000                       
+
+($G_DPWR)    5.0000                   (X_M1.10)    -.0025                       
+
+(X_M1.11)    -.0025                   
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(N19677$DtoA) : 0  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -2.500E-04
+    X_M1.VFI2   -2.499E-15
+    X_M1.VFI1    0.000E+00
+    X$DIGIFPWR.VDPWR  -5.003E-03
+    X$DIGIFPWR.VDGND  -5.000E-06
+
+    TOTAL POWER DISSIPATION   2.63E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/29/21 04:07:50 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       46.20
+  Total job time (using Solver 1)   =         .03
+

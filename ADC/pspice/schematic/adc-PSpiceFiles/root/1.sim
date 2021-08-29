@@ -2,22 +2,22 @@
 
 @Settings: 0 1
 @General:
-ProfileName= "time" 
-ProfileFile= "time.sim" 
-Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "time.cir" 
-DataFile= "time.dat" 
-OutFile= "time.out" 
+ProfileName= "1" 
+ProfileFile= "1.sim" 
+Connectivity= "root.net" 
+NetlistFile= "1.cir" 
+DataFile= "1.dat" 
+OutFile= "1.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "10m" 
++0 "256u" 
 +1 "" 
-+2 "" 
-+3 "5u" 
++2 "0" 
++3 "" 
 +4 "" 
 +5 "" 
 +6 "" 

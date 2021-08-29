@@ -2,22 +2,22 @@
 
 @Settings: 0 1
 @General:
-ProfileName= "counter" 
-ProfileFile= "counter.sim" 
-Connectivity= "SCHEMATIC1.net" 
-NetlistFile= "counter.cir" 
-DataFile= "counter.dat" 
-OutFile= "counter.out" 
+ProfileName= "1" 
+ProfileFile= "1.sim" 
+Connectivity= "npn_switch.net" 
+NetlistFile= "1.cir" 
+DataFile= "1.dat" 
+OutFile= "1.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "150u" 
++0 "275u" 
 +1 "" 
 +2 "0" 
-+3 "1n" 
++3 "" 
 +4 "" 
 +5 "" 
 +6 "" 

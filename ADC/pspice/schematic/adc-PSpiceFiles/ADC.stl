@@ -1,0 +1,14 @@
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\ADC.stl written on Sun Aug 29 03:57:59 2021
+* by Stimulus Editor -- Serial Number: -65536 -- Version 17.4.0
+;!Stimulus Get
+;! switch Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 260us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS switch STIM (1, 1)
++   +0s 0
++   258.406us 1

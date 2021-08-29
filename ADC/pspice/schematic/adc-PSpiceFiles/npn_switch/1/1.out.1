@@ -1,0 +1,91 @@
+
+**** 08/29/21 03:37:26 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "npn_switch-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\npn_switch\1.si
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 275u 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\npn_switch.net" 
+
+
+
+**** INCLUDING npn_switch.net ****
+* source ADC
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND N19677 IO_STM STIMULUS=switch
+V_V1         N19952 0 5V
+Q_Q1         N26502 N266531 N23210 Q2N2222A/ZTX 
+R_R4         N19677 N266531  1k TC=0,0 
+E_U1         N26893 0 VALUE {LIMIT(V(0,N23210)*1E6,-5V,+5V)}
+C_C1         N23210 N26893  12.8n IC=0 TC=0,0 
+R_R1         N23210 N19952  20k TC=0,0 
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node N19677
+*
+* Moving U_DSTM1:OUT1 from analog node N19677 to new digital node N19677$DtoA
+X$N19677_DtoA1
++ N19677$DtoA
++ N19677
++ $G_DPWR
++ $G_DGND
++ DtoA_STM
++       PARAMS: DRVH=   0      DRVL=   0      CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$DIGIFPWR 0 DIGIFPWR
+
+
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\ADC.stl written on Sun Aug 29 02:21:28 2021
+* by Stimulus Editor -- Serial Number: -65536 -- Version 17.4.0
+;!Stimulus Get
+;! switch Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 260us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS switch STIM (1, 1)
++   +0s 0
++   580ns 1
++   725ns 0
++   870ns 1
++   1.014us 0
++   254.493us 1
++   254.638us 0
++   255.942us 1
++   259.855us 0
++   260us 1
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N26502.
+

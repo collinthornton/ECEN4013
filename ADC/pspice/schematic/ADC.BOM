@@ -1,0 +1,27 @@
+"  Revised: Sunday, August 29, 2021"			
+          Revision: 			
+			
+			
+			
+			
+			
+			
+			
+"Bill Of Materials         August 30,2021      13:32:37"	Page1		
+			
+Item	Quantity	Reference	Part
+______________________________________________			
+			
+1	1	AND8	CD4068BEE4
+2	9	"U8,U10,U11,U13,U16,U18,U20,U22,CNT_EN"	74LS08
+3	1	CNT	CD4520B
+4	1	C1	12.8n
+5	1	IC2	CD4073BNSR
+6	1	IC3	CD4072BM
+7	1	IC4	CD4082BNSR
+8	1	IC9	CD4066BNS
+9	1	R1	20k
+10	1	R2	1.00E+07
+11	1	STATEBUFF	CD4076BM
+12	9	"U2,U7,U9,U12,U14,U17,U21,U26,U27"	74HC04
+13	2	"U6,U19"	74LS32

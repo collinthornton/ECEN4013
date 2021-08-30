@@ -1,11 +1,11 @@
-** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 ** Creating circuit file "4.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
 * Profile Libraries :
-.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4\4_profile.inc" 
+.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4\4_profile.inc" 
 * Local Libraries :
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 

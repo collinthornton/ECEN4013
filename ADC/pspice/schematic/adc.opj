@@ -1,6 +1,6 @@
 (ExpressProject "adc"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[08/29/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[08/30/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -14,7 +14,21 @@
     (CompileFileAddedOrDeleted "x")
     (PSPICE_Regenerate_Netlist_Flag "FALSE")
     (RootChangedForceReNetlist "x")
-    (Board_sim_option "VHDL_flow"))
+    (Board_sim_option "VHDL_flow")
+    (BOM_Scope "1")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0
+       "{Item}\t{Quantity}\t{Reference}\t{Value}\t{Footprint}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\adc-pspicefiles\schematic1\schematic1.net"
@@ -28,6 +42,8 @@
     (File ".\adc-pspicefiles\buff_test\buff_test.net"
       (Type "Report"))
     (File ".\adc-pspicefiles\cd4520_cntr_test\cd4520_cntr_test.net"
+      (Type "Report"))
+    (File ".\adc.bom"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -234,26 +250,29 @@
          "root")
       (Path "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "cd4076_buffer_test")
-      (Path "Design Resources"
+         "npn_switch")
+      (Path "Outputs")
+      (Select "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "cd4520_cntr_test")
-      (Path "Design Resources"
+         "root" "adc")
+      (Select "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "counter")
-      (Path "Outputs"))
+         "root" "controller")
+      (Select "Design Resources"
+         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
+         "root" "outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 809"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 839"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
-        (Scroll "-189 -7")
-        (Zoom "105")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 857")
+        (Scroll "-290 -8")
+        (Zoom "109")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
@@ -262,9 +281,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
-        (Scroll "-189 -7")
-        (Zoom "105")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 857")
+        (Scroll "-290 -8")
+        (Zoom "109")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
@@ -273,11 +292,31 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
-        (Scroll "-189 -7")
-        (Zoom "105")
+        (Placement "44 0 1 -1 -1 5 24 5 1674 24 857")
+        (Scroll "-290 -8")
+        (Zoom "109")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
       (Schematic "root")
-      (Page "outputs"))))
+      (Page "outputs"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 857")
+        (Scroll "-290 -8")
+        (Zoom "109"))
+      (Path
+         "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
+      (Schematic "npn_switch")
+      (Page "switch"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 857")
+        (Scroll "-290 -8")
+        (Zoom "109"))
+      (Path
+         "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
+      (Schematic "cd4076_buffer_test")
+      (Page "PAGE1"))))

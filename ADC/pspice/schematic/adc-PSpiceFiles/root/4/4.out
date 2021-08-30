@@ -1,7 +1,7 @@
-
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -17,7 +17,7 @@
 
 *Libraries: 
 * Profile Libraries :
-.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4\4_profile.inc" 
+.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4\4_profile.inc" 
 * Local Libraries :
 
 **** INCLUDING 4_profile.inc ****
@@ -312,9 +312,9 @@ X$CD4000_PWR 0 CD4000_PWR
 +   +0s 0
 +   5.011us 1
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Diode MODEL PARAMETERS
@@ -331,9 +331,9 @@ X$CD4000_PWR 0 CD4000_PWR
          CJO    2.000000E-12 
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Voltage Controlled Switch MODEL PARAMETERS
@@ -351,9 +351,9 @@ X$CD4000_PWR 0 CD4000_PWR
         VOFF    0            
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Digital Input MODEL PARAMETERS
@@ -391,9 +391,9 @@ X$CD4000_PWR 0 CD4000_PWR
        S5RHI    1.000000E+06  200.000000E+03  200.000000E+03 
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Digital Output MODEL PARAMETERS
@@ -432,9 +432,9 @@ X$CD4000_PWR 0 CD4000_PWR
        S7VLO    -.5              .8              .2          
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Digital Gate MODEL PARAMETERS
@@ -472,9 +472,9 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHLMX   20.000000E-09   22.000000E-09 
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Digital Edge Triggered FF MODEL PARAMETERS
@@ -524,9 +524,9 @@ X$CD4000_PWR 0 CD4000_PWR
    THCECLKMX    0               0            
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     Digital IO  MODEL PARAMETERS
@@ -565,9 +565,9 @@ X$CD4000_PWR 0 CD4000_PWR
        TPWRT  100.000000E+03 
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -721,9 +721,9 @@ X$CD4000_PWR 0 CD4000_PWR
     TOTAL POWER DISSIPATION   9.45E-04  WATTS
 
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     SIMULATION ERRORS
@@ -867,9 +867,9 @@ WIDTH Violation at time 524.51us
 
           JOB CONCLUDED
 
-**** 08/29/21 19:09:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4.sim ] 
+ ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -879,6 +879,5 @@ WIDTH Violation at time 524.51us
 
 
 
-  License check-out time            =       15.66
-  Total job time (using Solver 1)   =         .22
+  Total job time (using Solver 1)   =         .30
 

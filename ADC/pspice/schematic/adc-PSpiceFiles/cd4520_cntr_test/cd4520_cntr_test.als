@@ -1,0 +1,19 @@
+.ALIASES
+U_DSTM3          DSTM3(VCC=$G_DPWR GND=$G_DGND OUT=N51562 ) CN
++@ADC.cd4520_cntr_test(sch_1):INS51906@SOURCSTM.DigStim1.Normal(chips)
+X_CNT1B          CNT1B(CLK=0 RESET=N51596 EN=Q3 Q1=Q4 Q2=Q5 Q3=Q6 Q4=Q7 VDD=$G_CD4000_VDD VSS=$G_CD4000_VSS ) CN
++@ADC.cd4520_cntr_test(sch_1):INS51622@CD4000.CD4520B.Normal(chips)
+U_DSTM2          DSTM2(VCC=$G_DPWR GND=$G_DGND OUT=N51596 ) CN
++@ADC.cd4520_cntr_test(sch_1):INS51842@SOURCSTM.DigStim1.Normal(chips)
+U_DSTM1          DSTM1(VCC=$G_DPWR GND=$G_DGND 1=N51530 ) CN @ADC.cd4520_cntr_test(sch_1):INS51791@SOURCE.DigClock.Normal(chips)
+X_CNTA          CNTA(CLK=N51530 RESET=N51596 EN=N51562 Q1=Q0 Q2=Q1 Q3=Q2 Q4=Q3 VDD=$G_CD4000_VDD VSS=$G_CD4000_VSS ) CN
++@ADC.cd4520_cntr_test(sch_1):INS51482@CD4000.CD4520B.Normal(chips)
+_    _(Q0=Q0)
+_    _(Q1=Q1)
+_    _(Q2=Q2)
+_    _(Q3=Q3)
+_    _(Q4=Q4)
+_    _(Q5=Q5)
+_    _(Q6=Q6)
+_    _(Q7=Q7)
+.ENDALIASES

@@ -1,0 +1,17 @@
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\1\1.stl written on Sun Aug 29 15:53:47 2021
+* by Stimulus Editor -- Serial Number: 3014757 -- Version 17.4.0
+;!Stimulus Get
+;! TRIGGER Digital RST Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 500ns
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS TRIGGER STIM (1, 1)
++   +0s 0
++   2ns 1
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   400ns 0

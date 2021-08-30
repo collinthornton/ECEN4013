@@ -24,6 +24,10 @@
     (File ".\adc-pspicefiles\npn_switch\npn_switch.net"
       (Type "Report"))
     (File ".\adc-pspicefiles\root\root.net"
+      (Type "Report"))
+    (File ".\adc-pspicefiles\buff_test\buff_test.net"
+      (Type "Report"))
+    (File ".\adc-pspicefiles\cd4520_cntr_test\cd4520_cntr_test.net"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -47,27 +51,104 @@
          ".\adc-pspicefiles\npn_switch\1.sim"
         (DisplayName "npn_switch-1")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\adc-pspicefiles\root\1.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\adc-pspicefiles\root\1.sim"
         (DisplayName "root-1")
-        (Type "PSpice Profile")))
+        (Type "PSpice Profile"))
+      (Folder "root-1_Configuration"
+        (Folder "Profile Stimulus Files"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc-pspicefiles\cd4076_buffer_test\1.sim"
+        (DisplayName "cd4076_buffer_test-1")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc-pspicefiles\root\2.sim"
+        (DisplayName "root-2")
+        (Type "PSpice Profile"))
+      (Folder "root-2_Configuration"
+        (Folder "Profile Stimulus Files"))
+      (Folder "cd4076_buffer_test-1_Configuration"
+        (Folder "Profile Stimulus Files"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc-pspicefiles\cd4520_cntr_test\1.sim"
+        (DisplayName "cd4520_cntr_test-1")
+        (Type "PSpice Profile"))
+      (Folder "cd4520_cntr_test-1_Configuration"
+        (Folder "Profile Stimulus Files"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc-pspicefiles\root\3.sim"
+        (DisplayName "root-3")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\adc-pspicefiles\root\4.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\adc-pspicefiles\root\4.sim"
+        (DisplayName "root-4")
+        (Type "PSpice Profile"))
+      (Folder "root-4_Configuration"
+        (Folder "Profile Stimulus Files")))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Model Libraries"
+      (File "..\models\cd4066-cd4060\cd4066b.lib"
+        (DisplayName "..\models\cd4066-cd4060\cd4066b.lib")
+        (Type "PSpiceLibrary"))
+      (File "..\models\cd4000.lib"
+        (DisplayName "..\models\cd4000.lib")
+        (Type "PSpiceLibrary"))
       (Sort User))
     (Folder "Stimulus Files"
-      (Sort User)
       (File ".\adc-PSpiceFiles\ADC.stl"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\adc-PSpiceFiles\ADC.stl")))
-    (Folder "Include Files"
+        (DisplayName ".\adc-PSpiceFiles\ADC.stl")
+        (Type "PSpiceLibrary"))
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (R
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (DigStim1
+      (FullPartName "DigStim1.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
+      (DeviceIndex "0"))
+    (DigClock
+      (FullPartName "DigClock.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (INV
+      (FullPartName "INV.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (S
+      (FullPartName "S.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (CD4066BNS
+      (FullPartName "CD4066BNS.Normal")
+      (LibraryName
+         "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\MODELS\CAPTURE\CD4066BNS.OLB")
+      (DeviceIndex "0"))
+    (CD4016BNSR
+      (FullPartName "CD4016BNSR.Normal")
+      (LibraryName
+         "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\MODELS\CD4016BNSR.OLB")
       (DeviceIndex "0"))
     (2n3904d/ON
       (FullPartName "2n3904d/ON.Normal")
@@ -87,11 +168,6 @@
     (VP2106N3-G
       (FullPartName "VP2106N3-G.Normal")
       (LibraryName "C:\USERS\COLLI\DOWNLOADS\VP2106N3-G.OLB")
-      (DeviceIndex "0"))
-    (INV
-      (FullPartName "INV.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DATACONV.OLB")
       (DeviceIndex "0"))
     (2N7269
       (FullPartName "2N7269.Normal")
@@ -126,28 +202,10 @@
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SILICONIX.OLB")
       (DeviceIndex "0"))
-    (0
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (S
-      (FullPartName "S.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
     (OR2
       (FullPartName "OR2.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
-      (DeviceIndex "0"))
-    (VDC
-      (FullPartName "VDC.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
-      (DeviceIndex "0"))
-    (DigStim1
-      (FullPartName "DigStim1.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCSTM.OLB")
       (DeviceIndex "0"))
     (DigitalFStim
       (FullPartName "DigitalFStim.Normal")
@@ -162,22 +220,9 @@
     (CD4053BE
       (FullPartName "CD4053BE.Normal")
       (LibraryName "C:\USERS\COLLI\DOWNLOADS\CD4053BE.OLB")
-      (DeviceIndex "0"))
-    (OFFPAGELEFT-L
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
-      (DeviceIndex "0"))
-    (CD4068BEE4
-      (FullPartName "CD4068BEE4.Normal")
-      (LibraryName "C:\USERS\COLLI\DOWNLOADS\CD4068BEE4.OLB")
-      (DeviceIndex "0"))
-    (CD4052BNSR
-      (FullPartName "CD4052BNSR.Normal")
-      (LibraryName "C:\USERS\COLLI\DOWNLOADS\CD4052BNSR.OLB")
-      (DeviceIndex "0"))
-    (OFFPAGELEFT-R
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0")))
-  (LastUsedLibraryBrowseDirectory "C:\Users\colli\Downloads")
+  (LastUsedLibraryBrowseDirectory
+     "E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\models\capture")
   (MPSSessionName "colli")
   (GlobalState
     (FileView
@@ -189,23 +234,26 @@
          "root")
       (Path "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "npn_switch")
-      (Path "Outputs")
-      (Select "Design Resources"
+         "cd4076_buffer_test")
+      (Path "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "root" "outputs"))
+         "cd4520_cntr_test")
+      (Path "Design Resources"
+         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
+         "counter")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 579"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 809"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1153 24 597")
-        (Scroll "-199 -4")
-        (Zoom "74")
+        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
+        (Scroll "-189 -7")
+        (Zoom "105")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
@@ -214,9 +262,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1153 24 597")
-        (Scroll "-73 150")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
+        (Scroll "-189 -7")
+        (Zoom "105")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
@@ -225,9 +273,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1153 24 597")
-        (Scroll "-73 30")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 5 24 5 1434 24 827")
+        (Scroll "-189 -7")
+        (Zoom "105")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")

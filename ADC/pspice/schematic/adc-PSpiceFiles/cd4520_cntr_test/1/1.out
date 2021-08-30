@@ -1,0 +1,347 @@
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cntr_test\1\1_profile.inc" 
+* Local Libraries :
+
+**** INCLUDING 1_profile.inc ****
+.STMLIB ".\1.stl" 
+
+**** RESUMING 1.cir ****
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 200U 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\cd4520_cntr_test.net" 
+
+
+
+**** INCLUDING cd4520_cntr_test.net ****
+* source ADC
+U_DSTM3         STIM(1,0) $G_DPWR $G_DGND N51562 IO_STM STIMULUS=MEAS
+X_CNT1B         0 N51596 Q3 Q4 Q5 Q6 Q7 $G_CD4000_VDD $G_CD4000_VSS CD4520B
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N51596 IO_STM STIMULUS=RST
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N51530 IO_STM IO_LEVEL=0 
++ 0 0
++ +.5uS 1
++REPEAT FOREVER
++ +.5uS 0
++  +.5uS 1
++ ENDREPEAT
+X_CNTA         N51530 N51596 N51562 Q0 Q1 Q2 Q3 $G_CD4000_VDD $G_CD4000_VSS
++  CD4520B PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_CNT1B.U1:IN1 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$CD4000_PWR 0 CD4000_PWR
+
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cntr_test\1\1.stl written on Sun Aug 29 18:06:30 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! RST Digital MEAS Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 10us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   534ns 0
+.STIMULUS MEAS STIM (1, 1)
++   +0s 0
++   2.011us 1
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         
+          IS    1.000000E-15 
+          RS    2            
+         CJO    2.000000E-12 
+
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO4000B         
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .5          
+       S0VLO    -.5          
+      S1NAME 0               
+       S1VHI    -.5          
+       S1VLO   -3            
+      S2NAME R               
+       S2VHI     .05         
+       S2VLO    -.5          
+      S3NAME R               
+       S3VHI     .5          
+       S3VLO    -.05         
+      S4NAME X               
+       S4VHI     .5          
+       S4VLO    -.5          
+      S5NAME 1               
+       S5VHI    3            
+       S5VLO     .5          
+      S6NAME F               
+       S6VHI     .5          
+       S6VLO    -.05         
+      S7NAME F               
+       S7VHI     .05         
+       S7VLO    -.5          
+
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4520B_1     D_CD4520B_3     D0_GATE         
+      TPLHMN  200.000000E-09   25.000000E-09    0            
+      TPLHTY  500.000000E-09   62.500000E-09    0            
+      TPLHMX  800.000000E-09  100.000000E-09    0            
+      TPHLMN    0              25.000000E-09    0            
+      TPHLTY    0              62.500000E-09    0            
+      TPHLMX    0             100.000000E-09    0            
+
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4520B_2     
+  TPCLKQLHMN  115.000000E-09 
+  TPCLKQLHTY  287.500000E-09 
+  TPCLKQLHMX  460.000000E-09 
+  TPCLKQHLMN  115.000000E-09 
+  TPCLKQHLTY  287.500000E-09 
+  TPCLKQHLMX  460.000000E-09 
+   TPPCQLHMN  112.000000E-09 
+   TPPCQLHTY  280.000000E-09 
+   TPPCQLHMX  550.000000E-09 
+   TPPCQHLMN  112.000000E-09 
+   TPPCQHLTY  280.000000E-09 
+   TPPCQHLMX  550.000000E-09 
+    TWCLKLMN  200.000000E-09 
+    TWCLKLTY  200.000000E-09 
+    TWCLKLMX  200.000000E-09 
+    TWCLKHMN  200.000000E-09 
+    TWCLKHTY  200.000000E-09 
+    TWCLKHMX  200.000000E-09 
+     TWPCLMN  250.000000E-09 
+     TWPCLTY  250.000000E-09 
+     TWPCLMX  250.000000E-09 
+   TSUDCLKMN    0            
+   TSUDCLKTY    0            
+   TSUDCLKMX    0            
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    0            
+    THDCLKTY    0            
+    THDCLKMX    0            
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_4000B        
+        DRVL    0               1.443000E+03 
+        DRVH    0               1.443000E+03 
+       AtoD1                 AtoD_4000B      
+       AtoD2                 AtoD_4000B_NX   
+       AtoD3                 AtoD_4000B      
+       AtoD4                 AtoD_4000B_NX   
+       DtoA1 DtoA_STM        DtoA_4000B      
+       DtoA2 DtoA_STM        DtoA_4000B      
+       DtoA3 DtoA_STM        DtoA_4000B      
+       DtoA4 DtoA_STM        DtoA_4000B      
+    DIGPOWER                 CD4000_PWR      
+      TSWHL1                    7.720000E-09 
+      TSWHL2                    7.860000E-09 
+      TSWHL3                    9.710000E-09 
+      TSWHL4                    9.630000E-09 
+      TSWLH1                    7.560000E-09 
+      TSWLH2                    7.400000E-09 
+      TSWLH3                    9.410000E-09 
+      TSWLH4                    9.240000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+($G_CD4000_VDD)    5.0000             ($G_CD4000_VSS)    0.0000                 
+
+(X$0_AtoD1.NORM)   -1.2500            (X$0_AtoD1.XNORM.THRESHOLD)    1.5000 
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(      Q7) : 0     (X_CNT1B.CK3) : 1  (      Q4) : 0     (      Q1) : 0         
+
+(X_CNTA.2QB) : 1   (X_CNT1B.CLR) : 0  (X_CNTA.CLR) : 0   (X_CNTA.CK1) : 1       
+
+(X_CNT1B.CK1B) : 0                    (X_CNTA.CK2) : 1   (   $D_HI) : 1         
+
+(X_CNTA.4Q) : 0    (      Q5) : 0     (X_CNT1B.4Q) : 0   (X_CNT1B.CK1) : 1      
+
+(  N51530) : 0     (      Q2) : 0     (X_CNTA.CK1B) : 0  (X_CNT1B.4QB) : 1      
+
+(  N51596) : 1     (  N51562) : 0     (X_CNTA.2Q) : 0    (X_CNT1B.3QB) : 1      
+
+(X_CNT1B.2Q) : 0   (  0$AtoD) : 0     (X_CNTA.CK3) : 1   (X_CNTA.CK4) : 1       
+
+(X_CNT1B.END) : 0  (X_CNTA.4QB) : 1   (X_CNTA.3Q) : 0    (X_CNT1B.1QB) : 1      
+
+(X_CNT1B.3Q) : 0   (      Q6) : 0     (X_CNTA.END) : 0   (X_CNTA.3QB) : 1       
+
+(X_CNT1B.CK2) : 1  (      Q3) : 0     (      Q0) : 0     (X_CNT1B.CK4) : 1      
+
+(X_CNTA.1QB) : 1   (X_CNT1B.CLKB) : 1                    (X_CNT1B.2QB) : 1      
+
+(X_CNTA.1Q) : 0    (X_CNTA.CLKB) : 1  (X_CNT1B.1Q) : 0   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X$CD4000_PWR.VVDD  -5.050E-06
+    X$CD4000_PWR.VVSS  -5.050E-06
+
+    TOTAL POWER DISSIPATION   2.53E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/29/21 18:07:42 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4520_cntr_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4520_cn
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        8.39
+  Total job time (using Solver 1)   =         .05
+

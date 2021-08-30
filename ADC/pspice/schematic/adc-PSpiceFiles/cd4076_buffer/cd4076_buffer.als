@@ -1,0 +1,18 @@
+.ALIASES
+X_U1            U1(I0=D2 O=Q2 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.buff_test(sch_1):INS23244@DIG_PRIM.INV.Normal(chips)
+V_V1            V1(+=VCC -=0 ) CN @ADC.buff_test(sch_1):INS22942@SOURCE.VDC.Normal(chips)
+X_STATEBUFF          STATEBUFF(CLOCK=N23017 RESET=N24054 DATA_INPUT_DISABLE_G1=0 DATA_INPUT_DISABLE_G2=0 Q1=Q0 Q2=Q1 Q3=Q2
++Q4=M_UN0001 OUTPUT_DISABLE_M=VCC OUTPUT_DISABLE_N=VCC DATA_1=D0 DATA_2=D1 DATA_3=D2 DATA_4=M_UN0002 ) CN
++@ADC.buff_test(sch_1):INS22812@CD4076BM.CD4076BM.Normal(chips)
+X_U3            U3(I0=D0 O=Q0 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.buff_test(sch_1):INS23296@DIG_PRIM.INV.Normal(chips)
+U_DSTM1          DSTM1(VCC=$G_DPWR GND=$G_DGND 1=N23017 ) CN @ADC.buff_test(sch_1):INS23040@SOURCE.DigClock.Normal(chips)
+X_U2            U2(I0=D1 O=Q1 VCC=$G_DPWR GND=$G_DGND ) CN @ADC.buff_test(sch_1):INS23270@DIG_PRIM.INV.Normal(chips)
+U_DSTM2          DSTM2(VCC=$G_DPWR GND=$G_DGND OUT=N24054 ) CN @ADC.buff_test(sch_1):INS24074@SOURCSTM.DigStim1.Normal(chips)
+_    _(D0=D0)
+_    _(D1=D1)
+_    _(D2=D2)
+_    _(Q0=Q0)
+_    _(Q1=Q1)
+_    _(Q2=Q2)
+_    _(VCC=VCC)
+.ENDALIASES

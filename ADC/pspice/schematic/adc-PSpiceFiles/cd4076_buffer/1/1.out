@@ -1,0 +1,456 @@
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1\1_profile.inc" 
+* Local Libraries :
+
+**** INCLUDING 1_profile.inc ****
+.STMLIB "./1.stl" 
+
+**** RESUMING 1.cir ****
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\buff_test.net" 
+
+
+
+**** INCLUDING buff_test.net ****
+* source ADC
+X_U1         D2 Q2  $G_DPWR $G_DGND INV
+V_V1         VCC 0 5
+X_STATEBUFF          N23017 N24054 0 0 Q0 Q1 Q2 M_UN0001 VCC VCC D0 D1 D2
++  M_UN0002 CD4076B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
+X_U3         D0 Q0  $G_DPWR $G_DGND INV
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N23017 IO_STM IO_LEVEL=0 
++ 0 0
++ +.5uS 1
++REPEAT FOREVER
++ +.5uS 0
++  +.5uS 1
++ ENDREPEAT
+X_U2         D1 Q1  $G_DPWR $G_DGND INV
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND N24054 IO_STM STIMULUS=RST
+** Floating/unmodeled pin fixups **
+R__UC0001   M_UN0001  0   {1/GMIN}
+R__UC0002   M_UN0002  0   {1/GMIN}
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_STATEBUFF.U76BLOG:IN4 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_STATEBUFF.U76BLOG:IN3 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node VCC
+*
+* Moving X_STATEBUFF.U76BLOG:IN10 from analog node VCC to new digital node VCC$AtoD
+X$VCC_AtoD1
++ VCC
++ VCC$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_STATEBUFF.U76BLOG:IN9 from analog node VCC to new digital node VCC$AtoD2
+X$VCC_AtoD2
++ VCC
++ VCC$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0001
+*
+* Moving X_STATEBUFF.U76BLOG:IN8 from analog node M_UN0001 to new digital node M_UN0001$AtoD
+X$M_UN0001_AtoD1
++ M_UN0001
++ M_UN0001$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0002
+*
+* Moving X_STATEBUFF.U76BDLY:OUT4 from analog node M_UN0002 to new digital node M_UN0002$DtoA
+X$M_UN0002_DtoA1
++ M_UN0002$DtoA
++ M_UN0002
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ DtoA_4000B
++       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$CD4000_PWR 0 CD4000_PWR
+
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1\1.stl written on Sun Aug 29 16:09:54 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! RST Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   500ns 0
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         
+          IS    1.000000E-15 
+          RS    2            
+         CJO    2.000000E-12 
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN4000B        
+      S0NAME 0               
+       S0TSW   15.000000E-09 
+       S0RLO    1            
+       S0RHI   80.000000E+03 
+      S1NAME 1               
+       S1TSW   15.000000E-09 
+       S1RLO   40.000000E+03 
+       S1RHI    1            
+      S2NAME X               
+       S2TSW   15.000000E-09 
+       S2RLO  800            
+       S2RHI  800            
+      S3NAME R               
+       S3TSW   15.000000E-09 
+       S3RLO  800            
+       S3RHI  800            
+      S4NAME F               
+       S4TSW   15.000000E-09 
+       S4RLO  800            
+       S4RHI  800            
+      S5NAME Z               
+       S5TSW   15.000000E-09 
+       S5RLO    1.000000E+06 
+       S5RHI    1.000000E+06 
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO4000B         
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .5          
+       S0VLO    -.5          
+      S1NAME 0               
+       S1VHI    -.5          
+       S1VLO   -3            
+      S2NAME R               
+       S2VHI     .05         
+       S2VLO    -.5          
+      S3NAME R               
+       S3VHI     .5          
+       S3VLO    -.05         
+      S4NAME X               
+       S4VHI     .5          
+       S4VLO    -.5          
+      S5NAME 1               
+       S5VHI    3            
+       S5VLO     .5          
+      S6NAME F               
+       S6VHI     .5          
+       S6VLO    -.05         
+      S7NAME F               
+       S7VHI     .05         
+       S7VLO    -.5          
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_PLD_GATE      D0_GATE         
+      TPLHMN    0               0            
+      TPLHTY    0               0            
+      TPLHMX    0               0            
+      TPHLMN    0               0            
+      TPHLTY    0               0            
+      TPHLMX    0               0            
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_EFF          
+  TPCLKQLHMN    0            
+  TPCLKQLHTY    0            
+  TPCLKQLHMX    0            
+  TPCLKQHLMN    0            
+  TPCLKQHLTY    0            
+  TPCLKQHLMX    0            
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+    TWCLKLMN    0            
+    TWCLKLTY    0            
+    TWCLKLMX    0            
+    TWCLKHMN    0            
+    TWCLKHTY    0            
+    TWCLKHMX    0            
+     TWPCLMN    0            
+     TWPCLTY    0            
+     TWPCLMX    0            
+   TSUDCLKMN    0            
+   TSUDCLKTY    0            
+   TSUDCLKMX    0            
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    0            
+    THDCLKTY    0            
+    THDCLKMX    0            
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_PLD          IO_4000B        
+        DRVL    0                               1.443000E+03 
+        DRVH    0                               1.443000E+03 
+       AtoD1                                 AtoD_4000B      
+       AtoD2                                 AtoD_4000B_NX   
+       AtoD3                                 AtoD_4000B      
+       AtoD4                                 AtoD_4000B_NX   
+       DtoA1 DtoA_STM                        DtoA_4000B      
+       DtoA2 DtoA_STM                        DtoA_4000B      
+       DtoA3 DtoA_STM                        DtoA_4000B      
+       DtoA4 DtoA_STM                        DtoA_4000B      
+    DIGPOWER                                 CD4000_PWR      
+      TSWHL1                                    7.720000E-09 
+      TSWHL2                                    7.860000E-09 
+      TSWHL3                                    9.710000E-09 
+      TSWHL4                                    9.630000E-09 
+      TSWLH1                                    7.560000E-09 
+      TSWLH2                                    7.400000E-09 
+      TSWLH3                                    9.410000E-09 
+      TSWLH4                                    9.240000E-09 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (M_UN0001)    2.4999                  (M_UN0002)     .0411   
+
+($G_CD4000_VDD)    5.0000             ($G_CD4000_VSS)    0.0000                 
+
+(X$0_AtoD1.NORM)   -1.2500            (X$0_AtoD2.NORM)   -1.2500                
+
+(X$VCC_AtoD1.NORM)    1.2500          (X$VCC_AtoD2.NORM)    1.2500              
+
+(X$M_UN0001_AtoD1.NORM)-62.49E-06     (X$M_UN0002_DtoA1.DRVGND)     .0411       
+
+(X$M_UN0002_DtoA1.DRVPWR)    4.9692   (X$M_UN0002_DtoA1.X1.DRVN)     .0015      
+
+(X$M_UN0002_DtoA1.X1.DRVP)     .0020  (X$0_AtoD1.XNORM.THRESHOLD)    1.5000     
+
+(X$0_AtoD2.XNORM.THRESHOLD)    1.5000 (X$VCC_AtoD1.XNORM.THRESHOLD)    1.5000   
+
+(X$VCC_AtoD2.XNORM.THRESHOLD)    1.5000                                         
+
+(X$M_UN0001_AtoD1.XNORM.THRESHOLD)    1.5000             
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(X_STATEBUFF.Q4) : 0                  (X_STATEBUFF.D4) : X                      
+
+(      Q1) : 1     (X_STATEBUFF.Q1) : 0                  (X_STATEBUFF.D1) : 1   
+
+(X_STATEBUFF.TOD4) : X                (X_STATEBUFF.TOD1) : 1                    
+
+(  N24054) : 1     (      D2) : 0     (   $D_HI) : 1     (M_UN0001$AtoD) : X    
+
+(X_STATEBUFF.RESET) : 1               (      Q2) : 1     (X_STATEBUFF.Q2) : 0   
+
+(X_STATEBUFF.D2) : 1                  (X_STATEBUFF.TOD2) : 1                    
+
+(X_STATEBUFF.IN_EN) : 1               (  0$AtoD) : 0     (VCC$AtoD2) : 1        
+
+(   $D_NC) : Z     (      D0) : 0     (X_STATEBUFF.G1) : 0                      
+
+(X_STATEBUFF.Q3) : 0                  (X_STATEBUFF.D3) : 1                      
+
+(      Q0) : 1     (VCC$AtoD) : 1     (X_STATEBUFF.OUT_DIS) : 0                 
+
+(X_STATEBUFF.CLK) : 0                 (X_STATEBUFF.TOD3) : 1                    
+
+(X_STATEBUFF.M) : 1                   (  N23017) : 0     (X_STATEBUFF.N) : 1    
+
+(      D1) : 0     (M_UN0002$DtoA) : 0                   (X_STATEBUFF.RST) : 0  
+
+( 0$AtoD2) : 0     (X_STATEBUFF.G2) : 0                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-07
+    X$CD4000_PWR.VVDD  -6.673E-05
+    X$CD4000_PWR.VVSS  -5.000E-06
+
+    TOTAL POWER DISSIPATION   3.34E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/29/21 16:19:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "buff_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1.sim 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       20.59
+  Total job time (using Solver 1)   =         .05
+

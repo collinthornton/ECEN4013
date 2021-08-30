@@ -1,0 +1,14 @@
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\buff_test\1\1.stl written on Sun Aug 29 16:09:54 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! RST Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 1us
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   500ns 0

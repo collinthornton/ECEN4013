@@ -112,15 +112,16 @@
         ("CD4520B_0")
         ("CD4072BM_1")
         ("74HC04")
-        ("74LS08")
-        ("74LS32")
         ("CD4073BNSR")
+        ("74LS08")
         ("CD4082BNSR_1")
         ("CD4076BM")
+        ("74LS32")
         ("CD4068BEE4")
         ("DigStim1")
         ("CD4066BNS")
         ("JKFF")
+        ("CD4081BME4")
     )
     ("instances"
         ("U1"
@@ -493,52 +494,6 @@
                 )
             )
         )
-        ("U16A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U16A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U6A"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U6A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
         ("IC2"
             ("device_name"	"CD4073BNSR")
             ("pspice_path"	"X_IC2")
@@ -605,25 +560,6 @@
                 )
             )
         )
-        ("U17A"
-            ("device_name"	"74HC04")
-            ("pspice_path"	"X_U17A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
         ("IC4"
             ("device_name"	"CD4082BNSR_1")
             ("pspice_path"	"X_IC4")
@@ -664,29 +600,6 @@
                 ("Mouser Price/Stock"
                     ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4082BNSR?qs=HTr%252BoA4jRimwW8JmlnFifw%3D%3D")
                     ("pspice_param"	"Mouser Price/Stock")
-                )
-            )
-        )
-        ("U13A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U13A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -1369,6 +1282,286 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U39A"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U39A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U40C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U40C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("IC11"
+            ("device_name"	"CD4081BME4")
+            ("pspice_path"	"X_IC11")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("Height"
+                    ("value"	"1.75 mm")
+                    ("pspice_param"	"Height")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcd4073b")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Description"
+                    ("value"	"Logic Gates Quad 2-Input")
+                    ("pspice_param"	"Description")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4081BME4")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4081BME4?qs=HTr%252BoA4jRikg%252BQvASI76tw%3D%3D")
+                    ("pspice_param"	"Mouser Price/Stock")
+                )
+                ("Mouser Part Number"
+                    ("value"	"595-CD4081BME4")
+                    ("pspice_param"	"Mouser Part Number")
+                )
+            )
+        )
+        ("U41C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U41C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U42C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U42C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U43B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U43B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U44A"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U44A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U45C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U45C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U46A"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U46A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U46B"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U46B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U47B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U47B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U48B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U48B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
                 ("IMPL"
                     ("value"	"")

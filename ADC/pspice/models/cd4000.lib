@@ -2957,11 +2957,11 @@ U2 or(8) VDD VSS
 * The CMOS Integrated Circuits Data Book, 1983, RCA Solid State
 * tvh	09/29/89	Update interface and model names
 *
-.subckt CD4081B  A B J
+.subckt CD4081B  A B C D E F G H J K L M
 +	optional: VDD=$G_CD4000_VDD VSS=$G_CD4000_VSS
 +	params: MNTYMXDLY=0 IO_LEVEL=0
-U1 and(2) VDD VSS
-+	A B   J 
+U1 anda(2,4) VDD VSS
++	A B C D E F G H   J K L M 
 +	D_CD4081B IO_4000B MNTYMXDLY={MNTYMXDLY} IO_LEVEL={IO_LEVEL} 
 .ends
 *$

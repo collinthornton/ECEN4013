@@ -117,21 +117,20 @@
           (File ".\adc-pspicefiles\root\5\2.stl"
             (Type "PSpiceLibrary")
             (DisplayName ".\adc-pspicefiles\root\5\2.stl")))))
-    (Folder "Include Files"
+    (Folder "Include Files")
+    (Folder "Stimulus Files"
+      (File ".\adc-PSpiceFiles\ADC.stl"
+        (DisplayName ".\adc-PSpiceFiles\ADC.stl")
+        (Type "PSpiceLibrary"))
       (Sort User))
     (Folder "Model Libraries"
-      (Sort User)
       (File "..\models\cd4066-cd4060\cd4066b.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\models\cd4066-cd4060\cd4066b.lib"))
+        (DisplayName "..\models\cd4066-cd4060\cd4066b.lib")
+        (Type "PSpiceLibrary"))
       (File "..\models\cd4000.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\models\cd4000.lib")))
-    (Folder "Stimulus Files"
-      (Sort User)
-      (File ".\adc-PSpiceFiles\ADC.stl"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\adc-PSpiceFiles\ADC.stl"))))
+        (DisplayName "..\models\cd4000.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector

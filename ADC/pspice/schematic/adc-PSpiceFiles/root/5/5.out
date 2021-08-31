@@ -1,5 +1,5 @@
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -58,29 +58,21 @@ X_CNTA         CLK RST_CNT N70073 Q0 Q1 Q2 Q3 VCC 0 CD4520B PARAMS:
 X_CNTB         0 RST_CNT Q3 Q4 Q5 Q6 Q7 VCC 0 CD4520B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 V_V4         VCC 0 5
-X_IC3          N07888 N07954 N07900 N07969 0 N18350 N17461 N18619 N08053 N17188
-+  CD4072B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
+X_IC3          A0 A1 A2 A3 0 N18350 N17461 N18619 N80368 N17188 CD4072B PARAMS:
++  IO_LEVEL=0 MNTYMXDLY=0
 X_U17D         S1 NS1 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U2C         S2 NS2 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U16A         NS1 S2 N07969 $G_DPWR $G_DGND 74LS08 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U6A         N08158 N08053 N0 $G_DPWR $G_DGND 74LS32 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_IC2          S0 NS2 P NS0 S1 NS2 NS2 S1 P N07954 N17461 N18350 CD4073B
+X_IC2          NS0 NS2 P NS0 S1 NS2 NS2 S1 P N80856 N17461 N18350 CD4073B
 +  PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U22A         N17188 T N1 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U17A         T N08158 $G_DPWR $G_DGND 74HC04 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_IC4          NS2 S1 NS0 A A S2 NS1 S0 N07900 N18619 CD4082B PARAMS:
-+  IO_LEVEL=0 MNTYMXDLY=0
-X_U13A         S0 NS1 N07888 $G_DPWR $G_DGND 74LS08 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
+X_IC4          M_UN0001 M_UN0002 M_UN0003 M_UN0004 A S2 NS1 S0 M_UN0005 N18619
++  CD4082B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U14C         S0 NS0 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_STATEBUFF          CLK N38287 0 0 N0 N1 N2 0 VCC VCC S0 S1 S2 M_UN0001
+X_STATEBUFF          CLK N38287 0 0 N0 N1 N2 0 VCC VCC S0 S1 S2 M_UN0006
 +  CD4076B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U11B         S1 N05072 I0 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -98,7 +90,7 @@ X_U9B         S1 N66545 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U7A         N04762 WR $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_AND8          Q0 Q1 Q2 Q3 Q7 Q6 Q5 Q4 N55721 A M_UN0002 M_UN0003 CD4068B
+X_AND8          Q0 Q1 Q2 Q3 Q7 Q6 Q5 Q4 N55721 A M_UN0007 M_UN0008 CD4068B
 +  PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 U_DSTM5         STIM(1,0) $G_DPWR $G_DGND T IO_STM STIMULUS=TRIGGER
 V_Vref         N33002 0 -5
@@ -115,7 +107,7 @@ X_U30B         S1 N67294 N46973 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U31A         S0 S2 N67294 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U33         MEAS N69974 N70069 N70073 M_UN0004 $G_DPWR $G_DGND JKFF
+X_U33         MEAS N69974 N70069 N70073 M_UN0009 $G_DPWR $G_DGND JKFF
 X_U34B         P RST_IN N69586 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U35A         N46973 N69586 MEAS $G_DPWR $G_DGND 74LS08 PARAMS:
@@ -124,19 +116,47 @@ X_U36C         MEAS N70069 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U37C         CLK N69974 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_IC10          T S0 N73522 P S2 M_UN0005 M_UN0006 M_UN0007 M_UN0008 N2 N74185
-+  M_UN0009 CD4073B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
+X_IC10          T S0 N73522 P S2 S1 M_UN0010 M_UN0011 M_UN0012 N74441 N74185
++  M_UN0013 CD4073B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U38C         N74185 N73522 $G_DPWR $G_DGND 74HC04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U39A         N768130 N74441 N2 $G_DPWR $G_DGND 74LS08 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U40C         A N768130 $G_DPWR $G_DGND 74HC04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_IC11          NS1 N79541 N79143 NS1 NS1 NS2 NS1 NS0 A2 A3 A1 A0 CD4081B
++  PARAMS: IO_LEVEL=0 MNTYMXDLY=0
+X_U41C         A N79143 $G_DPWR $G_DGND 74HC04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U42C         T N79541 $G_DPWR $G_DGND 74HC04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U43B         N80856 N80368 N81702 $G_DPWR $G_DGND 74LS32 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U44A         N81129 NS2 N81695 $G_DPWR $G_DGND 74LS08 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U45C         T N81129 $G_DPWR $G_DGND 74HC04 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U46A         NS2 NS0 N81492 $G_DPWR $G_DGND 74LS08 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U46B         A N81492 N81688 $G_DPWR $G_DGND 74LS08 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U47B         N81695 N81688 N81706 $G_DPWR $G_DGND 74LS32 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U48B         N81706 N81702 N81713 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 ** Floating/unmodeled pin fixups **
 R__UC0001   M_UN0001  0   {1/GMIN}
 R__UC0002   M_UN0002  0   {1/GMIN}
 R__UC0003   M_UN0003  0   {1/GMIN}
-R__UC0004   M_UN0005  0   {1/GMIN}
-R__UC0005   M_UN0006  0   {1/GMIN}
-R__UC0006   M_UN0007  0   {1/GMIN}
-R__UC0007   M_UN0008  0   {1/GMIN}
-R__UC0008   M_UN0009  0   {1/GMIN}
+R__UC0004   M_UN0004  0   {1/GMIN}
+R__UC0005   M_UN0005  0   {1/GMIN}
+R__UC0006   M_UN0006  0   {1/GMIN}
+R__UC0007   M_UN0007  0   {1/GMIN}
+R__UC0008   M_UN0008  0   {1/GMIN}
+R__UC0009   M_UN0010  0   {1/GMIN}
+R__UC0010   M_UN0011  0   {1/GMIN}
+R__UC0011   M_UN0012  0   {1/GMIN}
+R__UC0012   M_UN0013  0   {1/GMIN}
 
 **** RESUMING 5.cir ****
 .END
@@ -248,72 +268,116 @@ X$VCC_AtoD2
 X$N55721_DtoA1
 + N55721$DtoA
 + N55721
-+ M_UN0002
-+ M_UN0003
++ M_UN0007
++ M_UN0008
 + DtoA_4000B
 +       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
 *
 * Analog/Digital interface for node M_UN0001
 *
-* Moving X_STATEBUFF.U76BDLY:OUT4 from analog node M_UN0001 to new digital node M_UN0001$DtoA
-X$M_UN0001_DtoA1
-+ M_UN0001$DtoA
+* Moving X_IC4.U1:IN1-1 from analog node M_UN0001 to new digital node M_UN0001$AtoD
+X$M_UN0001_AtoD1
 + M_UN0001
++ M_UN0001$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0002
+*
+* Moving X_IC4.U1:IN1-2 from analog node M_UN0002 to new digital node M_UN0002$AtoD
+X$M_UN0002_AtoD1
++ M_UN0002
++ M_UN0002$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0003
+*
+* Moving X_IC4.U1:IN1-3 from analog node M_UN0003 to new digital node M_UN0003$AtoD
+X$M_UN0003_AtoD1
++ M_UN0003
++ M_UN0003$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0004
+*
+* Moving X_IC4.U1:IN1-4 from analog node M_UN0004 to new digital node M_UN0004$AtoD
+X$M_UN0004_AtoD1
++ M_UN0004
++ M_UN0004$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0005
+*
+* Moving X_IC4.U1:OUT1 from analog node M_UN0005 to new digital node M_UN0005$DtoA
+X$M_UN0005_DtoA1
++ M_UN0005$DtoA
++ M_UN0005
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + DtoA_4000B
 +       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
 *
-* Analog/Digital interface for node M_UN0005
-*
-* Moving X_IC10.U1:IN2-3 from analog node M_UN0005 to new digital node M_UN0005$AtoD
-X$M_UN0005_AtoD1
-+ M_UN0005
-+ M_UN0005$AtoD
-+ $G_CD4000_VDD
-+ $G_CD4000_VSS
-+ AtoD_4000B
-+       PARAMS: CAPACITANCE=   0     
-*
 * Analog/Digital interface for node M_UN0006
 *
-* Moving X_IC10.U1:IN3-1 from analog node M_UN0006 to new digital node M_UN0006$AtoD
-X$M_UN0006_AtoD1
+* Moving X_STATEBUFF.U76BDLY:OUT4 from analog node M_UN0006 to new digital node M_UN0006$DtoA
+X$M_UN0006_DtoA1
++ M_UN0006$DtoA
 + M_UN0006
-+ M_UN0006$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ DtoA_4000B
++       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0010
+*
+* Moving X_IC10.U1:IN3-1 from analog node M_UN0010 to new digital node M_UN0010$AtoD
+X$M_UN0010_AtoD1
++ M_UN0010
++ M_UN0010$AtoD
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + AtoD_4000B
 +       PARAMS: CAPACITANCE=   0     
 *
-* Analog/Digital interface for node M_UN0007
+* Analog/Digital interface for node M_UN0011
 *
-* Moving X_IC10.U1:IN3-2 from analog node M_UN0007 to new digital node M_UN0007$AtoD
-X$M_UN0007_AtoD1
-+ M_UN0007
-+ M_UN0007$AtoD
+* Moving X_IC10.U1:IN3-2 from analog node M_UN0011 to new digital node M_UN0011$AtoD
+X$M_UN0011_AtoD1
++ M_UN0011
++ M_UN0011$AtoD
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + AtoD_4000B
 +       PARAMS: CAPACITANCE=   0     
 *
-* Analog/Digital interface for node M_UN0008
+* Analog/Digital interface for node M_UN0012
 *
-* Moving X_IC10.U1:IN3-3 from analog node M_UN0008 to new digital node M_UN0008$AtoD
-X$M_UN0008_AtoD1
-+ M_UN0008
-+ M_UN0008$AtoD
+* Moving X_IC10.U1:IN3-3 from analog node M_UN0012 to new digital node M_UN0012$AtoD
+X$M_UN0012_AtoD1
++ M_UN0012
++ M_UN0012$AtoD
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + AtoD_4000B
 +       PARAMS: CAPACITANCE=   0     
 *
-* Analog/Digital interface for node M_UN0009
+* Analog/Digital interface for node M_UN0013
 *
-* Moving X_IC10.U1:OUT3 from analog node M_UN0009 to new digital node M_UN0009$DtoA
-X$M_UN0009_DtoA1
-+ M_UN0009$DtoA
-+ M_UN0009
+* Moving X_IC10.U1:OUT3 from analog node M_UN0013 to new digital node M_UN0013$DtoA
+X$M_UN0013_DtoA1
++ M_UN0013$DtoA
++ M_UN0013
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + DtoA_4000B
@@ -389,7 +453,7 @@ X$CD4000_PWR 0 CD4000_PWR
 +   671ns 0
 +   5.011us 1
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -408,7 +472,7 @@ X$CD4000_PWR 0 CD4000_PWR
          CJO    2.000000E-12 
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -428,7 +492,7 @@ X$CD4000_PWR 0 CD4000_PWR
         VOFF    0            
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -468,7 +532,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S5RHI    1.000000E+06  200.000000E+03  200.000000E+03 
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -509,7 +573,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S7VLO    -.5              .8          
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -531,25 +595,25 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHLMX    0             100.000000E-09  250.000000E-09  250.000000E-09 
 
 
-               D_CD4082B       D_CD4068B       D0_GATE         D_H04C          
-      TPLHMN   50.000000E-09   60.000000E-09    0               3.600000E-09 
-      TPLHTY  125.000000E-09  150.000000E-09    0               9.000000E-09 
-      TPLHMX  250.000000E-09  300.000000E-09    0              24.000000E-09 
-      TPHLMN   50.000000E-09   60.000000E-09    0               3.600000E-09 
-      TPHLTY  125.000000E-09  150.000000E-09    0               9.000000E-09 
-      TPHLMX  250.000000E-09  300.000000E-09    0              24.000000E-09 
+               D_CD4082B       D_CD4068B       D_CD4081B       D0_GATE         
+      TPLHMN   50.000000E-09   60.000000E-09   50.000000E-09    0            
+      TPLHTY  125.000000E-09  150.000000E-09  125.000000E-09    0            
+      TPLHMX  250.000000E-09  300.000000E-09  250.000000E-09    0            
+      TPHLMN   50.000000E-09   60.000000E-09   50.000000E-09    0            
+      TPHLTY  125.000000E-09  150.000000E-09  125.000000E-09    0            
+      TPHLMX  250.000000E-09  300.000000E-09  250.000000E-09    0            
 
 
-               D_LS08          D_LS32          
-      TPLHMN    3.200000E-09    5.600000E-09 
-      TPLHTY    8.000000E-09   14.000000E-09 
-      TPLHMX   15.000000E-09   22.000000E-09 
-      TPHLMN    4.000000E-09    5.600000E-09 
-      TPHLTY   10.000000E-09   14.000000E-09 
-      TPHLMX   20.000000E-09   22.000000E-09 
+               D_H04C          D_LS08          D_LS32          
+      TPLHMN    3.600000E-09    3.200000E-09    5.600000E-09 
+      TPLHTY    9.000000E-09    8.000000E-09   14.000000E-09 
+      TPLHMX   24.000000E-09   15.000000E-09   22.000000E-09 
+      TPHLMN    3.600000E-09    4.000000E-09    5.600000E-09 
+      TPHLTY    9.000000E-09   10.000000E-09   14.000000E-09 
+      TPHLMX   24.000000E-09   20.000000E-09   22.000000E-09 
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -601,7 +665,7 @@ X$CD4000_PWR 0 CD4000_PWR
    THCECLKMX    0               0               0            
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -642,7 +706,7 @@ X$CD4000_PWR 0 CD4000_PWR
        TPWRT  100.000000E+03  100.000000E+03 
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -665,13 +729,17 @@ X$CD4000_PWR 0 CD4000_PWR
 
 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
 
-(M_UN0001)     .0411                  (M_UN0002)    0.0000                      
+(M_UN0001)    2.4999                  (M_UN0002)    2.4999                      
 
-(M_UN0003)    0.0000                  (M_UN0005)    2.4999                      
+(M_UN0003)    2.4999                  (M_UN0004)    2.4999                      
 
-(M_UN0006)    2.4999                  (M_UN0007)    2.4999                      
+(M_UN0005)    2.6506                  (M_UN0006)     .0411                      
 
-(M_UN0008)    2.4999                  (M_UN0009)    2.6506                      
+(M_UN0007)    0.0000                  (M_UN0008)    0.0000                      
+
+(M_UN0010)    2.4999                  (M_UN0011)    2.4999                      
+
+(M_UN0012)    2.4999                  (M_UN0013)    2.6506                      
 
 ($G_CD4000_VDD)    5.0000             ($G_CD4000_VSS)    0.0000                 
 
@@ -689,120 +757,144 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X$I1_DtoA1.DGND_OL)     .1014        (X$I1_DtoA1.DPWR_OH)    3.4493            
 
-(X$M_UN0005_AtoD1.NORM)-62.49E-06     (X$M_UN0006_AtoD1.NORM)-62.49E-06         
+(X$M_UN0001_AtoD1.NORM)-62.49E-06     (X$M_UN0002_AtoD1.NORM)-62.49E-06         
 
-(X$M_UN0007_AtoD1.NORM)-62.49E-06     (X$M_UN0008_AtoD1.NORM)-62.49E-06         
+(X$M_UN0003_AtoD1.NORM)-62.49E-06     (X$M_UN0004_AtoD1.NORM)-62.49E-06         
 
-(X$N55721_DtoA1.DRVGND)    0.0000     (X$N55721_DtoA1.DRVPWR)    0.0000         
+(X$M_UN0010_AtoD1.NORM)-62.49E-06     (X$M_UN0011_AtoD1.NORM)-62.49E-06         
 
-(X$N55721_DtoA1.X1.DRVN)    0.0000    (X$N55721_DtoA1.X1.DRVP)    0.0000        
+(X$M_UN0012_AtoD1.NORM)-62.49E-06     (X$N55721_DtoA1.DRVGND)    0.0000         
 
-(X$RST_IN_DtoA1.DGND_OL)     .0022    (X$RST_IN_DtoA1.DPWR_OH)    4.9975        
+(X$N55721_DtoA1.DRVPWR)    0.0000     (X$N55721_DtoA1.X1.DRVN)    0.0000        
 
-(X$M_UN0001_DtoA1.DRVGND)     .0411   (X$M_UN0001_DtoA1.DRVPWR)    4.9692       
+(X$N55721_DtoA1.X1.DRVP)    0.0000    (X$RST_IN_DtoA1.DGND_OL)     .0022        
 
-(X$M_UN0009_DtoA1.DRVGND)    1.2048   (X$M_UN0009_DtoA1.DRVPWR)    4.0964       
+(X$RST_IN_DtoA1.DPWR_OH)    4.9975    (X$M_UN0005_DtoA1.DRVGND)    1.2048       
 
-(X$M_UN0001_DtoA1.X1.DRVN)     .0015  (X$M_UN0001_DtoA1.X1.DRVP)     .0020      
+(X$M_UN0005_DtoA1.DRVPWR)    4.0964   (X$M_UN0006_DtoA1.DRVGND)     .0411       
 
-(X$M_UN0009_DtoA1.X1.DRVN)     .0015  (X$M_UN0009_DtoA1.X1.DRVP)     .0020      
+(X$M_UN0006_DtoA1.DRVPWR)    4.9692   (X$M_UN0013_DtoA1.DRVGND)    1.2048       
 
-(X$0_AtoD1.XNORM.THRESHOLD)    1.5000 (X$0_AtoD2.XNORM.THRESHOLD)    1.5000     
+(X$M_UN0013_DtoA1.DRVPWR)    4.0964   (X$M_UN0005_DtoA1.X1.DRVN)     .0015      
 
-(X$0_AtoD3.XNORM.THRESHOLD)    1.5000 (X$0_AtoD4.XNORM.THRESHOLD)    1.5000     
+(X$M_UN0005_DtoA1.X1.DRVP)     .0020  (X$M_UN0006_DtoA1.X1.DRVN)     .0015      
 
-(X$0_AtoD5.XNORM.THRESHOLD)    1.5000 (X$P_AtoD1.XNORM.THRESHOLD)    1.5000     
+(X$M_UN0006_DtoA1.X1.DRVP)     .0020  (X$M_UN0013_DtoA1.X1.DRVN)     .0015      
 
-(X$P_AtoD3.XNORM.THRESHOLD)    1.5000 (X$P_AtoD4.XNORM.THRESHOLD)    1.5000     
+(X$M_UN0013_DtoA1.X1.DRVP)     .0020  (X$0_AtoD1.XNORM.THRESHOLD)    1.5000     
 
-(X$VCC_AtoD1.XNORM.THRESHOLD)    1.5000                                         
+(X$0_AtoD2.XNORM.THRESHOLD)    1.5000 (X$0_AtoD3.XNORM.THRESHOLD)    1.5000     
+
+(X$0_AtoD4.XNORM.THRESHOLD)    1.5000 (X$0_AtoD5.XNORM.THRESHOLD)    1.5000     
+
+(X$P_AtoD1.XNORM.THRESHOLD)    1.5000 (X$P_AtoD3.XNORM.THRESHOLD)    1.5000     
+
+(X$P_AtoD4.XNORM.THRESHOLD)    1.5000 (X$VCC_AtoD1.XNORM.THRESHOLD)    1.5000   
 
 (X$VCC_AtoD2.XNORM.THRESHOLD)    1.5000                                         
 
-(X$M_UN0005_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+(X$M_UN0001_AtoD1.XNORM.THRESHOLD)    1.5000                                    
 
-(X$M_UN0006_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+(X$M_UN0002_AtoD1.XNORM.THRESHOLD)    1.5000                                    
 
-(X$M_UN0007_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+(X$M_UN0003_AtoD1.XNORM.THRESHOLD)    1.5000                                    
 
-(X$M_UN0008_AtoD1.XNORM.THRESHOLD)    1.5000             
+(X$M_UN0004_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+
+(X$M_UN0010_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+
+(X$M_UN0011_AtoD1.XNORM.THRESHOLD)    1.5000                                    
+
+(X$M_UN0012_AtoD1.XNORM.THRESHOLD)    1.5000             
 
 
 
  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
 
 
-(X_CNTB.4QB) : X   (      Q7) : X     (     NS1) : 1     (M_UN0006$AtoD) : X    
+(X_CNTB.4QB) : X   (  N79541) : 1     (      Q7) : X     (      A3) : X         
 
-(      Q4) : X     (X_STATEBUFF.Q4) : 0                  (X_STATEBUFF.D4) : 0   
+(     NS1) : 1     (      Q4) : X     (X_STATEBUFF.Q4) : 0                      
 
-(N55721$DtoA) : X  (X_CNTB.3QB) : X   (  N07888) : 0     (      Q1) : X         
+(X_STATEBUFF.D4) : 0                  (      A0) : 1     (N55721$DtoA) : X      
 
-(X_STATEBUFF.Q1) : 0                  ( RST_CNT) : 0     (X_STATEBUFF.D1) : 1   
+(X_CNTB.3QB) : X   (      Q1) : X     (X_STATEBUFF.Q1) : 0                      
 
-(RST_IN$DtoA) : 1  (X_CNTB.4Q) : X    (M_UN0001$DtoA) : 0                       
+( RST_CNT) : 0     (X_STATEBUFF.D1) : X                  (RST_IN$DtoA) : 1      
 
-(  N38287) : 1     (X_CNTA.2QB) : X   (      S2) : 0     (  N70073) : X         
+(X_CNTB.4Q) : X    (  N38287) : 1     (X_CNTA.2QB) : X   (      S2) : 0         
 
-(  P$AtoD) : 0     (  N18350) : 0     (M_UN0005$AtoD) : X                       
+(  N70073) : X     (  P$AtoD) : 0     (  N18350) : 0     (  N81713) : 1         
 
-(X_STATEBUFF.TOD4) : 0                (      N0) : 1     ( P$AtoD4) : 0         
+(M_UN0002$AtoD) : X                   (X_STATEBUFF.TOD4) : 0                    
 
-(  N08053) : 0     ( 0$AtoD5) : 0     (X_CNTA.CLR) : 1   (  N08158) : 1         
+(      N0) : Z     ( P$AtoD4) : 0     ( 0$AtoD5) : 0     (X_CNTA.CLR) : 1       
 
-(X_CNTA.CK1) : 1   (X_STATEBUFF.TOD1) : 1                ( I1$DtoA) : 0         
+(X_CNTA.CK1) : 1   (X_STATEBUFF.TOD1) : X                ( I1$DtoA) : 0         
 
 (  N66538) : 1     (X_CNTB.1QB) : X   (X_CNTB.2Q) : X    (X_CNTB.CK4) : X       
 
-(X_CNTA.CK2) : 1   (   $D_HI) : 1     ( P$AtoD2) : 0     ( 0$AtoD3) : 0         
+(X_CNTA.CK2) : 1   (  N81706) : 1     (   $D_HI) : 1     ( P$AtoD2) : 0         
 
-(X_CNTB.CK1) : X   (X_CNTB.END) : X   (  N04842) : 1     (     NS2) : 1         
+( 0$AtoD3) : 0     (X_CNTB.CK1) : X   (M_UN0001$AtoD) : X                       
 
-(  N70069) : 1     (  N05072) : 1     (X_CNTA.4Q) : X    (      Q5) : X         
+(X_CNTB.END) : X   (  N04842) : 1     (     NS2) : 1     (  N70069) : 1         
 
-(M_UN0004) : X     (X_STATEBUFF.RESET) : 1               (X_CNTB.3Q) : X        
+(M_UN0012$AtoD) : X                   (  N05072) : 1     (  N80856) : 0         
 
-(M_UN0009$DtoA) : X                   (      Q2) : X     (X_STATEBUFF.Q2) : 0   
+(X_CNTA.4Q) : X    (      Q5) : X     (      A1) : 1                            
 
-(X_STATEBUFF.D2) : 0                  (X_CNTA.CK1B) : 0  (  N67294) : 0         
+(X_STATEBUFF.RESET) : 1               (X_CNTB.3Q) : X    (      Q2) : X         
 
-(X_CNTB.2QB) : X   (      S0) : 0     (    MEAS) : 0     (  N07954) : 0         
+(X_STATEBUFF.Q2) : 0                  (X_STATEBUFF.D2) : 0                      
 
-(X_CNTA.2Q) : X    (      N1) : 0     (X_STATEBUFF.TOD2) : 0                    
+(X_CNTA.CK1B) : 0  (  N67294) : 0     (M_UN0004$AtoD) : X                       
 
-(X_STATEBUFF.IN_EN) : 1               (  0$AtoD) : 0     (X_CNTB.CLR) : 1       
+(  N81129) : 1     (X_CNTB.2QB) : X   (      S0) : 0     (M_UN0011$AtoD) : X    
 
-(VCC$AtoD2) : 1    (X_CNTA.CK3) : 1   ( P$AtoD3) : 0     (   $D_NC) : Z         
+(    MEAS) : 0     (X_CNTA.2Q) : X    (      N1) : 0     (  N81695) : 1         
 
-(X_CNTB.CK2) : X   (X_CNTA.CK4) : 1   (  N04762) : 0     (X_CNTA.4QB) : X       
+(X_STATEBUFF.TOD2) : 0                (X_STATEBUFF.IN_EN) : 1                   
+
+(  0$AtoD) : 0     (X_CNTB.CLR) : 1   (VCC$AtoD2) : 1    (X_CNTA.CK3) : 1       
+
+( N768130) : X     ( P$AtoD3) : 0     (   $D_NC) : Z     (X_CNTB.CK2) : X       
+
+(X_CNTA.CK4) : 1   (  N81688) : X     (  N04762) : 0     (X_CNTA.4QB) : X       
 
 (X_CNTA.3Q) : X    (X_STATEBUFF.G1) : 0                  (  N18619) : 0         
 
 (X_CNTB.1Q) : X    (      Q6) : X     (  N73522) : 1     (X_CNTA.END) : X       
 
-(  N46973) : 0     (     NS0) : 1     (X_CNTA.3QB) : X   (X_CNTB.CK1B) : X      
+(      A2) : 1     (  N46973) : 0     (     NS0) : 1     (X_CNTA.3QB) : X       
 
-(      Q3) : X     (X_STATEBUFF.Q3) : 0                  (X_STATEBUFF.D3) : 0   
+(  N79143) : X     (X_CNTB.CK1B) : X  (      Q3) : X     (X_STATEBUFF.Q3) : 0   
 
-(RST_IN$AtoD) : 1  (M_UN0007$AtoD) : X                   (      Q0) : X         
+(X_STATEBUFF.D3) : 0                  (RST_IN$AtoD) : 1  (  N81492) : 1         
 
-(VCC$AtoD) : 1     (       A) : X     (      WR) : 1     (  N07900) : 0         
+(      Q0) : X     (VCC$AtoD) : 1     (M_UN0010$AtoD) : X                       
 
-(     CLK) : 1     (X_CNTB.CLKB) : 1  (      S1) : 0     (  N17188) : 0         
+(       A) : X     (      WR) : 1     (  N80368) : 1     (     CLK) : 1         
 
-(X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0     (  N66545) : 1         
+(X_CNTB.CLKB) : 1  (      S1) : 0     (M_UN0006$DtoA) : 0                       
 
-(       T) : 0     (X_STATEBUFF.CLK) : 1                 (X_STATEBUFF.TOD3) : 0 
+(  N17188) : 0     (X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0         
 
-(X_STATEBUFF.M) : 1                   (X_CNTA.1QB) : X   ( 0$AtoD4) : 0         
+(  N66545) : 1     (  N74441) : 0     (M_UN0013$DtoA) : X                       
 
-(M_UN0008$AtoD) : X                   (  N74185) : 0     (X_STATEBUFF.N) : 1    
+(       T) : 0     (X_STATEBUFF.CLK) : 1                 (M_UN0009) : X         
 
-(X_CNTA.1Q) : X    (X_CNTA.CLKB) : 0  (X_CNTB.CK3) : X   ( I0$DtoA) : 0         
+(X_STATEBUFF.TOD3) : 0                (X_STATEBUFF.M) : 1                       
 
-(  N07969) : 0     (  N17461) : 0     (X_STATEBUFF.RST) : 0                     
+(X_CNTA.1QB) : X   (M_UN0003$AtoD) : X                   ( 0$AtoD4) : 0         
 
-( 0$AtoD2) : 0     (  N69586) : 1     (X_STATEBUFF.G2) : 0                      
+(  N74185) : 0     (X_STATEBUFF.N) : 1                   (X_CNTA.1Q) : X        
+
+(X_CNTA.CLKB) : 0  (X_CNTB.CK3) : X   ( I0$DtoA) : 0     (M_UN0005$DtoA) : X    
+
+(  N17461) : 0     (X_STATEBUFF.RST) : 0                 ( 0$AtoD2) : 0         
+
+(  N69586) : 1     (X_STATEBUFF.G2) : 0                  (  N81702) : 1         
 
 (  N69974) : 0     
 
@@ -818,13 +910,13 @@ X$CD4000_PWR 0 CD4000_PWR
     V_Vin       -8.445E-10
     X$DIGIFPWR.VDPWR  -1.219E-04
     X$DIGIFPWR.VDGND  -2.300E-04
-    X$CD4000_PWR.VVDD  -1.874E-03
+    X$CD4000_PWR.VVDD  -3.682E-03
     X$CD4000_PWR.VVSS  -5.250E-06
 
-    TOTAL POWER DISSIPATION   9.98E-03  WATTS
+    TOTAL POWER DISSIPATION   1.90E-02  WATTS
 
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -839,8 +931,17 @@ X$CD4000_PWR 0 CD4000_PWR
 
 DIGITAL Message ID#1 (WARNING):
 GLITCH Hazard at time 506ns
-  Device: X_U17A.U1
-  NODEs: T (IN1) => N08158 (OUT1)  
+  Device: X_U45C.U1
+  NODEs: T (IN1) => N81129 (OUT1)  
+  Pulse width is  5.000E-09
+ Noise Margin (tpwrt) is  2.000E-09
+ Propagation Delay is  9.000E-09
+
+
+DIGITAL Message ID#2 (WARNING):
+GLITCH Hazard at time 506ns
+  Device: X_U42C.U1
+  NODEs: T (IN1) => N79541 (OUT1)  
   Pulse width is  5.000E-09
  Noise Margin (tpwrt) is  2.000E-09
  Propagation Delay is  9.000E-09
@@ -849,7 +950,7 @@ GLITCH Hazard at time 506ns
 
           JOB CONCLUDED
 
-**** 08/31/21 10:10:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 12:00:09 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-5"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\5.sim ] 
 
@@ -861,6 +962,6 @@ GLITCH Hazard at time 506ns
 
 
 
-  License check-out time            =         .61
-  Total job time (using Solver 1)   =         .11
+  License check-out time            =        2.41
+  Total job time (using Solver 1)   =         .08
 

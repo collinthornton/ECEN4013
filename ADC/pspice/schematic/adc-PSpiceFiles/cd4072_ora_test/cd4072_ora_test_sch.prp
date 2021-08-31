@@ -1,0 +1,70 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("VDC")
+        ("CD4072BM_1")
+    )
+    ("instances"
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("IC1"
+            ("device_name"	"CD4072BM_1")
+            ("pspice_path"	"X_IC1")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/gpn/cd4072b")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Description"
+                    ("value"	"Texas Instruments CD4072BM, Dual, OR OR Gate, 3  18 V, 14-Pin SOIC")
+                    ("pspice_param"	"Description")
+                )
+                ("Height"
+                    ("value"	"1.75 mm")
+                    ("pspice_param"	"Height")
+                )
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4072BM")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Mouser Part Number"
+                    ("value"	"595-CD4072BM")
+                    ("pspice_param"	"Mouser Part Number")
+                )
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4072BM?qs=HTr%252BoA4jRile2ZuWAdK8PA%3D%3D")
+                    ("pspice_param"	"Mouser Price/Stock")
+                )
+            )
+        )
+    )
+)

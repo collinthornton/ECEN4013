@@ -1,0 +1,319 @@
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10us 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\cd4072_ora_test.net" 
+
+
+
+**** INCLUDING cd4072_ora_test.net ****
+* source ADC
+V_V1         N00173 0 5
+X_IC1          0 0 0 0 0 N00173 N00173 N00173 N00538 N00276 CD4072B PARAMS:
++  IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node 0
+*
+* Moving X_IC1.U1:IN2-1 from analog node 0 to new digital node 0$AtoD
+X$0_AtoD1
++ 0
++ 0$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN1-4 from analog node 0 to new digital node 0$AtoD2
+X$0_AtoD2
++ 0
++ 0$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN1-3 from analog node 0 to new digital node 0$AtoD3
+X$0_AtoD3
++ 0
++ 0$AtoD3
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN1-2 from analog node 0 to new digital node 0$AtoD4
+X$0_AtoD4
++ 0
++ 0$AtoD4
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN1-1 from analog node 0 to new digital node 0$AtoD5
+X$0_AtoD5
++ 0
++ 0$AtoD5
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N00173
+*
+* Moving X_IC1.U1:IN2-4 from analog node N00173 to new digital node N00173$AtoD
+X$N00173_AtoD1
++ N00173
++ N00173$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN2-3 from analog node N00173 to new digital node N00173$AtoD2
+X$N00173_AtoD2
++ N00173
++ N00173$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC1.U1:IN2-2 from analog node N00173 to new digital node N00173$AtoD3
+X$N00173_AtoD3
++ N00173
++ N00173$AtoD3
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$CD4000_PWR 0 CD4000_PWR
+
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         
+          IS    1.000000E-15 
+          RS    2            
+         CJO    2.000000E-12 
+
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO4000B         
+    TIMESTEP  100.000000E-12 
+      S0NAME X               
+       S0VHI     .5          
+       S0VLO    -.5          
+      S1NAME 0               
+       S1VHI    -.5          
+       S1VLO   -3            
+      S2NAME R               
+       S2VHI     .05         
+       S2VLO    -.5          
+      S3NAME R               
+       S3VHI     .5          
+       S3VLO    -.05         
+      S4NAME X               
+       S4VHI     .5          
+       S4VLO    -.5          
+      S5NAME 1               
+       S5VHI    3            
+       S5VLO     .5          
+      S6NAME F               
+       S6VHI     .5          
+       S6VLO    -.05         
+      S7NAME F               
+       S7VHI     .05         
+       S7VLO    -.5          
+
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD4072B       
+      TPLHMN   50.000000E-09 
+      TPLHTY  125.000000E-09 
+      TPLHMX  250.000000E-09 
+      TPHLMN   50.000000E-09 
+      TPHLTY  125.000000E-09 
+      TPHLMX  250.000000E-09 
+
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_4000B        
+        DRVL    1.443000E+03 
+        DRVH    1.443000E+03 
+       AtoD1 AtoD_4000B      
+       AtoD2 AtoD_4000B_NX   
+       AtoD3 AtoD_4000B      
+       AtoD4 AtoD_4000B_NX   
+       DtoA1 DtoA_4000B      
+       DtoA2 DtoA_4000B      
+       DtoA3 DtoA_4000B      
+       DtoA4 DtoA_4000B      
+    DIGPOWER CD4000_PWR      
+      TSWHL1    7.720000E-09 
+      TSWHL2    7.860000E-09 
+      TSWHL3    9.710000E-09 
+      TSWHL4    9.630000E-09 
+      TSWLH1    7.560000E-09 
+      TSWLH2    7.400000E-09 
+      TSWLH3    9.410000E-09 
+      TSWLH4    9.240000E-09 
+       TPWRT  100.000000E+03 
+
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00173)    5.0000 ($G_CD4000_VDD)    5.0000                                    
+
+($G_CD4000_VSS)    0.0000             (X$0_AtoD1.NORM)   -1.2500                
+
+(X$0_AtoD2.NORM)   -1.2500            (X$0_AtoD3.NORM)   -1.2500                
+
+(X$0_AtoD4.NORM)   -1.2500            (X$0_AtoD5.NORM)   -1.2500                
+
+(X$N00173_AtoD1.NORM)    1.2500       (X$N00173_AtoD2.NORM)    1.2500           
+
+(X$N00173_AtoD3.NORM)    1.2500       (X$0_AtoD1.XNORM.THRESHOLD)    1.5000     
+
+(X$0_AtoD2.XNORM.THRESHOLD)    1.5000 (X$0_AtoD3.XNORM.THRESHOLD)    1.5000     
+
+(X$0_AtoD4.XNORM.THRESHOLD)    1.5000 (X$0_AtoD5.XNORM.THRESHOLD)    1.5000     
+
+(X$N00173_AtoD1.XNORM.THRESHOLD)    1.5000                                      
+
+(X$N00173_AtoD2.XNORM.THRESHOLD)    1.5000                                      
+
+(X$N00173_AtoD3.XNORM.THRESHOLD)    1.5000               
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(  N00538) : 0     (N00173$AtoD2) : 1                    ( 0$AtoD5) : 0         
+
+(N00173$AtoD) : 1  ( 0$AtoD3) : 0     (N00173$AtoD3) : 1                        
+
+(  0$AtoD) : 0     (  N00276) : 1     ( 0$AtoD4) : 0     ( 0$AtoD2) : 0     
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.500E-07
+    X$CD4000_PWR.VVDD  -5.250E-06
+    X$CD4000_PWR.VVSS  -5.100E-06
+
+    TOTAL POWER DISSIPATION   2.70E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/31/21 08:17:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd4072_ora_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4072_ora
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

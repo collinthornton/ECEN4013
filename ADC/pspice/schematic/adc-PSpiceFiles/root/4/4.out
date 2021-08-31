@@ -1,5 +1,5 @@
-
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -58,7 +58,7 @@ X_CNTA         N60088 RST_CNT MEAS Q0 Q1 Q2 Q3 VCC 0 CD4520B PARAMS:
 X_CNTB         0 RST_CNT Q3 Q4 Q5 Q6 Q7 VCC 0 CD4520B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 V_V4         VCC 0 5
-X_IC3          N07888 N07954 N07900 N07969 VCC N18350 N17461 N18619 N08053
+X_IC3          N07888 N07954 N07900 N07969 N64787 N18350 N17461 N18619 N08053
 +  N17188 M_UN0001 M_UN0002 CD4072B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U17D         S1 NS1 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -123,6 +123,7 @@ X_U27E         N46997 MEAS $G_DPWR $G_DGND 74HC04 PARAMS:
 R_R2         N55721 0  10e6 TC=0,0 
 X_CNT_ENA         CLK P N60088 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
+R_R3         0 N64787  10e6 TC=0,0 
 ** Floating/unmodeled pin fixups **
 R__UC0001   M_UN0001  0   {1/GMIN}
 R__UC0002   M_UN0002  0   {1/GMIN}
@@ -225,14 +226,6 @@ X$VCC_AtoD2
 + $G_CD4000_VSS
 + AtoD_4000B
 +       PARAMS: CAPACITANCE=   0     
-* Moving X_IC3.U1:IN2-1 from analog node VCC to new digital node VCC$AtoD3
-X$VCC_AtoD3
-+ VCC
-+ VCC$AtoD3
-+ M_UN0001
-+ M_UN0002
-+ AtoD_4000B
-+       PARAMS: CAPACITANCE=   0     
 *
 * Analog/Digital interface for node N55721
 *
@@ -244,6 +237,17 @@ X$N55721_DtoA1
 + M_UN0005
 + DtoA_4000B
 +       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N64787
+*
+* Moving X_IC3.U1:IN2-1 from analog node N64787 to new digital node N64787$AtoD
+X$N64787_AtoD1
++ N64787
++ N64787$AtoD
++ M_UN0001
++ M_UN0002
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
 *
 * Analog/Digital interface for node M_UN0003
 *
@@ -312,7 +316,7 @@ X$CD4000_PWR 0 CD4000_PWR
 +   +0s 0
 +   5.011us 1
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -331,7 +335,7 @@ X$CD4000_PWR 0 CD4000_PWR
          CJO    2.000000E-12 
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -351,7 +355,7 @@ X$CD4000_PWR 0 CD4000_PWR
         VOFF    0            
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -391,7 +395,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S5RHI    1.000000E+06  200.000000E+03  200.000000E+03 
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -432,7 +436,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S7VLO    -.5              .8              .2          
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -472,7 +476,7 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHLMX   20.000000E-09   22.000000E-09 
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -524,7 +528,7 @@ X$CD4000_PWR 0 CD4000_PWR
    THCECLKMX    0               0            
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -565,7 +569,7 @@ X$CD4000_PWR 0 CD4000_PWR
        TPWRT  100.000000E+03 
 
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -580,15 +584,15 @@ X$CD4000_PWR 0 CD4000_PWR
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(    P) 3.231E-24  (   I0)     .1015  (   I1)     .1015  (  VCC)    5.0000      
+(    P)    0.0000  (   I0)     .1015  (   I1)     .1015  (  VCC)    5.0000      
 
-( VREF)    0.0000  (N01900)    0.0000 (N01917)-3.231E-30 (N29993) 32.31E-24     
+( VREF)    0.0000  (N01900)    0.0000 (N01917) 3.231E-30 (N29993)-32.31E-24     
 
-(N32959)    5.0000 (N33002)   -5.0000 (N55721)    0.0000 (RST_IN)    4.9975     
+(N32959)    5.0000 (N33002)   -5.0000 (N55721)    0.0000 (N64787) 98.04E-30     
 
-($G_DGND)    0.0000                   ($G_DPWR)    5.0000                       
+(RST_IN)    4.9975 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000    
 
-(M_UN0001)    4.9995                  (M_UN0002)    4.9995                      
+(M_UN0001)-16.38E-24                  (M_UN0002) 6.573E-24                      
 
 (M_UN0003)     .0411                  (M_UN0004)    0.0000                      
 
@@ -598,17 +602,17 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X$0_AtoD2.NORM)   -1.2500            (X$0_AtoD3.NORM)   -1.2500                
 
-(X$0_AtoD4.NORM)   -1.2500            (X$P_AtoD2.NORM) 646.2E-27                
+(X$0_AtoD4.NORM)   -1.2500            (X$P_AtoD2.NORM)    0.0000                
 
 (X$P_AtoD3.NORM)   -1.2500            (X$P_AtoD4.NORM)   -1.2500                
 
 (X$VCC_AtoD1.NORM)    1.2500          (X$VCC_AtoD2.NORM)    1.2500              
 
-(X$VCC_AtoD3.NORM)  508.7500          (X$I0_DtoA1.DGND_OL)     .1014            
+(X$I0_DtoA1.DGND_OL)     .1014        (X$I0_DtoA1.DPWR_OH)    3.4493            
 
-(X$I0_DtoA1.DPWR_OH)    3.4493        (X$I1_DtoA1.DGND_OL)     .1014            
+(X$I1_DtoA1.DGND_OL)     .1014        (X$I1_DtoA1.DPWR_OH)    3.4493            
 
-(X$I1_DtoA1.DPWR_OH)    3.4493        (X$N55721_DtoA1.DRVGND)    0.0000         
+(X$N64787_AtoD1.NORM) 4.901E-18       (X$N55721_DtoA1.DRVGND)    0.0000         
 
 (X$N55721_DtoA1.DRVPWR)    0.0000     (X$N55721_DtoA1.X1.DRVN)    0.0000        
 
@@ -628,7 +632,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X$VCC_AtoD2.XNORM.THRESHOLD)    1.5000                                         
 
-(X$VCC_AtoD3.XNORM.THRESHOLD)    0.0000                  
+(X$N64787_AtoD1.XNORM.THRESHOLD)    0.0000               
 
 
 
@@ -655,15 +659,15 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_CNTB.1QB) : X   (  N60088) : 0     (X_CNTB.2Q) : X    (X_CNTB.CK4) : X       
 
-(X_CNTA.CK2) : 1   (   $D_HI) : 1     ( P$AtoD2) : 0     ( 0$AtoD3) : 0         
+(X_CNTA.CK2) : 1   (   $D_HI) : 1     (N64787$AtoD) : X  ( P$AtoD2) : 0         
 
-(X_CNTB.CK1) : X   (  N16213) : 1     (X_CNTB.END) : X   (  N04842) : 1         
+( 0$AtoD3) : 0     (X_CNTB.CK1) : X   (  N16213) : 1     (X_CNTB.END) : X       
 
-(     NS2) : 1     (  N05072) : 1     (X_CNTA.4Q) : X    (      Q5) : X         
+(  N04842) : 1     (     NS2) : 1     (  N05072) : 1     (X_CNTA.4Q) : X        
 
-(X_STATEBUFF.RESET) : 1               (X_CNTB.3Q) : X    (      Q2) : X         
+(      Q5) : X     (X_STATEBUFF.RESET) : 1               (X_CNTB.3Q) : X        
 
-(X_STATEBUFF.Q2) : 0                  (X_STATEBUFF.D2) : 0                      
+(      Q2) : X     (X_STATEBUFF.Q2) : 0                  (X_STATEBUFF.D2) : 0   
 
 (      NP) : 1     (X_CNTA.CK1B) : 0  (X_CNTB.2QB) : X   (      S0) : 0         
 
@@ -687,7 +691,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (       A) : X     (      WR) : 1     (  N07900) : 0     (     CLK) : 1         
 
-(X_CNTB.CLKB) : 1  (      S1) : 0     (  N17188) : 1                            
+(X_CNTB.CLKB) : 1  (      S1) : 0     (  N17188) : X                            
 
 (X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0     (  N46997) : 1         
 
@@ -695,13 +699,13 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_STATEBUFF.M) : 1                   (X_CNTA.1QB) : X   (  N16066) : 0         
 
-( 0$AtoD4) : 0     (VCC$AtoD3) : 1    (X_STATEBUFF.N) : 1                       
+( 0$AtoD4) : 0     (X_STATEBUFF.N) : 1                   (X_CNTA.1Q) : X        
 
-(X_CNTA.1Q) : X    (X_CNTA.CLKB) : 1  (X_CNTB.CK3) : X   ( I0$DtoA) : 0         
+(X_CNTA.CLKB) : 1  (X_CNTB.CK3) : X   ( I0$DtoA) : 0     (  N07969) : 0         
 
-(  N07969) : 0     (  N17461) : 0     (X_STATEBUFF.RST) : 0                     
+(  N17461) : 0     (X_STATEBUFF.RST) : 0                 ( 0$AtoD2) : 0         
 
-( 0$AtoD2) : 0     (X_STATEBUFF.G2) : 0                  
+(X_STATEBUFF.G2) : 0                  
 
 
 
@@ -720,154 +724,11 @@ X$CD4000_PWR 0 CD4000_PWR
 
     TOTAL POWER DISSIPATION   9.45E-04  WATTS
 
-
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
-
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
-
-
- ****     SIMULATION ERRORS
-
-
-******************************************************************************
-
-
-
-
-DIGITAL Message ID#1 (SERIOUS):
-DIGITAL INPUT VOLTAGE Hazard at time 0s
-  Device: X$VCC_AtoD3.O0
-  Voltage V(X$VCC_AtoD3.NORM,M_UN0002)= 503.7500 is beyond the ranges defined in model DO4000B
-
-
-DIGITAL Message ID#2 (WARNING):
-WIDTH Violation at time 8.51us
-  Device: X_CNTA.U4
-   CLOCK: X_CNTA.CK1
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 183.2ns
-
-
-DIGITAL Message ID#3 (WARNING):
-WIDTH Violation at time 520.51us
-  Device: X_CNTA.U4
-   CLOCK: X_CNTA.CK1
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 183.9ns
-
-
-DIGITAL Message ID#4 (WARNING):
-WIDTH Violation at time 520.51us
-  Device: X_CNTA.U5
-   CLOCK: X_CNTA.CK2
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 183.9ns
-
-
-DIGITAL Message ID#5 (WARNING):
-WIDTH Violation at time 520.51us
-  Device: X_CNTA.U6
-   CLOCK: X_CNTA.CK3
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 183.9ns
-
-
-DIGITAL Message ID#6 (WARNING):
-WIDTH Violation at time 520.51us
-  Device: X_CNTA.U7
-   CLOCK: X_CNTA.CK4
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 183.9ns
-
-
-DIGITAL Message ID#7 (WARNING):
-WIDTH Violation at time 520.6136us
-  Device: X_CNTA.U5
-   CLOCK: X_CNTA.CK2
-  Minimum TWCLKL = 200ns
-  Measured CLOCK pulse width = 103.6ns
-
-
-DIGITAL Message ID#8 (WARNING):
-WIDTH Violation at time 520.6136us
-  Device: X_CNTA.U6
-   CLOCK: X_CNTA.CK3
-  Minimum TWCLKL = 200ns
-  Measured CLOCK pulse width = 103.6ns
-
-
-DIGITAL Message ID#9 (WARNING):
-WIDTH Violation at time 520.6136us
-  Device: X_CNTA.U7
-   CLOCK: X_CNTA.CK4
-  Minimum TWCLKL = 200ns
-  Measured CLOCK pulse width = 103.6ns
-
-
-DIGITAL Message ID#10 (SERIOUS):
-PERSISTENT Hazard at time 520.6136us
-  Device: 
-  at "DATA" input of X_CNTA.U5
-  See Message ID#7 for probable cause.
-
-DIGITAL Message ID#11 (SERIOUS):
-PERSISTENT Hazard at time 520.6136us
-  Device: 
-  at "DATA" input of X_CNTA.U6
-  See Message ID#8 for probable cause.
-
-DIGITAL Message ID#12 (SERIOUS):
-PERSISTENT Hazard at time 520.6136us
-  Device: 
-  at "DATA" input of X_CNTA.U7
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#13 (SERIOUS):
-PERSISTENT Hazard at time 520.6761us
-  Device: 
-  at "CLOCK" input of X_CNTB.U4
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#14 (SERIOUS):
-PERSISTENT Hazard at time 520.6761us
-  Device: 
-  at "CLOCK" input of X_CNTB.U5
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#15 (SERIOUS):
-PERSISTENT Hazard at time 520.6761us
-  Device: 
-  at "CLOCK" input of X_CNTB.U6
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#16 (SERIOUS):
-PERSISTENT Hazard at time 520.6761us
-  Device: 
-  at "CLOCK" input of X_CNTB.U7
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#17 (SERIOUS):
-PERSISTENT Hazard at time 520.8185us
-  On D/A Node "N55721$DtoA"
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#18 (SERIOUS):
-PERSISTENT Hazard at time 520.8185us
-  Device: On D/A interface X$N55721_DtoA1.N1, "N55721$DtoA"
-  See Message ID#9 for probable cause.
-
-DIGITAL Message ID#19 (WARNING):
-WIDTH Violation at time 524.51us
-  Device: X_CNTA.U4
-   CLOCK: X_CNTA.CK1
-  Minimum TWCLKH = 200ns
-  Measured CLOCK pulse width = 185.2ns
-
 
 
           JOB CONCLUDED
 
-**** 08/30/21 12:50:07 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/31/21 08:12:51 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
 
@@ -879,5 +740,6 @@ WIDTH Violation at time 524.51us
 
 
 
-  Total job time (using Solver 1)   =         .30
+  License check-out time            =        1.17
+  Total job time (using Solver 1)   =         .08
 

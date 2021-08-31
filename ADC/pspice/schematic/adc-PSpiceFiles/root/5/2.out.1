@@ -1,7 +1,7 @@
 
-**** 08/31/21 08:11:47 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 08/29/21 16:51:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "root-4"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4.sim ] 
+ ** Profile: "root-2"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\2.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,18 +12,18 @@
 
 
 
-** Creating circuit file "4.cir" 
+** Creating circuit file "2.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
 * Profile Libraries :
-.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\4\4_profile.inc" 
+.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\2\2_profile.inc" 
 * Local Libraries :
 
-**** INCLUDING 4_profile.inc ****
-.STMLIB ".\2.stl" 
+**** INCLUDING 2_profile.inc ****
+.STMLIB "./2.stl" 
 
-**** RESUMING 4.cir ****
+**** RESUMING 2.cir ****
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
 .STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
@@ -32,7 +32,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 600u 0 
+.TRAN  0 300u 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\root.net" 
@@ -44,7 +44,7 @@
 E_U1         N01917 0 VALUE {LIMIT(V(0,N01900)*1E6,-5V,+5V)}
 C_C1         N01900 N01917  12.8n IC=0 TC=0,0 
 R_R1         N01900 N29993  20k TC=0,0 
-E_U2         P 0 VALUE {LIMIT(V(VREF,N01917)*1E6,0V,+5V)}
+E_U2         N29633 0 VALUE {LIMIT(V(VREF,N01917)*1E6,0V,+5V)}
 V_V0         VREF 0 0
 U_DSTM1         STIM(1,1) $G_DPWR $G_DGND CLK IO_STM IO_LEVEL=0 
 + 0 0
@@ -53,14 +53,17 @@ U_DSTM1         STIM(1,1) $G_DPWR $G_DGND CLK IO_STM IO_LEVEL=0
 + +500n 0
 +  +500n 1
 + ENDREPEAT
-X_CNTA         N60088 RST_CNT MEAS Q0 Q1 Q2 Q3 VCC 0 CD4520B PARAMS:
+U_DSTM4         STIM(1,0) $G_DPWR $G_DGND N29309 IO_STM STIMULUS=RST
+X_CNTA         CLK N16078 P Q0 Q1 Q2 Q3 $G_CD4000_VDD $G_CD4000_VSS CD4520B
++  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_CNTB         0 RST_CNT Q3 Q4 Q5 Q6 Q7 VCC 0 CD4520B PARAMS:
+X_CNTB         0 N16078 Q3 Q4 Q5 Q6 Q7 $G_CD4000_VDD $G_CD4000_VSS CD4520B
++  PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 V_V4         VCC 0 5
-X_IC3          N07888 N07954 N07900 N07969 N64787 N18350 N17461 N18619 N08053
+X_IC3          N07888 N07954 N07900 N07969 VCC N18350 N17461 N18619 N08053
 +  N17188 M_UN0001 M_UN0002 CD4072B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
-X_U17D         S1 NS1 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U17D         MEAS NS1 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U2C         S2 NS2 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -68,7 +71,7 @@ X_U16A         NS1 S2 N07969 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U6A         N08158 N08053 N0 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_IC2          S0 NS2 P NS0 S1 NS2 NS2 S1 P N07954 N17461 N18350 CD4073B
+X_IC2          S0 NS2 P NS0 MEAS NS2 NS2 MEAS P N07954 N17461 N18350 CD4073B
 +  PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 X_U22A         N17188 T N1 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -76,7 +79,7 @@ X_U17A         T N08158 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U18B         T S0 N16066 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_IC4          NS2 S1 NS0 A A S2 NS1 S0 N07900 N18619 CD4082B PARAMS:
+X_IC4          NS2 MEAS NS0 A A S2 NS1 S0 N07900 N18619 CD4082B PARAMS:
 +  IO_LEVEL=0 MNTYMXDLY=0
 X_U21C         P NP $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -90,48 +93,51 @@ X_U14C         S0 NS0 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U19A         NS1 N16213 N16204 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_STATEBUFF          CLK N38287 0 0 N0 N1 N2 0 VCC VCC S0 S1 S2 M_UN0003
+X_STATEBUFF          CLK N38287 0 0 N0 N1 N2 0 VCC VCC S0 MEAS S2 M_UN0003
 +  CD4076B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
-X_U11B         S1 N05072 I0 $G_DPWR $G_DGND 74LS08 PARAMS:
+X_U11B         MEAS N05072 I0 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U9E         S1 RST_IN $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U9E         MEAS RST_IN $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U12F         S0 N05072 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U6B         S0 S1 N04762 $G_DPWR $G_DGND 74LS32 PARAMS:
+X_U6B         S0 MEAS N04762 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U10B         S0 S1 I1 $G_DPWR $G_DGND 74LS08 PARAMS:
+X_U10B         S0 MEAS I1 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U8A         S0 N04842 RST_CNT $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U9B         S1 N04842 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U9B         MEAS N04842 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U7A         N04762 WR $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_AND8          Q0 Q1 Q2 Q3 Q7 Q6 Q5 Q4 N55721 A M_UN0004 M_UN0005 CD4068B
+X_IC7          Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 M_UN0004 A M_UN0005 M_UN0006 CD4068B
 +  PARAMS: IO_LEVEL=0 MNTYMXDLY=0
 U_DSTM5         STIM(1,0) $G_DPWR $G_DGND T IO_STM STIMULUS=TRIGGER
+X_U23         N29309 RST_CNT N16078 $G_DPWR $G_DGND OR2
 V_Vref         N33002 0 -5
 V_Vin         N32959 0 5
-X_IC9          N32959 N29993 N33002 N29993 0 0 N01900 N01917 I0 I1 0 RST_IN VCC
-+  0 CD4066B
+X_IC9          N32959 N29993 N33002 N43055 P N29633 N01900 N01917 I0 I1 MEAS
++  RST_IN VCC 0 CD4066B
 U_DSTM6         STIM(1,0) $G_DPWR $G_DGND N38287 IO_STM STIMULUS=RST
-X_U26E         S1 N46997 $G_DPWR $G_DGND 74HC04 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-X_U27E         N46997 MEAS $G_DPWR $G_DGND 74HC04 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
-R_R2         N55721 0  10e6 TC=0,0 
-X_CNT_ENA         CLK P N60088 $G_DPWR $G_DGND 74LS08 PARAMS:
-+ IO_LEVEL=0 MNTYMXDLY=0
 ** Floating/unmodeled pin fixups **
 R__UC0001   M_UN0001  0   {1/GMIN}
 R__UC0002   M_UN0002  0   {1/GMIN}
 R__UC0003   M_UN0003  0   {1/GMIN}
 R__UC0004   M_UN0004  0   {1/GMIN}
 R__UC0005   M_UN0005  0   {1/GMIN}
+R__UC0006   M_UN0006  0   {1/GMIN}
 
-**** RESUMING 4.cir ****
+**** RESUMING 2.cir ****
 .END
+
+WARNING(ORPSIM-15223): Library file e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4066-cd4060\cd4066b.lib has changed since index file cd4066b.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Sun Aug 29 16:50:55 2021 to Sun Aug 29 16:51:48 2021.
+
+INFO(ORPSIM-15422): Making new index file cd4066b.ind for library file cd4066b.lib.
+
+Index has 2 entries from 1 file(s).
 
 
 **** Generated AtoD and DtoA Interfaces ****
@@ -167,41 +173,6 @@ X$0_AtoD3
 X$0_AtoD4
 + 0
 + 0$AtoD4
-+ VCC
-+ 0
-+ AtoD_4000B
-+       PARAMS: CAPACITANCE=   0     
-*
-* Analog/Digital interface for node P
-*
-* Moving X_CNT_ENA.U1:IN2 from analog node P to new digital node P$AtoD
-X$P_AtoD1
-+ P
-+ P$AtoD
-+ $G_DPWR
-+ $G_DGND
-+ AtoD_LS
-+       PARAMS: CAPACITANCE=   0     
-* Moving X_U21C.U1:IN1 from analog node P to new digital node P$AtoD2
-X$P_AtoD2
-+ P
-+ P$AtoD2
-+ $G_DPWR
-+ $G_DGND
-+ AtoD_HC
-+       PARAMS: CAPACITANCE=   3.5000E-12
-* Moving X_IC2.U1:IN3-3 from analog node P to new digital node P$AtoD3
-X$P_AtoD3
-+ P
-+ P$AtoD3
-+ $G_CD4000_VDD
-+ $G_CD4000_VSS
-+ AtoD_4000B
-+       PARAMS: CAPACITANCE=   0     
-* Moving X_IC2.U1:IN1-3 from analog node P to new digital node P$AtoD4
-X$P_AtoD4
-+ P
-+ P$AtoD4
 + $G_CD4000_VDD
 + $G_CD4000_VSS
 + AtoD_4000B
@@ -225,17 +196,14 @@ X$VCC_AtoD2
 + $G_CD4000_VSS
 + AtoD_4000B
 +       PARAMS: CAPACITANCE=   0     
-*
-* Analog/Digital interface for node N55721
-*
-* Moving X_AND8.U1:OUT1 from analog node N55721 to new digital node N55721$DtoA
-X$N55721_DtoA1
-+ N55721$DtoA
-+ N55721
-+ M_UN0004
-+ M_UN0005
-+ DtoA_4000B
-+       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+* Moving X_IC3.U1:IN2-1 from analog node VCC to new digital node VCC$AtoD3
+X$VCC_AtoD3
++ VCC
++ VCC$AtoD3
++ M_UN0001
++ M_UN0002
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
 *
 * Analog/Digital interface for node M_UN0003
 *
@@ -245,6 +213,17 @@ X$M_UN0003_DtoA1
 + M_UN0003
 + $G_CD4000_VDD
 + $G_CD4000_VSS
++ DtoA_4000B
++       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
+* Analog/Digital interface for node M_UN0004
+*
+* Moving X_IC7.U1:OUT1 from analog node M_UN0004 to new digital node M_UN0004$DtoA
+X$M_UN0004_DtoA1
++ M_UN0004$DtoA
++ M_UN0004
++ M_UN0005
++ M_UN0006
 + DtoA_4000B
 +       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
 *
@@ -270,6 +249,124 @@ X$I1_DtoA1
 + DtoA_LS
 +       PARAMS: DRVH= 108    DRVL= 157    CAPACITANCE=   0     
 *
+* Analog/Digital interface for node P
+*
+* Moving X_U21C.U1:IN1 from analog node P to new digital node P$AtoD
+X$P_AtoD1
++ P
++ P$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_IC2.U1:IN3-3 from analog node P to new digital node P$AtoD2
+X$P_AtoD2
++ P
++ P$AtoD2
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC2.U1:IN1-3 from analog node P to new digital node P$AtoD3
+X$P_AtoD3
++ P
++ P$AtoD3
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_CNTA.U2:IN1 from analog node P to new digital node P$AtoD4
+X$P_AtoD4
++ P
++ P$AtoD4
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface for node MEAS
+*
+* Moving X_U9B.U1:IN1 from analog node MEAS to new digital node MEAS$AtoD
+X$MEAS_AtoD1
++ MEAS
++ MEAS$AtoD
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U10B.U1:IN2 from analog node MEAS to new digital node MEAS$AtoD2
+X$MEAS_AtoD2
++ MEAS
++ MEAS$AtoD2
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U6B.U1:IN2 from analog node MEAS to new digital node MEAS$AtoD3
+X$MEAS_AtoD3
++ MEAS
++ MEAS$AtoD3
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U9E.U1:IN1 from analog node MEAS to new digital node MEAS$AtoD4
+X$MEAS_AtoD4
++ MEAS
++ MEAS$AtoD4
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_U11B.U1:IN1 from analog node MEAS to new digital node MEAS$AtoD5
+X$MEAS_AtoD5
++ MEAS
++ MEAS$AtoD5
++ $G_DPWR
++ $G_DGND
++ AtoD_LS
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC4.U1:IN1-2 from analog node MEAS to new digital node MEAS$AtoD6
+X$MEAS_AtoD6
++ MEAS
++ MEAS$AtoD6
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC2.U1:IN3-2 from analog node MEAS to new digital node MEAS$AtoD7
+X$MEAS_AtoD7
++ MEAS
++ MEAS$AtoD7
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_IC2.U1:IN2-2 from analog node MEAS to new digital node MEAS$AtoD8
+X$MEAS_AtoD8
++ MEAS
++ MEAS$AtoD8
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B
++       PARAMS: CAPACITANCE=   0     
+* Moving X_U17D.U1:IN1 from analog node MEAS to new digital node MEAS$AtoD9
+X$MEAS_AtoD9
++ MEAS
++ MEAS$AtoD9
++ $G_DPWR
++ $G_DGND
++ AtoD_HC
++       PARAMS: CAPACITANCE=   3.5000E-12
+* Moving X_STATEBUFF.U76BDLY:OUT2 from analog node MEAS to new digital node MEAS$DtoA
+X$MEAS_DtoA1
++ MEAS$DtoA
++ MEAS
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ DtoA_4000B
++       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
 * Analog/Digital interface for node RST_IN
 *
 * Moving X_U9E.U1:OUT1 from analog node RST_IN to new digital node RST_IN$DtoA
@@ -286,8 +383,8 @@ X$RST_IN_DtoA1
 X$DIGIFPWR 0 DIGIFPWR
 X$CD4000_PWR 0 CD4000_PWR
 
-* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\4\2.stl written on Sun Aug 29 18:48:22 2021
-* by Stimulus Editor -- Serial Number: 65793 -- Version 17.4.0
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\2\2.stl written on Sun Aug 29 16:24:35 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
 ;!Stimulus Get
 ;! RST Digital TRIGGER Digital
 ;!Ok
@@ -302,9 +399,13 @@ X$CD4000_PWR 0 CD4000_PWR
 +   300ns 0
 .STIMULUS TRIGGER STIM (1, 1)
 +   +0s 0
++   501ns 1
++   506ns 0
++   550ns 1
++   551ns 0
++   670ns 1
++   671ns 0
 +   5.011us 1
 
-ERROR(ORPSIM-15141): Less than 2 connections at node M_UN0001.
-
-ERROR(ORPSIM-15141): Less than 2 connections at node M_UN0002.
+ERROR(ORPSIM-15141): Less than 2 connections at node N43055.
 

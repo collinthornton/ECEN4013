@@ -1,0 +1,19 @@
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd4028_decoder_test\1\1.stl written on Wed Sep  1 00:03:10 2021
+* by Stimulus Editor -- Serial Number: 0 -- Version 17.4.0
+;!Stimulus Get
+;! TRIGGER Digital RST Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 10ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS RST STIM (1, 1)
++   +0s 1
++   33.333us 0
+.STIMULUS TRIGGER STIM (1, 1)
++   +0s 0
++   133.333us 1
++   6.5ms 0
++   8.675ms 1

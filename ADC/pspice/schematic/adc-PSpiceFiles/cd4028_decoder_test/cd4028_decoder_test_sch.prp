@@ -1,0 +1,70 @@
+("FILE_TYPE"	"PMAP File"
+    ("devices"
+        ("CD4028BEE4")
+        ("VDC")
+    )
+    ("instances"
+        ("IC10"
+            ("device_name"	"CD4028BEE4")
+            ("pspice_path"	"X_IC10")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("Height"
+                    ("value"	"5.08 mm")
+                    ("pspice_param"	"Height")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/ds/symlink/cd4028b.pdf")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Description"
+                    ("value"	"CD4028BEE4, Decoder, Demultiplexer 1-of-10 Non-Inverting 3  18 V 16-Pin PDIP")
+                    ("pspice_param"	"Description")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4028BEE4")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4028BEE4?qs=2Yv9SV80M5h3imMlmGq92g%3D%3D")
+                    ("pspice_param"	"Mouser Price/Stock")
+                )
+                ("Mouser Part Number"
+                    ("value"	"595-CD4028BEE4")
+                    ("pspice_param"	"Mouser Part Number")
+                )
+            )
+        )
+        ("V1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"0W")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+    )
+)

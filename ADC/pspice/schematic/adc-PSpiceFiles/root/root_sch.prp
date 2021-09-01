@@ -110,18 +110,16 @@
         ("VDC")
         ("DigClock")
         ("CD4520B_0")
-        ("CD4072BM_1")
-        ("74HC04")
-        ("CD4073BNSR")
-        ("74LS08")
-        ("CD4082BNSR_1")
         ("CD4076BM")
+        ("74LS08")
+        ("74HC04")
         ("74LS32")
         ("CD4068BEE4")
         ("DigStim1")
         ("CD4066BNS")
         ("JKFF")
-        ("CD4081BME4")
+        ("CD4028BEE4")
+        ("CD4512BNSR")
     )
     ("instances"
         ("U1"
@@ -129,25 +127,25 @@
             ("pspice_path"	"E_U1")
             ("level"	"0")
             ("model_params"
-                ("VPOS"
-                    ("value"	"+5V")
-                    ("pspice_param"	"VPOS")
+                ("BiasValue Power"
+                    ("value"	"-57.05e-24W")
+                    ("pspice_param"	"BiasValue Power")
                 )
                 ("VNEG"
                     ("value"	"-5V")
                     ("pspice_param"	"VNEG")
                 )
-                ("BiasValue Power"
-                    ("value"	"0W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("Schematics' Source Library"
-                    ("value"	"E:\\library\\tmp\\analog.slb")
-                    ("pspice_param"	"Schematics' Source Library")
+                ("VPOS"
+                    ("value"	"+5V")
+                    ("pspice_param"	"VPOS")
                 )
                 ("GAIN"
                     ("value"	"1E6")
                     ("pspice_param"	"GAIN")
+                )
+                ("Schematics' Source Library"
+                    ("value"	"E:\\library\\tmp\\analog.slb")
+                    ("pspice_param"	"Schematics' Source Library")
                 )
             )
         )
@@ -165,53 +163,53 @@
                     ("value"	"0")
                     ("pspice_param"	"IC")
                 )
-                ("VC2"
-                    ("value"	"0")
-                    ("pspice_param"	"VC2")
-                )
-                ("VC1"
-                    ("value"	"0")
-                    ("pspice_param"	"VC1")
-                )
-                ("MAX_TEMP"
-                    ("value"	"CTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("SLOPE"
-                    ("value"	"CSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("KNEE"
-                    ("value"	"CBMAX")
-                    ("pspice_param"	"KNEE")
-                )
-                ("CURRENT"
-                    ("value"	"CIMAX")
-                    ("pspice_param"	"CURRENT")
-                )
-                ("VOLTAGE"
-                    ("value"	"CMAX")
-                    ("pspice_param"	"VOLTAGE")
-                )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
                 ("TC2"
                     ("value"	"0")
                     ("pspice_param"	"TC2")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("VOLTAGE"
+                    ("value"	"CMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("CURRENT"
+                    ("value"	"CIMAX")
+                    ("pspice_param"	"CURRENT")
+                )
+                ("KNEE"
+                    ("value"	"CBMAX")
+                    ("pspice_param"	"KNEE")
+                )
+                ("SLOPE"
+                    ("value"	"CSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"CTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("VC1"
+                    ("value"	"0")
+                    ("pspice_param"	"VC1")
+                )
+                ("VC2"
+                    ("value"	"0")
+                    ("pspice_param"	"VC2")
                 )
             )
             ("smoke_vars"
@@ -233,44 +231,44 @@
                     ("distrib"	"FLAT")
                 )
                 ("BiasValue Power"
-                    ("value"	"0W")
+                    ("value"	"570.6e-18W")
                     ("pspice_param"	"BiasValue Power")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
-                )
-                ("POWER"
-                    ("value"	"RMAX")
-                    ("pspice_param"	"POWER")
-                )
-                ("MAX_TEMP"
-                    ("value"	"RTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("SLOPE"
-                    ("value"	"RSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("VOLTAGE"
-                    ("value"	"RVMAX")
-                    ("pspice_param"	"VOLTAGE")
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
                 )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
                 )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
             ("smoke_vars"
@@ -288,21 +286,21 @@
                     ("value"	"0W")
                     ("pspice_param"	"BiasValue Power")
                 )
-                ("VNEG"
-                    ("value"	"0V")
-                    ("pspice_param"	"VNEG")
-                )
                 ("VPOS"
                     ("value"	"+5V")
                     ("pspice_param"	"VPOS")
                 )
-                ("Schematics' Source Library"
-                    ("value"	"E:\\library\\tmp\\analog.slb")
-                    ("pspice_param"	"Schematics' Source Library")
+                ("VNEG"
+                    ("value"	"0V")
+                    ("pspice_param"	"VNEG")
                 )
                 ("GAIN"
                     ("value"	"1E6")
                     ("pspice_param"	"GAIN")
+                )
+                ("Schematics' Source Library"
+                    ("value"	"E:\\library\\tmp\\analog.slb")
+                    ("pspice_param"	"Schematics' Source Library")
                 )
             )
         )
@@ -330,37 +328,37 @@
             ("pspice_path"	"U_DSTM1")
             ("level"	"0")
             ("model_params"
-                ("ONTIME"
-                    ("value"	"500n")
-                    ("pspice_param"	"ONTIME")
-                )
-                ("DELAY"
+                ("STARTVAL"
                     ("value"	"0")
-                    ("pspice_param"	"DELAY")
+                    ("pspice_param"	"STARTVAL")
                 )
                 ("OFFTIME"
                     ("value"	"500n")
                     ("pspice_param"	"OFFTIME")
                 )
-                ("STARTVAL"
+                ("DELAY"
                     ("value"	"0")
-                    ("pspice_param"	"STARTVAL")
+                    ("pspice_param"	"DELAY")
                 )
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
+                ("ONTIME"
+                    ("value"	"500n")
+                    ("pspice_param"	"ONTIME")
                 )
-                ("IO_MODEL"
-                    ("value"	"IO_STM")
-                    ("pspice_param"	"IO_MODEL")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
                 ("OPPVAL"
                     ("value"	"1")
                     ("pspice_param"	"OPPVAL")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("IO_MODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IO_MODEL")
+                )
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
                 )
             )
         )
@@ -413,215 +411,6 @@
                 )
             )
         )
-        ("IC3"
-            ("device_name"	"CD4072BM_1")
-            ("pspice_path"	"X_IC3")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4072BM?qs=HTr%252BoA4jRile2ZuWAdK8PA%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
-                )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4072BM")
-                    ("pspice_param"	"Mouser Part Number")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4072BM")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
-                )
-                ("Height"
-                    ("value"	"1.75 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Description"
-                    ("value"	"Texas Instruments CD4072BM, Dual, OR OR Gate, 3  18 V, 14-Pin SOIC")
-                    ("pspice_param"	"Description")
-                )
-                ("Datasheet Link"
-                    ("value"	"http://www.ti.com/lit/gpn/cd4072b")
-                    ("pspice_param"	"Datasheet Link")
-                )
-            )
-        )
-        ("U17D"
-            ("device_name"	"74HC04")
-            ("pspice_path"	"X_U17D")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U2C"
-            ("device_name"	"74HC04")
-            ("pspice_path"	"X_U2C")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("IC2"
-            ("device_name"	"CD4073BNSR")
-            ("pspice_path"	"X_IC2")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("Height"
-                    ("value"	"2 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Datasheet Link"
-                    ("value"	"https://www.ti.com/store/ti/en/p/product/?p=CD4073BNSR")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"CMOS Triple 3-Input AND Gate")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4073BNSR")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
-                )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4073BNSR?qs=Dqy2GfToSoRdbB5GKBI1zg%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
-                )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4073BNSR")
-                    ("pspice_param"	"Mouser Part Number")
-                )
-            )
-        )
-        ("U22A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U22A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("IC4"
-            ("device_name"	"CD4082BNSR_1")
-            ("pspice_path"	"X_IC4")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("Datasheet Link"
-                    ("value"	"http://www.ti.com/lit/gpn/cd4082b")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"CMOS Dual 4-Input AND Gate")
-                    ("pspice_param"	"Description")
-                )
-                ("Height"
-                    ("value"	"2 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4082BNSR")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4082BNSR")
-                    ("pspice_param"	"Mouser Part Number")
-                )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4082BNSR?qs=HTr%252BoA4jRimwW8JmlnFifw%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
-                )
-            )
-        )
-        ("U14C"
-            ("device_name"	"74HC04")
-            ("pspice_path"	"X_U14C")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
         ("STATEBUFF"
             ("device_name"	"CD4076BM")
             ("pspice_path"	"X_STATEBUFF")
@@ -635,33 +424,33 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("Height"
-                    ("value"	"1.75 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Datasheet Link"
-                    ("value"	"https://www.ti.com/lit/ds/symlink/cd4076b.pdf?ts=1608191945733&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DCD4076BM%2526keyMatch%253DCD4076BM%2526tisearch%253DSearch-EN-everything%2526usecase%253DOPN")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"Texas Instruments CD4076BM, D Type Bus Interface Flip Flop, 3-State, 3  18 V, 16-Pin SOIC")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4076BM")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
+                ("Mouser Part Number"
+                    ("value"	"595-CD4076BM")
+                    ("pspice_param"	"Mouser Part Number")
                 )
                 ("Mouser Price/Stock"
                     ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4076BM?qs=LSR%252BNeaw%2FwBN3ck%252BfFXJfg%3D%3D")
                     ("pspice_param"	"Mouser Price/Stock")
                 )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4076BM")
-                    ("pspice_param"	"Mouser Part Number")
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4076BM")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"Texas Instruments CD4076BM, D Type Bus Interface Flip Flop, 3-State, 3  18 V, 16-Pin SOIC")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"https://www.ti.com/lit/ds/symlink/cd4076b.pdf?ts=1608191945733&ref_url=https%253A%252F%252Fwww.ti.com%252Fstore%252Fti%252Fen%252Fp%252Fproduct%252F%253Fp%253DCD4076BM%2526keyMatch%253DCD4076BM%2526tisearch%253DSearch-EN-everything%2526usecase%253DOPN")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"1.75 mm")
+                    ("pspice_param"	"Height")
                 )
             )
         )
@@ -678,13 +467,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -739,13 +528,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
                 ("IMPL"
                     ("value"	"")
                     ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -762,13 +551,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -785,13 +574,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -846,33 +635,33 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("Height"
-                    ("value"	"5.08 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Datasheet Link"
-                    ("value"	"")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"AND/NAND Gate 1-Element 8-IN")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4068BEE4")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
+                ("Mouser Part Number"
+                    ("value"	"595-CD4068BEE4")
+                    ("pspice_param"	"Mouser Part Number")
                 )
                 ("Mouser Price/Stock"
                     ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4068BEE4?qs=HTr%252BoA4jRik5Fe5fTigNmQ%3D%3D")
                     ("pspice_param"	"Mouser Price/Stock")
                 )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4068BEE4")
-                    ("pspice_param"	"Mouser Part Number")
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4068BEE4")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"AND/NAND Gate 1-Element 8-IN")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"5.08 mm")
+                    ("pspice_param"	"Height")
                 )
             )
         )
@@ -881,17 +670,17 @@
             ("pspice_path"	"U_DSTM5")
             ("level"	"0")
             ("model_params"
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
                 )
                 ("IOMODEL"
                     ("value"	"IO_STM")
                     ("pspice_param"	"IOMODEL")
                 )
-                ("STIMTYPE"
-                    ("value"	"DIGITAL")
-                    ("pspice_param"	"STIMTYPE")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -916,11 +705,11 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"5")
+                    ("value"	"4")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
-                    ("value"	"-4.223nW")
+                    ("value"	"-2.702nW")
                     ("pspice_param"	"BiasValue Power")
                 )
                 ("PSpice Model Type"
@@ -934,33 +723,33 @@
             ("pspice_path"	"X_IC9")
             ("level"	"0")
             ("model_params"
-                ("Height"
-                    ("value"	"2 mm")
-                    ("pspice_param"	"Height")
-                )
-                ("Datasheet Link"
-                    ("value"	"")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"Analogue Switch ICs CMOS Quad Bilateral Switch 14-SO")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4066BNS")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
+                ("Mouser Part Number"
+                    ("value"	"595-CD4066BNS")
+                    ("pspice_param"	"Mouser Part Number")
                 )
                 ("Mouser Price/Stock"
                     ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4066BNS?qs=byeeYqUIh0PidQRe7LWghQ%3D%3D")
                     ("pspice_param"	"Mouser Price/Stock")
                 )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4066BNS")
-                    ("pspice_param"	"Mouser Part Number")
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4066BNS")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"Analogue Switch ICs CMOS Quad Bilateral Switch 14-SO")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"2 mm")
+                    ("pspice_param"	"Height")
                 )
             )
         )
@@ -969,17 +758,17 @@
             ("pspice_path"	"U_DSTM6")
             ("level"	"0")
             ("model_params"
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
                 )
                 ("IOMODEL"
                     ("value"	"IO_STM")
                     ("pspice_param"	"IOMODEL")
                 )
-                ("STIMTYPE"
-                    ("value"	"DIGITAL")
-                    ("pspice_param"	"STIMTYPE")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -997,41 +786,41 @@
                     ("value"	"0W")
                     ("pspice_param"	"BiasValue Power")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
-                )
-                ("POWER"
-                    ("value"	"RMAX")
-                    ("pspice_param"	"POWER")
-                )
-                ("MAX_TEMP"
-                    ("value"	"RTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("SLOPE"
-                    ("value"	"RSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("VOLTAGE"
-                    ("value"	"RVMAX")
-                    ("pspice_param"	"VOLTAGE")
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
                 )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
                 )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
             ("smoke_vars"
@@ -1072,13 +861,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -1095,13 +884,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
                 ("IMPL"
                     ("value"	"")
                     ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -1118,13 +907,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -1133,13 +922,13 @@
             ("pspice_path"	"X_U33")
             ("level"	"0")
             ("model_params"
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
                 ("IMPL"
                     ("value"	"PLSYN")
                     ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -1156,13 +945,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
                 ("IMPL"
                     ("value"	"")
                     ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -1179,13 +968,13 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -1228,7 +1017,7 @@
             )
         )
         ("IC10"
-            ("device_name"	"CD4073BNSR")
+            ("device_name"	"CD4028BEE4")
             ("pspice_path"	"X_IC10")
             ("level"	"0")
             ("model_params"
@@ -1240,39 +1029,39 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("Height"
-                    ("value"	"2 mm")
-                    ("pspice_param"	"Height")
+                ("Mouser Part Number"
+                    ("value"	"595-CD4028BEE4")
+                    ("pspice_param"	"Mouser Part Number")
                 )
-                ("Datasheet Link"
-                    ("value"	"https://www.ti.com/store/ti/en/p/product/?p=CD4073BNSR")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"CMOS Triple 3-Input AND Gate")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4073BNSR")
-                    ("pspice_param"	"Manufacturer_Part_Number")
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4028BEE4?qs=2Yv9SV80M5h3imMlmGq92g%3D%3D")
+                    ("pspice_param"	"Mouser Price/Stock")
                 )
                 ("Manufacturer_Name"
                     ("value"	"Texas Instruments")
                     ("pspice_param"	"Manufacturer_Name")
                 )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4073BNSR?qs=Dqy2GfToSoRdbB5GKBI1zg%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4028BEE4")
+                    ("pspice_param"	"Manufacturer_Part_Number")
                 )
-                ("Mouser Part Number"
-                    ("value"	"595-CD4073BNSR")
-                    ("pspice_param"	"Mouser Part Number")
+                ("Description"
+                    ("value"	"CD4028BEE4, Decoder, Demultiplexer 1-of-10 Non-Inverting 3  18 V 16-Pin PDIP")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/ds/symlink/cd4028b.pdf")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"5.08 mm")
+                    ("pspice_param"	"Height")
                 )
             )
         )
-        ("U38C"
+        ("U49C"
             ("device_name"	"74HC04")
-            ("pspice_path"	"X_U38C")
+            ("pspice_path"	"X_U49C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1289,9 +1078,9 @@
                 )
             )
         )
-        ("U39A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U39A")
+        ("U48C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U48C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1306,15 +1095,11 @@
                     ("value"	"")
                     ("pspice_param"	"IMPL")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
             )
         )
-        ("U40C"
+        ("U50C"
             ("device_name"	"74HC04")
-            ("pspice_path"	"X_U40C")
+            ("pspice_path"	"X_U50C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1332,7 +1117,7 @@
             )
         )
         ("IC11"
-            ("device_name"	"CD4081BME4")
+            ("device_name"	"CD4512BNSR")
             ("pspice_path"	"X_IC11")
             ("level"	"0")
             ("model_params"
@@ -1344,39 +1129,125 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-                ("Height"
-                    ("value"	"1.75 mm")
-                    ("pspice_param"	"Height")
+                ("Mouser Part Number"
+                    ("value"	"595-CD4512BNSR")
+                    ("pspice_param"	"Mouser Part Number")
                 )
-                ("Datasheet Link"
-                    ("value"	"http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcd4073b")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Description"
-                    ("value"	"Logic Gates Quad 2-Input")
-                    ("pspice_param"	"Description")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4081BME4")
-                    ("pspice_param"	"Manufacturer_Part_Number")
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.com/Search/Refine.aspx?Keyword=595-CD4512BNSR")
+                    ("pspice_param"	"Mouser Price/Stock")
                 )
                 ("Manufacturer_Name"
                     ("value"	"Texas Instruments")
                     ("pspice_param"	"Manufacturer_Name")
                 )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4081BME4?qs=HTr%252BoA4jRikg%252BQvASI76tw%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4512BNSR")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"CMOS 8-Channel Data Selector")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/gpn/cd4512b")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"2 mm")
+                    ("pspice_param"	"Height")
+                )
+            )
+        )
+        ("IC12"
+            ("device_name"	"CD4512BNSR")
+            ("pspice_path"	"X_IC12")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
                 )
                 ("Mouser Part Number"
-                    ("value"	"595-CD4081BME4")
+                    ("value"	"595-CD4512BNSR")
                     ("pspice_param"	"Mouser Part Number")
                 )
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.com/Search/Refine.aspx?Keyword=595-CD4512BNSR")
+                    ("pspice_param"	"Mouser Price/Stock")
+                )
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4512BNSR")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"CMOS 8-Channel Data Selector")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/gpn/cd4512b")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"2 mm")
+                    ("pspice_param"	"Height")
+                )
             )
         )
-        ("U41C"
+        ("IC13"
+            ("device_name"	"CD4512BNSR")
+            ("pspice_path"	"X_IC13")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("Mouser Part Number"
+                    ("value"	"595-CD4512BNSR")
+                    ("pspice_param"	"Mouser Part Number")
+                )
+                ("Mouser Price/Stock"
+                    ("value"	"https://www.mouser.com/Search/Refine.aspx?Keyword=595-CD4512BNSR")
+                    ("pspice_param"	"Mouser Price/Stock")
+                )
+                ("Manufacturer_Name"
+                    ("value"	"Texas Instruments")
+                    ("pspice_param"	"Manufacturer_Name")
+                )
+                ("Manufacturer_Part_Number"
+                    ("value"	"CD4512BNSR")
+                    ("pspice_param"	"Manufacturer_Part_Number")
+                )
+                ("Description"
+                    ("value"	"CMOS 8-Channel Data Selector")
+                    ("pspice_param"	"Description")
+                )
+                ("Datasheet Link"
+                    ("value"	"http://www.ti.com/lit/gpn/cd4512b")
+                    ("pspice_param"	"Datasheet Link")
+                )
+                ("Height"
+                    ("value"	"2 mm")
+                    ("pspice_param"	"Height")
+                )
+            )
+        )
+        ("U53C"
             ("device_name"	"74HC04")
-            ("pspice_path"	"X_U41C")
+            ("pspice_path"	"X_U53C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1393,9 +1264,9 @@
                 )
             )
         )
-        ("U42C"
+        ("U55C"
             ("device_name"	"74HC04")
-            ("pspice_path"	"X_U42C")
+            ("pspice_path"	"X_U55C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1412,55 +1283,9 @@
                 )
             )
         )
-        ("U43B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U43B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U44A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U44A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U45C"
+        ("U56C"
             ("device_name"	"74HC04")
-            ("pspice_path"	"X_U45C")
+            ("pspice_path"	"X_U56C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1477,9 +1302,32 @@
                 )
             )
         )
-        ("U46A"
+        ("U57A"
             ("device_name"	"74LS08")
-            ("pspice_path"	"X_U46A")
+            ("pspice_path"	"X_U57A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U58C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U58C")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1494,38 +1342,11 @@
                     ("value"	"")
                     ("pspice_param"	"IMPL")
                 )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
             )
         )
-        ("U46B"
+        ("U59A"
             ("device_name"	"74LS08")
-            ("pspice_path"	"X_U46B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U47B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U47B")
+            ("pspice_path"	"X_U59A")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1546,9 +1367,227 @@
                 )
             )
         )
-        ("U48B"
+        ("U59B"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U59B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U62C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U62C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U63B"
             ("device_name"	"74LS32")
-            ("pspice_path"	"X_U48B")
+            ("pspice_path"	"X_U63B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U64B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U64B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U65B"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U65B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U66B"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U66B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U67C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U67C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U72B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U72B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U73B"
+            ("device_name"	"74LS32")
+            ("pspice_path"	"X_U73B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U74C"
+            ("device_name"	"74HC04")
+            ("pspice_path"	"X_U74C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("IMPL"
+                    ("value"	"")
+                    ("pspice_param"	"IMPL")
+                )
+            )
+        )
+        ("U75A"
+            ("device_name"	"74LS08")
+            ("pspice_path"	"X_U75A")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"

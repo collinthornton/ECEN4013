@@ -4076,7 +4076,7 @@ U9 bufa(4) VDD VSS
 +	)
 *$
 .model D_CD4520B_2 ueff (
-+	twclklmn=200ns	twclkhmn=200ns
++	twclklmn=100ns	twclkhmn=100ns
 +	twpclmn=250ns	tpclkqhlmx=460ns
 +	tpclkqlhmx=460ns	tppcqhlty=280ns
 +	tppcqlhty=280ns	tppcqhlmx=550ns

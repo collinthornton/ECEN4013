@@ -1,0 +1,118 @@
+* PSpice Model Editor - Version 17.4.0
+*$
+* updated using Model Editor release 17.4.0 on 09/01/21 at 21:46
+*DEVICE=TL082_3,OPAMP,NPN,INT
+.subckt TL082_3 PIN NIN OUT PVSS NVSS 
++ params:
++ VOS=0
++ IB=0
++ IBOS=0
++ A0=2000000
++ GBW=800e+6
++ SRP=800e+6
++ SRM=800e+6
++ CMRR=10000
++ P0=0
++ PD=50e-3
++ ISCP=25e-3
++ ISCM=-25e-3
++ ROUT=1
++ ROAC=20
++ VPDIFF=1
++ VMDIFF=1
++ VCC=15
++ VSS=-15
++ CINDM=0
++ RINDM=10e+9
++ enw=10e-9
+XinstTL082_3 PIN NIN OUT PVSS NVSS  model639a_3
++ params: 
++ vos={VOS}
++ ib={IB}
++ ibos={IBOS}
++ a0={A0}
++ gbw={GBW}
++ srp={SRP}
++ srm={SRM}
++ cmrr={CMRR}
++ p0={P0}
++ pd={PD}
++ iscp={ISCP}
++ iscm={ISCM}
++ rout={ROUT}
++ roac={ROAC}
++ vpdiff={VPDIFF}
++ vmdiff={VMDIFF}
++ vcc={VCC}
++ vss={VSS}
++ cindm={CINDM}
++ rindm={RINDM}
++ enw={ENW}
+.ends TL082_3
+*$
+* updated using Model Editor release 17.4.0 on 09/01/21 at 21:46
+*DEVICE=TL082_2,OPAMP,NPN,INT
+.subckt TL082_2 PIN NIN OUT PVSS NVSS 
++ params:
++ VOS=0
++ IB=0
++ IBOS=0
++ A0=2000000
++ GBW=800e+6
++ SRP=800e+6
++ SRM=800e+6
++ CMRR=10000
++ P0=0
++ PD=50e-3
++ ISCP=25e-3
++ ISCM=-25e-3
++ ROUT=1
++ ROAC=20
++ VPDIFF=1
++ VMDIFF=1
++ VCC=15
++ VSS=-15
+XinstTL082_2 PIN NIN OUT PVSS NVSS  model639a_2
++ params: 
++ vos={VOS}
++ ib={IB}
++ ibos={IBOS}
++ a0={A0}
++ gbw={GBW}
++ srp={SRP}
++ srm={SRM}
++ cmrr={CMRR}
++ p0={P0}
++ pd={PD}
++ iscp={ISCP}
++ iscm={ISCM}
++ rout={ROUT}
++ roac={ROAC}
++ vpdiff={VPDIFF}
++ vmdiff={VMDIFF}
++ vcc={VCC}
++ vss={VSS}
+.ends TL082_2
+*$
+* updated using Model Editor release 17.4.0 on 09/01/21 at 21:46
+*DEVICE=TL082_1,OPAMP,NPN,INT
+.subckt TL082_1 PIN NIN OUT PVSS NVSS 
++ params:
++ VOS=0
++ IB=0
++ IBOS=0
++ A0=2000000
++ GBW=800e+6
++ SRP=800e+6
++ SRM=800e+6
+XinstTL082_1 PIN NIN OUT PVSS NVSS  model639a_1
++ params: 
++ vos={VOS}
++ ib={IB}
++ ibos={IBOS}
++ a0={A0}
++ gbw={GBW}
++ srp={SRP}
++ srm={SRM}
+.ends TL082_1
+*$

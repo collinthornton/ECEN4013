@@ -1,11 +1,10 @@
-** Profile: "root-6"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\6.sim ] 
+** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd40106_schmitt_test\1.sim ] 
 
-** Creating circuit file "6.cir" 
+** Creating circuit file "1.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
 * Profile Libraries :
-.INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\6\6_profile.inc" 
 * Local Libraries :
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/tl082.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
@@ -16,10 +15,10 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 0.5m 0 
+.TRAN  0 4m 0 
 .OPTIONS ADVCONV
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
-.INC "..\root.net" 
+.INC "..\cd40106_schmitt_test.net" 
 
 
 .END

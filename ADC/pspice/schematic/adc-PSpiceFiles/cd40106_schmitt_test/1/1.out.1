@@ -1,0 +1,86 @@
+
+**** 09/01/21 22:20:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/tl082.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 4m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\cd40106_schmitt_test.net" 
+
+
+
+**** INCLUDING cd40106_schmitt_test.net ****
+* source ADC
+V_V1         N00110 0  AC 0
++SIN 0 2.95 2k 0 0 0
+X_U1A         N00525 N00155 $G_CD4000_VDD $G_CD4000_VSS CD40106B PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R1         0 N00155  1k TC=0,0 
+E_U2         N00525 0 VALUE {LIMIT(V(0,N00690)*1E6,-15V,+15V)}
+V_V2         N00686 0 2.9
+R_R2         N00525 N00690  1k TC=0,0 
+R_R3         N00690 N00110  1k TC=0,0 
+R_R4         N00690 N00686  1k TC=0,0 
+E_U3         N00525 0 VALUE {LIMIT(V(0,N00525)*1E6,-15V,+15V)}
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node N00155
+*
+* Moving X_U1A.UG:OUT1 from analog node N00155 to new digital node N00155$DtoA
+X$N00155_DtoA1
++ N00155$DtoA
++ N00155
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ DtoA_4000B
++       PARAMS: DRVH=   1.4430E+03 DRVL=   1.4430E+03 CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N00525
+*
+* Moving X_U1A.UG:IN1 from analog node N00525 to new digital node N00525$AtoD
+X$N00525_AtoD1
++ N00525
++ N00525$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B_ST
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$CD4000_PWR 0 CD4000_PWR
+
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving E_U3. You may break the loop by adding a series resistance
+

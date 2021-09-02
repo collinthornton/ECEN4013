@@ -1,4 +1,3 @@
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\tl082.lib, offset=137, size=725
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=105748, size=999
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=74485, size=2197
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=70498, size=340
@@ -11,6 +10,7 @@
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\74ls.lib, offset=13073, size=196
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_prim.lib, offset=28009, size=323
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\opamp.lib, offset=1725, size=1073
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\tex_inst.lib, offset=448341, size=1022
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106748, size=51
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106800, size=184
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106985, size=309
@@ -30,13 +30,12 @@
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\74ls.lib, offset=13270, size=266
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_prim.lib, offset=41585, size=23
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_prim.lib, offset=41633, size=26
- lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\templates.lib, offset=1182164, size=25519
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=24084, size=234
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=24989, size=312
- lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=97995, size=843
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=96787, size=225
- lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=79481, size=1134
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=77086, size=298
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=97995, size=843
+ lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=79481, size=1134
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=7572, size=259
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=7882, size=393
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=7856, size=25

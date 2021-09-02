@@ -2,19 +2,19 @@
 
 @Settings: 0 1
 @General:
-ProfileName= "6" 
-ProfileFile= "6.sim" 
+ProfileName= "7" 
+ProfileFile= "7.sim" 
 Connectivity= "root.net" 
-NetlistFile= "6.cir" 
-DataFile= "6.dat" 
-OutFile= "6.out" 
+NetlistFile= "7.cir" 
+DataFile= "7.dat" 
+OutFile= "7.out" 
 Notes=
 @#$BEGINNOTES
 @#$ENDNOTES
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "0.5m" 
++0 "50m" 
 +1 "" 
 +2 "0" 
 +3 "" 

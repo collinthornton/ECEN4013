@@ -1,0 +1,289 @@
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/tl082.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
+.LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
+.STMLIB "../../../adc-PSpiceFiles/ADC.stl" 
+* From [PSPICE NETLIST] section of C:\Users\colli\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "E:\local\college\microg\saver2021\signals\pspice\models\Q50a02ch.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 4m 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\cd40106_schmitt_test.net" 
+
+
+
+**** INCLUDING cd40106_schmitt_test.net ****
+* source ADC
+X_U1A         N00525 N02882 $G_CD4000_VDD $G_CD4000_VSS CD40106B PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+R_R1         0 N02861  1k TC=0,0 
+E_U2         N00525 0 VALUE {LIMIT(V(0,N00690)*1E6,-15V,+15V)}
+V_V2         N00686 0 -2.9
+R_R2         N00525 N00690  1k TC=0,0 
+R_R3         N00690 N00110  1k TC=0,0 
+R_R4         N00690 N00686  1k TC=0,0 
+V_V3         N00110 0  
++PULSE 0 -1 0 500u 500u 500u 2k
+X_U3         N02882 N02861  $G_DPWR $G_DGND INV
+
+**** RESUMING 1.cir ****
+.END
+
+
+**** Generated AtoD and DtoA Interfaces ****
+
+*
+* Analog/Digital interface for node N02861
+*
+* Moving X_U3.U1:OUT1 from analog node N02861 to new digital node N02861$DtoA
+X$N02861_DtoA1
++ N02861$DtoA
++ N02861
++ $G_DPWR
++ $G_DGND
++ DtoAdefault
++       PARAMS: DRVH=  50     DRVL=  50     CAPACITANCE=   0     
+*
+* Analog/Digital interface for node N00525
+*
+* Moving X_U1A.UG:IN1 from analog node N00525 to new digital node N00525$AtoD
+X$N00525_AtoD1
++ N00525
++ N00525$AtoD
++ $G_CD4000_VDD
++ $G_CD4000_VSS
++ AtoD_4000B_ST
++       PARAMS: CAPACITANCE=   0     
+*
+* Analog/Digital interface power supply subcircuits
+*
+X$CD4000_PWR 0 CD4000_PWR
+X$DIGIFPWR 0 DIGIFPWR
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D74CLMP         
+          IS    1.000000E-15 
+          RS    2            
+         CJO    2.000000E-12 
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     Digital Input MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DIN74           
+      S0NAME 0               
+       S0TSW    3.500000E-09 
+       S0RLO    7.13         
+       S0RHI  389            
+      S1NAME 1               
+       S1TSW    5.500000E-09 
+       S1RLO  467            
+       S1RHI  200            
+      S2NAME X               
+       S2TSW    3.500000E-09 
+       S2RLO   42.9          
+       S2RHI  116            
+      S3NAME R               
+       S3TSW    3.500000E-09 
+       S3RLO   42.9          
+       S3RHI  116            
+      S4NAME F               
+       S4TSW    3.500000E-09 
+       S4RLO   42.9          
+       S4RHI  116            
+      S5NAME Z               
+       S5TSW    3.500000E-09 
+       S5RLO  200.000000E+03 
+       S5RHI  200.000000E+03 
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     Digital Output MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               DO4000B_ST      
+    TIMESTEP  100.000000E-12 
+      S0NAME 0               
+       S0VHI     .2          
+       S0VLO   -3            
+      S1NAME 1               
+       S1VHI    3            
+       S1VLO    -.3          
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_CD40106B      D_PLD_GATE      
+      TPLHMN   56.000000E-09    0            
+      TPLHTY  140.000000E-09    0            
+      TPLHMX  280.000000E-09    0            
+      TPHLMN   56.000000E-09    0            
+      TPHLTY  140.000000E-09    0            
+      TPHLMX  280.000000E-09    0            
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_4000B_ST     IO_PLD          IO_DFT          IO_4000B        
+        DRVL    1.443000E+03                                    1.443000E+03 
+        DRVH    1.443000E+03                                    1.443000E+03 
+       AtoD1 AtoD_4000B_ST                   AtoD_STD        AtoD_4000B      
+       AtoD2 AtoD_4000B_ST                   AtoD_STD_NX     AtoD_4000B_NX   
+       AtoD3 AtoD_4000B_ST                   AtoD_STD        AtoD_4000B      
+       AtoD4 AtoD_4000B_ST                   AtoD_STD_NX     AtoD_4000B_NX   
+       DtoA1 DtoA_4000B                      DtoA_STD        DtoA_4000B      
+       DtoA2 DtoA_4000B                      DtoA_STD        DtoA_4000B      
+       DtoA3 DtoA_4000B                      DtoA_STD        DtoA_4000B      
+       DtoA4 DtoA_4000B                      DtoA_STD        DtoA_4000B      
+    DIGPOWER CD4000_PWR                                      CD4000_PWR      
+      TSWHL1    7.720000E-09                                    7.720000E-09 
+      TSWHL2    7.860000E-09                                    7.860000E-09 
+      TSWHL3    9.710000E-09                                    9.710000E-09 
+      TSWHL4    9.630000E-09                                    9.630000E-09 
+      TSWLH1    7.560000E-09                                    7.560000E-09 
+      TSWLH2    7.400000E-09                                    7.400000E-09 
+      TSWLH3    9.410000E-09                                    9.410000E-09 
+      TSWLH4    9.240000E-09                                    9.240000E-09 
+       TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
+
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00110)    0.0000 (N00525)    2.9000 (N00686)   -2.9000 (N00690)-2.900E-06     
+
+(N02861)     .0894 ($G_DGND)    0.0000                   ($G_DPWR)    5.0000    
+
+($G_CD4000_VDD)    5.0000             ($G_CD4000_VSS)    0.0000                 
+
+(X$N00525_AtoD1.NORM)     .2000       (X$N00525_AtoD1.XNORM.THRESHOLD)    1.5000
+
+
+
+ DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE  DGTL NODE : STATE
+
+
+(N02861$DtoA) : 0  (  N02882) : 1     (N00525$AtoD) : 0  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2         2.900E-03
+    V_V3        -2.900E-09
+    X$CD4000_PWR.VVDD  -5.021E-06
+    X$CD4000_PWR.VVSS  -4.992E-06
+    X$DIGIFPWR.VDPWR  -1.263E-02
+    X$DIGIFPWR.VDGND  -9.437E-05
+
+    TOTAL POWER DISSIPATION   7.16E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 09/01/21 22:54:41 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "cd40106_schmitt_test-1"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\cd401
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       35.44
+  Total job time (using Solver 1)   =         .13
+

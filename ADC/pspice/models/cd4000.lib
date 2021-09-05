@@ -2882,12 +2882,12 @@ U76BDLY PINDLY (4,1,10) VDD VSS
 +
 + FREQ:
 +   NODE = CLK
-+   MAXFREQ = 3MEG
++   MAXFREQ = 6MEG
 +
 + WIDTH:
 +   NODE = CLK
-+   MIN_HI = 200NS
-+   MIN_LO = 200NS
++   MIN_HI = 100NS
++   MIN_LO = 100NS
 +
 + WIDTH:
 +   NODE = RESET
@@ -2902,7 +2902,7 @@ U76BDLY PINDLY (4,1,10) VDD VSS
 + SETUP_HOLD:
 +   DATA(4) D1 D2 D3 D4
 +   CLOCK LH = CLK
-+   SETUPTIME = 200NS
++   SETUPTIME = 80NS
 +   WHEN = { RESET!='1 & IN_EN!='0}
 *
 .ENDS
@@ -4076,7 +4076,7 @@ U9 bufa(4) VDD VSS
 +	)
 *$
 .model D_CD4520B_2 ueff (
-+	twclklmn=100ns	twclkhmn=100ns
++	twclklmn=10ns	twclkhmn=10ns
 +	twpclmn=250ns	tpclkqhlmx=460ns
 +	tpclkqlhmx=460ns	tppcqhlty=280ns
 +	tppcqlhty=280ns	tppcqhlmx=550ns

@@ -7,6 +7,7 @@
 * Profile Libraries :
 .INC "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7\7_profile.inc" 
 * Local Libraries :
+.LIB "../../../adc-pspicefiles/adc.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4000.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/tl082.lib" 
 .LIB "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/models/cd4066-cd4060/cd4066b.lib" 
@@ -16,8 +17,9 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 100m 0 
+.TRAN  0 50m 0 
 .OPTIONS ADVCONV
+.OPTIONS DIGINITSTATE= 0
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\root.net" 
 

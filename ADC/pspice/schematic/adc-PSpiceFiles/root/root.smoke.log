@@ -1,0 +1,323 @@
+Smoke Analysis Run : Sun Sep  5 16:22:35 2021
+
+
+Reference Designator = R1
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R2
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U85B
+Info:
+	Smoke test IMINUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U85B
+Info:
+	Smoke test IPLUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U88
+Info:
+	Smoke test IMINUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U88
+Info:
+	Smoke test IPLUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U88
+Info:
+	Smoke test VSUPM will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R3
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U123B
+Info:
+	Smoke test IMINUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U123B
+Info:
+	Smoke test IPLUS will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R4
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = R5
+Info:
+	Smoke test RV will not be done.
+	The Maximum Operating Value is not defined.
+
+Reference Designator = U85B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VDIFF.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U85B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VMMAX.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U85B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VMMIN.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U85B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VPMAX.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U85B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VPMIN.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U123B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VDIFF.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U123B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VMMAX.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U123B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VMMIN.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U123B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VPMAX.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = U123B
+Non-Fatal Error:
+	Voltage data not found for Smoke test VPMIN.
+	Please verify Save Data and Data Collection options in the simulation profile.
+
+Reference Designator = R1
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R1
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R1
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R1
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R1
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R1
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R2
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R2
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R3
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R3
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R4
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R4
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+Reference Designator = R5
+Warning: Deration
+INFO(ORPSPAA-7028): TBreak (Tknee)is less than Simulation Temprature. Check the slope[RSMAX] or maximum temperature[RTMAX].
+
+Reference Designator = R5
+Info: Deration
+	Tbrk Calculated:0.000000
+
+
+***** Analysis Summary *****
+
+Reference Designator = C1
+
+
+Reference Designator = R1
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = R2
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = C2
+
+
+Reference Designator = C3
+
+
+Reference Designator = U85B
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		VSMIN ( RMS )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		IMINUS
+		IPLUS
+	The following parameter(s) could not be
+	evaluated due to missing data
+		VDIFF
+		VMMAX
+		VMMIN
+		VPMAX
+		VPMIN
+
+Reference Designator = U88
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		VMMAX ( RMS )
+		VPMAX ( RMS )
+		VPMIN ( RMS )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		IMINUS
+		IPLUS
+		VSUPM
+
+
+Reference Designator = C4
+
+
+Reference Designator = R3
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = U123B
+	The following parameter(s) exceeded the
+	Maximum Operating Value(s) specified
+		VSMIN ( RMS )
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		IMINUS
+		IPLUS
+	The following parameter(s) could not be
+	evaluated due to missing data
+		VDIFF
+		VMMAX
+		VMMIN
+		VPMAX
+		VPMIN
+
+Reference Designator = R4
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+
+Reference Designator = R5
+	The following parameter(s) had undefined
+	Maximum Operating Value(s)
+		RV
+
+

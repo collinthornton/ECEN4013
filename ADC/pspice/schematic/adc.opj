@@ -140,7 +140,8 @@
       (ActiveProfile ".\adc-pspicefiles\root\7.sim")
       (Folder "root-7_Configuration"
         (Folder "Profile Stimulus Files")))
-    (Folder "Include Files")
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Model Libraries"
       (File ".\adc-pspicefiles\adc.lib"
         (DisplayName ".\adc-pspicefiles\adc.lib")
@@ -283,30 +284,23 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn")
-      (Path "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "root")
       (Path "Outputs")
-      (Select "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "root" "adc")
-      (Select "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "root" "controller"))
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "PSpice Resources" "Simulation Profiles"
+         "E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\schematic\adc-pspicefiles\root\time.sim"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 700"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 286 0 839"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 718")
-        (Scroll "0 31")
-        (Zoom "86")
+        (Placement "44 0 1 -1 -1 5 24 5 1588 24 857")
+        (Scroll "0 11")
+        (Zoom "84")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
@@ -315,9 +309,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1674 24 718")
-        (Scroll "-397 -9")
-        (Zoom "20")
+        (Placement "44 0 1 -1 -1 5 24 5 1588 24 857")
+        (Scroll "0 32")
+        (Zoom "40")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")

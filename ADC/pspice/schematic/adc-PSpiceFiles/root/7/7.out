@@ -1,5 +1,5 @@
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -45,7 +45,7 @@
 **** INCLUDING root.net ****
 * source ADC
 C_C1         N01906 N01917  32n IC=0 TC=0,0 
-R_R1         N01906 N29993  20k TC=0,0 
+R_R1         N01906 N29993  100k TC=0,0 
 U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N086260 IO_STM IO_LEVEL=0 
 + 0 0
 + +0 1
@@ -157,7 +157,7 @@ X_U118C         ARISE NARISE $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U119B         NARISE NT NX5 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-V_V7         VIN 0 1
+V_V7         VIN 0 4
 X_U120         VCC N271757 VCC N271786 M_UN0011 $G_DPWR $G_DGND JKFF
 X_U121B         N086260 N271757 VCC 0 CD40106B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -176,13 +176,13 @@ X_U126B         N301325 N301337 S0CHANGE $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U127C         S0 N301089 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U129         N312053 CLK S0CHANGE Q7RISE M_UN0012 $G_DPWR $G_DGND JKFF
-X_U131A         N251743 N3120311 N312053 $G_DPWR $G_DGND 74LS08 PARAMS:
+X_U129         N312610 CLK S0CHANGE Q7RISE M_UN0012 $G_DPWR $G_DGND JKFF
+X_U131A         N251743 N3125741 N312610 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U132         Q7 CLK N320539 M_UN0013 N320697 $G_DPWR $G_DGND JKFF
-X_U133A         Q7 N320539 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U132         Q7 CLK N313269 M_UN0013 N312628 $G_DPWR $G_DGND JKFF
+X_U133B         Q7 N313269 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U134A         N320697 Q7 N3120311 $G_DPWR $G_DGND 74LS08 PARAMS:
+X_U134A         N312628 Q7 N3125741 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 ** Floating/unmodeled pin fixups **
 R__UC0001   M_UN0001  0   {1/GMIN}
@@ -630,7 +630,7 @@ X$CD4000_PWR 0 CD4000_PWR
 +   +0s 1
 +   300ns 0
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -655,7 +655,7 @@ X$CD4000_PWR 0 CD4000_PWR
          CJO   10.000000E-12    2.000000E-12 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -695,7 +695,7 @@ X$CD4000_PWR 0 CD4000_PWR
            D     .52             .87             .87             .87         
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -715,7 +715,7 @@ X$CD4000_PWR 0 CD4000_PWR
           IS    2.500000E-12    2.500000E-12 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -735,7 +735,7 @@ X$CD4000_PWR 0 CD4000_PWR
         VOFF    0            
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -775,7 +775,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S5RHI    1.000000E+06  200.000000E+03  200.000000E+03 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -816,7 +816,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S7VLO    -.5              .8                              .8          
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -856,7 +856,7 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHLMX    0              24.000000E-09   20.000000E-09   22.000000E-09 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -890,7 +890,7 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHZMX  120.000000E-09 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -942,7 +942,7 @@ X$CD4000_PWR 0 CD4000_PWR
    THCECLKMX    0               0               0            
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1002,7 +1002,7 @@ X$CD4000_PWR 0 CD4000_PWR
        TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1017,9 +1017,9 @@ X$CD4000_PWR 0 CD4000_PWR
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   I0)     .1015  (   I1)     .1015  (  VCC)   10.0000  (  VIN)    1.0000      
+(   I0)     .1015  (   I1)     .1015  (  VCC)   10.0000  (  VIN)    4.0000      
 
-(  VSS)  -10.0000  (N01906)-89.25E-06 (N01917)-89.25E-06 (N29993)-102.8E-06     
+(  VSS)  -10.0000  (N01906)-89.25E-06 (N01917)-89.25E-06 (N29993)-106.1E-06     
 
 (N33002)   -5.0000 (RST_IN)    4.9975 ($G_DGND)    0.0000                       
 
@@ -1057,7 +1057,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_U85B.53)    8.0000                 (X_U85B.54)   -8.0000                     
 
-(X_U85B.90) 659.9E-09                 (X_U85B.91)   15.0000                     
+(X_U85B.90) 153.2E-09                 (X_U85B.91)   15.0000                     
 
 (X_U85B.92)  -15.0000                 (X_U85B.99)    0.0000                     
 
@@ -1226,49 +1226,47 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_IC12.C1) : 0    (     NY1) : 1     ( 0$AtoD8) : 0     (X_IC13.P) : 0         
 
-(  N99368) : 0     ( N320697) : 1     (X_OUTPUTBUFF1.TOD3) : 0                  
+(  N99368) : 0     (X_OUTPUTBUFF1.TOD3) : 0              (X_STATEBUFF.TOD4) : 0 
 
-(X_STATEBUFF.TOD4) : 0                (0$AtoD20) : 0     (X_IC10.DB) : 1        
+(0$AtoD20) : 0     (X_IC10.DB) : 1    (X_IC10.T0) : 1    (      N0) : 1         
 
-(X_IC10.T0) : 1    (      N0) : 1     (X_IC11.D21) : 1   (0$AtoD18) : 0         
+(X_IC11.D21) : 1   (0$AtoD18) : 0     ( N243538) : 0     (X_IC13.D41) : 0       
 
-( N243538) : 0     (X_IC13.D41) : 0   (M_UN0013) : 0     ( N301325) : 0         
+(M_UN0013) : 0     ( N301325) : 0     ( 0$AtoD5) : 0     (X_CNTA.CLR) : 1       
 
-( 0$AtoD5) : 0     (X_CNTA.CLR) : 1   (X_OUTPUTBUFF1.D3) : 0                    
+(X_OUTPUTBUFF1.D3) : 0                (X_OUTPUTBUFF2.RST) : 1                   
 
-(X_OUTPUTBUFF2.RST) : 1               (      Y5) : 0     (X_CNTA.CK1) : 1       
+(      Y5) : 0     (X_CNTA.CK1) : 1   (X_STATEBUFF.TOD1) : 1                    
 
-(X_STATEBUFF.TOD1) : 1                (S0CHANGE) : 0     ( I1$DtoA) : 0         
+(S0CHANGE) : 0     ( I1$DtoA) : 0     (X_IC10.T5) : 0    (X_CNTB.1QB) : 1       
 
-(X_IC10.T5) : 0    (X_CNTB.1QB) : 1   (N3120311) : 0     ( 0$AtoD6) : 0         
+( 0$AtoD6) : 0     (X_CNTB.2Q) : 0    (X_IC12.OEN) : 1   (VCC$AtoD5) : 1        
 
-(X_CNTB.2Q) : 0    (X_IC12.OEN) : 1   (VCC$AtoD5) : 1    (      Y2) : 0         
+(      Y2) : 0     ( N271757) : 0     (X_CNTB.CK4) : 1   (X_CNTA.CK2) : 1       
 
-( N271757) : 0     (X_CNTB.CK4) : 1   (X_CNTA.CK2) : 1   (X_IC11.B1) : 0        
+(X_IC11.B1) : 0    (     NX4) : 0     (   $D_HI) : 1                            
 
-(     NX4) : 0     (   $D_HI) : 1     (X_OUTPUTBUFF1.OUT_DIS) : 0               
+(X_OUTPUTBUFF1.OUT_DIS) : 0           (X_OUTPUTBUFF1.CLK) : 1                   
 
-(X_OUTPUTBUFF1.CLK) : 1               (X_IC10.T6) : 0    (X_IC12.D21) : 0       
+(X_IC10.T6) : 0    (X_IC12.D21) : 0   ( 0$AtoD3) : 0     (VCC$AtoD6) : 1        
 
-( 0$AtoD3) : 0     (VCC$AtoD6) : 1    (     NZ5) : 0     (X_IC13.A0) : 1        
+(     NZ5) : 0     (X_IC13.A0) : 1    (X_CNTB.CK1) : 1   ( N162460) : 1         
 
-(X_CNTB.CK1) : 1   ( N162460) : 1     (     NX1) : 0                            
+(     NX1) : 0     (X_OUTPUTBUFF1.IN_EN) : 1             (X_IC11.Q) : 0         
 
-(X_OUTPUTBUFF1.IN_EN) : 1             (X_IC11.Q) : 0     (X_OUTPUTBUFF1.G2) : 0 
+(X_OUTPUTBUFF1.G2) : 0                (X_OUTPUTBUFF1.Q2) : 0                    
 
-(X_OUTPUTBUFF1.Q2) : 0                (X_OUTPUTBUFF2.D1) : 0                    
+(X_OUTPUTBUFF2.D1) : 0                (X_CNTB.END) : 0   (X_OUTPUTBUFF2.M) : 1  
 
-(X_CNTB.END) : 0   (X_OUTPUTBUFF2.M) : 1                 (X_IC11.OEN) : 1       
+(X_IC11.OEN) : 1   (X_IC11.D31) : 1   (     NZ2) : 1     (X_IC13.D51) : 0       
 
-(X_IC11.D31) : 1   (     NZ2) : 1     (X_IC13.D51) : 0   (0$AtoD15) : 0         
+(0$AtoD15) : 0     (X_CNTA.4Q) : 0    (X_IC11.R) : 0     (      Q5) : 0         
 
-(X_CNTA.4Q) : 0    (X_IC11.R) : 0     (      Q5) : 0     ( N271786) : 0         
+( N271786) : 0     (X_STATEBUFF.RESET) : 0               (X_CNTB.3Q) : 0        
 
-(X_STATEBUFF.RESET) : 0               (X_CNTB.3Q) : 0    (X_OUTPUTBUFF2.Q3) : 0 
+(X_OUTPUTBUFF2.Q3) : 0                (M_UN0009$DtoA) : 0                       
 
-(M_UN0009$DtoA) : 0                   ( N320539) : 1     (0$AtoD12) : 0         
-
-(X_OUTPUTBUFF2.TOD1) : 0              (X_OUTPUTBUFF1.Q4) : 0                    
+(0$AtoD12) : 0     (X_OUTPUTBUFF2.TOD1) : 0              (X_OUTPUTBUFF1.Q4) : 0 
 
 (      Q2) : 0     ( N251743) : 1     (X_IC11.C1) : 0    (X_STATEBUFF.Q2) : 0   
 
@@ -1282,33 +1280,33 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_OUTPUTBUFF2.IN_EN) : 1             ( 0$AtoD9) : 0     (X_IC13.D61) : 0       
 
-(X_IC13.Q) : 0     (    MEAS) : 0     (X_CNTA.2Q) : 0    (0$AtoD21) : 0         
+( N312628) : 1     (X_IC13.Q) : 0     (    MEAS) : 0     (X_CNTA.2Q) : 0        
 
-(X_IC10.T1) : 0    (      N1) : 0     (0$AtoD19) : 0     (N2434742) : 1         
+( N312610) : 0     (0$AtoD21) : 0     (X_IC10.T1) : 0    (      N1) : 0         
 
-(X_IC13.R) : 0     (M_UN0007$DtoA) : 0                   (      Y6) : 0         
+(0$AtoD19) : 0     (N2434742) : 1     (X_IC13.R) : 0     (M_UN0007$DtoA) : 0    
 
-(X_OUTPUTBUFF1.TOD1) : 0              ( N086260) : 1     (X_STATEBUFF.TOD2) : 0 
+(      Y6) : 0     (X_OUTPUTBUFF1.TOD1) : 0              ( N086260) : 1         
 
-(X_STATEBUFF.IN_EN) : 1               (X_IC12.A0) : 1    (X_IC10.T2) : 0        
+(X_STATEBUFF.TOD2) : 0                (X_STATEBUFF.IN_EN) : 1                   
 
-(  0$AtoD) : 0     (X_IC12.D41) : 1   (M_UN0011) : 1     (M_UN0010$DtoA) : 0    
+(X_IC12.A0) : 1    (X_IC10.T2) : 0    (  0$AtoD) : 0     (X_IC12.D41) : 1       
 
-(X_IC12.1OUT) : 0  ( 0$AtoD7) : 0     (X_CNTB.CLR) : 1   (N2369790) : 0         
+(M_UN0011) : 1     (M_UN0010$DtoA) : 0                   (X_IC12.1OUT) : 0      
 
-(N180505$AtoD) : 1                    (X_OUTPUTBUFF1.M) : 1                     
+( 0$AtoD7) : 0     (X_CNTB.CLR) : 1   (N2369790) : 0     (N180505$AtoD) : 1     
 
-(       P) : 1     (X_OUTPUTBUFF1.D1) : 0                (VCC$AtoD2) : 1        
+(X_OUTPUTBUFF1.M) : 1                 (       P) : 1     (X_OUTPUTBUFF1.D1) : 0 
 
-(X_OUTPUTBUFF1.RST) : 1               (      Y3) : 0     ( N312053) : 0         
+(VCC$AtoD2) : 1    (X_OUTPUTBUFF1.RST) : 1               (      Y3) : 0         
 
 (X_CNTA.CK3) : 1   (     NX5) : 1     (X_IC13.C0) : 1    (   $D_NC) : Z         
 
 (X_IC13.OEN) : 1   (VCC$AtoD7) : 1    (X_IC13.A1) : 0    (      Y0) : 0         
 
-(X_CNTB.CK2) : 1   (X_CNTA.CK4) : 1   (X_IC10.BF) : 0    (X_IC11.D51) : 1       
+(N3125741) : 0     (X_CNTB.CK2) : 1   (X_CNTA.CK4) : 1   (X_IC10.BF) : 0        
 
-(     NX2) : 1     (X_OUTPUTBUFF2.RESET) : 0                                    
+(X_IC11.D51) : 1   (     NX2) : 1     (X_OUTPUTBUFF2.RESET) : 0                 
 
 (X_OUTPUTBUFF2.CLK) : 1               (X_IC13.D01) : 0   (X_IC13.D71) : 0       
 
@@ -1340,19 +1338,19 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (VCC$AtoD) : 1     (X_IC11.D61) : 0   (X_IC13.D11) : 0   (       A) : 0         
 
-( N162940) : 1     (      WR) : 1     (     CLK) : 1     (X_CNTB.CLKB) : 1      
+( N162940) : 1     (      WR) : 1     ( N313269) : 1     (     CLK) : 1         
 
-(      S1) : 0     (X_IC11.A0) : 1    (X_OUTPUTBUFF2.TOD4) : 0                  
+(X_CNTB.CLKB) : 1  (      S1) : 0     (X_IC11.A0) : 1                           
 
-(     NY3) : 0     ( N140538) : 0     ( N254178) : 0     (X_IC11.IEN) : 1       
+(X_OUTPUTBUFF2.TOD4) : 0              (     NY3) : 0     ( N140538) : 0         
 
-( N301089) : 1     (M_UN0006$DtoA) : 0                   (0$AtoD22) : 0         
+( N254178) : 0     (X_IC11.IEN) : 1   ( N301089) : 1     (M_UN0006$DtoA) : 0    
 
-(X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0     (X_IC12.C0) : 1        
+(0$AtoD22) : 0     (X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0         
 
-(     NY0) : 0     (X_IC12.D61) : 0   (       T) : 0     (X_IC13.1OUT) : 0      
+(X_IC12.C0) : 1    (     NY0) : 0     (X_IC12.D61) : 0   (       T) : 0         
 
-(X_STATEBUFF.CLK) : 1                 (      Y7) : 0                            
+(X_IC13.1OUT) : 0  (X_STATEBUFF.CLK) : 1                 (      Y7) : 0         
 
 (X_OUTPUTBUFF1.TOD2) : 0              (X_STATEBUFF.TOD3) : 0                    
 
@@ -1391,11 +1389,11 @@ X$CD4000_PWR 0 CD4000_PWR
     V_V4        -1.227E+01
     V_Vref       8.445E-10
     V_V5         3.166E-04
-    V_V7        -1.689E-10
+    V_V7        -6.756E-10
     X_U85B.vb    1.402E-14
     X_U85B.vc    8.001E-12
     X_U85B.ve    9.096E-12
-    X_U85B.vlim   6.599E-10
+    X_U85B.vlim   1.532E-10
     X_U85B.vlp  -1.500E-11
     X_U85B.vln  -1.500E-11
     X_U88.VI1    2.503E-08
@@ -1415,7 +1413,7 @@ X$CD4000_PWR 0 CD4000_PWR
     TOTAL POWER DISSIPATION   6.13E+01  WATTS
 
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1479,7 +1477,7 @@ DIGITAL INPUT VOLTAGE Hazard at time 0s
 
           JOB CONCLUDED
 
-**** 09/07/21 15:39:00 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/07/21 16:01:14 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1491,6 +1489,6 @@ DIGITAL INPUT VOLTAGE Hazard at time 0s
 
 
 
-  License check-out time            =      231.72
-  Total job time (using Solver 1)   =        3.64
+  License check-out time            =      244.23
+  Total job time (using Solver 1)   =        2.63
 

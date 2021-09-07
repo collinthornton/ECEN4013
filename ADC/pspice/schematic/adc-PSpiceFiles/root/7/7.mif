@@ -1,10 +1,10 @@
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\adc.lib, offset=439, size=518
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=105727, size=999
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=74521, size=2114
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=70504, size=350
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=45384, size=657
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=95208, size=934
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=122941, size=213
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\adc.lib, offset=451, size=541
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106022, size=1000
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=74680, size=2197
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=70643, size=351
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=45476, size=658
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=95490, size=935
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=123259, size=214
  lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4066-cd4060\cd4066b.lib, offset=17, size=290
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=9827, size=143
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\74hc.lib, offset=2213, size=190
@@ -12,16 +12,16 @@
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\74ls.lib, offset=13073, size=196
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\opamp.lib, offset=1725, size=1073
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_prim.lib, offset=28009, size=323
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106727, size=51
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106779, size=182
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=106962, size=309
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=70855, size=318
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=46042, size=364
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96143, size=64
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96208, size=62
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96271, size=64
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96336, size=370
- lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=123155, size=338
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=107023, size=52
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=107076, size=190
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=107267, size=310
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=70995, size=319
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=46135, size=365
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96426, size=65
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96492, size=63
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96556, size=65
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=96622, size=371
+ lib=e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\models\cd4000.lib, offset=123474, size=339
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=12017, size=116
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=22760, size=401
  lib=C:\Cadence\SPB_17.4\tools\PSpice\Library\dig_io.lib, offset=12266, size=116

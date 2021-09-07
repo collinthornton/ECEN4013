@@ -140,27 +140,26 @@
       (ActiveProfile ".\adc-pspicefiles\root\7.sim")
       (Folder "root-7_Configuration"
         (Folder "Profile Stimulus Files")))
-    (Folder "Include Files"
-      (Sort User))
+    (Folder "Include Files")
     (Folder "Model Libraries"
-      (Sort User)
       (File ".\adc-pspicefiles\adc.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\adc-pspicefiles\adc.lib"))
+        (DisplayName ".\adc-pspicefiles\adc.lib")
+        (Type "PSpiceLibrary"))
       (File "..\models\cd4000.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\models\cd4000.lib"))
+        (DisplayName "..\models\cd4000.lib")
+        (Type "PSpiceLibrary"))
       (File "..\models\tl082.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\models\tl082.lib"))
+        (DisplayName "..\models\tl082.lib")
+        (Type "PSpiceLibrary"))
       (File "..\models\cd4066-cd4060\cd4066b.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName "..\models\cd4066-cd4060\cd4066b.lib")))
+        (DisplayName "..\models\cd4066-cd4060\cd4066b.lib")
+        (Type "PSpiceLibrary"))
+      (Sort User))
     (Folder "Stimulus Files"
-      (Sort User)
       (File ".\adc-PSpiceFiles\ADC.stl"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\adc-PSpiceFiles\ADC.stl"))))
+        (DisplayName ".\adc-PSpiceFiles\ADC.stl")
+        (Type "PSpiceLibrary"))
+      (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector

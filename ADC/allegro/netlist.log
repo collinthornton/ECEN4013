@@ -1,0 +1,23 @@
+{ Using PSTWRITER 17.4.0 d001Sep-14-2021 at 17:16:53 }
+
+#1 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
+Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
+Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
+ on all sections of the part.
+#2 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
+Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
+Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
+ on all sections of the part.
+#3 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
+Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
+Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
+ on all sections of the part.
+#4 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
+Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_2_DIP14_3_CD4069_CD4069/SO 
+Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
+ on all sections of the part.
+#5 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
+Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_2_DIP14_3_CD4069_CD4069/SO 
+Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
+ on all sections of the part.
+#6 ERROR(ORCAP-36018): Netlisting cannot complete because of the errors listed above in the session log. Correct the errors and netlist design.

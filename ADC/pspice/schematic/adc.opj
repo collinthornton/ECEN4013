@@ -1,6 +1,6 @@
 (ExpressProject "adc"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/10/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/14/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -28,7 +28,76 @@
     (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
     (BOM_One_Part_Per_Line "FALSE")
     (Open_BOM_in_Excel "FALSE")
-    (BOM_View_Output "FALSE"))
+    (BOM_View_Output "FALSE")
+    (FLDSTUFF_Scope "0")
+    (FLDSTUFF_Action "0")
+    (FLDSTUFF_Report_File
+       "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.RPT")
+    (FLDSTUFF_Update_File
+       "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.UPD")
+    (FLDSTUFF__Uppercase_Result_Property "FALSE")
+    (FLDSTUFF_Uppercase_Update_Property "FALSE")
+    (FLDSTUFF_Uppercase_Unconditionally "FALSE")
+    (FLDSTUFF_Visibility "0")
+    (FLDSTUFF_inst_or_occurrence "0")
+    (FLDSTUFF_Create_Report_File "FALSE")
+    ("Allegro Netlist Directory"
+       "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro")
+    ("Allegro Netlist Output Board File" "allegro\adc.brd")
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "TRUE")
+    (DRC_View_Output "TRUE")
+    (DRC_View_Output_Type "2")
+    (DRC_Preserved_Waived "FALSE")
+    (RUN_Online_Rules "FALSE")
+    (DRC_Run_Electrical_Rules "TRUE")
+    (DRC_Check_Single_Node_Nets "TRUE")
+    (DRC_Check_No_Driving_Source "TRUE")
+    (DRC_Check_Duplicate_NetNames "TRUE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_Floating_Pins "TRUE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Check_Single_Node_Nets_Online "TRUE")
+    (DRC_Check_No_Driving_Source_Online "FALSE")
+    (DRC_Check_Duplicate_NetNames_Online "TRUE")
+    (DRC_Check_Off-Page_Connectors_Online "FALSE")
+    (DRC_Check_Ports_Online "FALSE")
+    (DRC_Check_Unconnected_Nets_Online "FALSE")
+    (DRC_Check_Floating_Pins_Online "FALSE")
+    (DRC_Run_Electrical_Reports "TRUE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Run_Physical_Rules "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility "TRUE")
+    (DRC_Check_PCB_Footprint_Property "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync "TRUE")
+    (DRC_Check_Incorrect_PinGroup_Assignment "TRUE")
+    (DRC_Check_High_Speed_Props_Syntax "TRUE")
+    (DRC_Check_Missing_Pin_Numbers "TRUE")
+    (DRC_Check_Device_With_No_Pins "TRUE")
+    (DRC_Check_Power_Ground_Short "TRUE")
+    (DRC_Check_Name_Prop_For_HierBlocks "TRUE")
+    (DRC_Check_Physical_Power_Pins_Visibility_Online "FALSE")
+    (DRC_Check_PCB_Footprint_Property_Online "TRUE")
+    (DRC_Check_Normal_Convert_View_Sync_Online "FALSE")
+    (DRC_Check_Incorrect_PinGroup_Assignment_Online "TRUE")
+    (DRC_Check_Missing_Pin_Numbers_Online "TRUE")
+    (DRC_Check_Device_With_No_Pins_Online "FALSE")
+    (DRC_Check_Power_Ground_Short_Online "FALSE")
+    (DRC_Check_Name_Prop_For_HierBlocks_Online "FALSE")
+    (DRC_Run_Physical_Reports "TRUE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Unused_Part_Packages "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Run_Custom_Rules "FALSE")
+    (DRC_Report_File
+       "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DRC"))
   (Folder "Layout")
   (Folder "Outputs"
     (File ".\adc-pspicefiles\schematic1\schematic1.net"
@@ -50,6 +119,8 @@
     (File ".\adc-pspicefiles\cd4028_decoder_test\cd4028_decoder_test.net"
       (Type "Report"))
     (File ".\adc-pspicefiles\cd40106_schmitt_test\cd40106_schmitt_test.net"
+      (Type "Report"))
+    (File ".\adc.drc"
       (Type "Report")))
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
@@ -139,7 +210,10 @@
         (Type "PSpice Profile"))
       (ActiveProfile ".\adc-pspicefiles\root\7.sim")
       (Folder "root-7_Configuration"
-        (Folder "Profile Stimulus Files")))
+        (Folder "Profile Stimulus Files"
+          (File ".\adc-pspicefiles\root\7\2.stl"
+            (Type "PSpiceLibrary")
+            (DisplayName ".\adc-pspicefiles\root\7\2.stl")))))
     (Folder "Include Files"
       (Sort User))
     (Folder "Model Libraries"
@@ -164,6 +238,13 @@
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector
+    (CD4069/SO
+      (FullPartName "CD4069/SO.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
     (OFFPAGELEFT-L
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
@@ -180,9 +261,6 @@
       (FullPartName "R.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (0
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
     (VDC
       (FullPartName "VDC.Normal")
@@ -272,10 +350,6 @@
     (AD840
       (FullPartName "AD840.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
-      (DeviceIndex "0"))
-    (TL082
-      (FullPartName "TL082.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.4\tools\capture\library")
   (MPSSessionName "colli")
@@ -290,32 +364,21 @@
       (Path "Outputs")
       (Select "Design Resources"
          "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
-         "root" "controller"))
+         "root"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 839"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 255 0 399"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 857")
-        (Scroll "-293 -5")
-        (Zoom "52")
+        (Placement "44 0 1 -1 -1 5 24 5 1619 24 417")
+        (Scroll "2625 377")
+        (Zoom "156")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
       (Schematic "root")
-      (Page "adc"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 1674 24 857")
-        (Scroll "1105 719")
-        (Zoom "100")
-        (Occurrence "/"))
-      (Path
-         "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")
-      (Schematic "root")
-      (Page "controller"))))
+      (Page "adc"))))

@@ -17,7 +17,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 0.65 0 
+.TRAN  0 0.3 0 
 .OPTIONS ADVCONV
 .OPTIONS DIGINITSTATE= 0
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 

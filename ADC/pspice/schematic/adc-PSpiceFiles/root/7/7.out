@@ -1,5 +1,5 @@
-
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -34,7 +34,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 50m 0 
+.TRAN  0 0.65 0 
 .OPTIONS ADVCONV
 .OPTIONS DIGINITSTATE= 0
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -53,7 +53,7 @@ U_DSTM1         STIM(1,1) $G_DPWR $G_DGND N086260 IO_STM IO_LEVEL=0
 + +500n 0
 +  +500n 1
 + ENDREPEAT
-X_CNTA         N237358 RST_CNT N140538 Q0 Q1 Q2 Q3 VCC 0 CD4520B PARAMS:
+X_CNTA         N237358 RST_CNT N160004 Q0 Q1 Q2 Q3 VCC 0 CD4520B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_CNTB         0 RST_CNT Q3 Q4 Q5 Q6 Q7 VCC 0 CD4520B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -66,15 +66,15 @@ U_DSTM5         STIM(1,0) $G_DPWR $G_DGND T IO_STM STIMULUS=TRIGGER
 V_Vref         N33002 0 -5
 X_IC9          VIN N29993 N33002 N29993 0 0 N01906 N01917 I0 I1 0 RST_IN VCC 0
 +  CD4066B
-X_IC10          S0 S1 S2 0 NX0 NX1 N99368 M_UN0005 NX4 M_UN0006 M_UN0007
-+  M_UN0008 M_UN0009 M_UN0010 CD4028B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
-X_U49C         NX0 NZ0 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_IC10          S0 S1 S2 0 SB0 SB1 SB2 M_UN0005 SB4 M_UN0006 M_UN0007 M_UN0008
++  M_UN0009 M_UN0010 CD4028B PARAMS: IO_LEVEL=0 MNTYMXDLY=0
+X_U49C         SB0 NZ0 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U48C         NX0 NY0 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U48C         SB0 NY0 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U50C         NX1 NY1 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U50C         SB1 NY1 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_IC11          NX0 NX1 NX2 NX3 NX4 NX5 0 0 S0 S1 S2 0 0 N0 CD4512B PARAMS:
+X_IC11          SB0 SB1 NX2 NX3 SB4 NX5 0 0 S0 S1 S2 0 0 N0 CD4512B PARAMS:
 +  IO_LEVEL=0 MNTYMXDLY=0
 X_IC12          NY0 NY1 T NY3 NY4 NY5 0 0 S0 S1 S2 0 0 N1 CD4512B PARAMS:
 +  IO_LEVEL=0 MNTYMXDLY=0
@@ -88,7 +88,7 @@ X_U59A         ARISE T NY5 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U59B         NARISE T NZ5 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U62C         N99368 NZ2 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U62C         SB2 NZ2 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U63B         ARISE NT NX2 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -96,10 +96,10 @@ X_U64B         NT P NX3 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U66B         T NP NZ3 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-X_U67C         NX4 NY4 $G_DPWR $G_DGND 74HC04 PARAMS:
+X_U67C         SB4 NY4 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 V_V5         VSS 0 -10
-X_U78A         MEAS CLK_EN_OVERIDE N140538 $G_DPWR $G_DGND 74LS08 PARAMS:
+X_U78A         MEAS CLK_EN_OVERIDE N160004 $G_DPWR $G_DGND 74LS08 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_OUTPUTBUFF1          WR 0 0 0 Q0 Q1 Q2 Q3 VCC VCC Y0 Y1 Y2 Y3 CD4076B PARAMS:
 +  IO_LEVEL=0 MNTYMXDLY=0
@@ -159,9 +159,8 @@ X_U118C         ARISE NARISE $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U119B         NARISE NT NX5 $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
-V_V7         VIN 0 4
-X_U120         VCC N271757 VCC N271786 M_UN0012 $G_DPWR $G_DGND JKFF
-X_U121B         N086260 N271757 VCC 0 CD40106B PARAMS:
+X_U120         VCC N326631 VCC N271786 M_UN0012 $G_DPWR $G_DGND JKFF
+X_U121B         N086260 N326631 VCC 0 CD40106B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U122B         N271786 CLK VCC 0 CD40106B PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
@@ -178,6 +177,8 @@ X_U126B         N301325 N301337 S0CHANGE $G_DPWR $G_DGND 74LS32 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
 X_U127C         S0 N301089 $G_DPWR $G_DGND 74HC04 PARAMS:
 + IO_LEVEL=0 MNTYMXDLY=0
+V_V6         VIN 0  
++PULSE 0 5 0 1 5 0 10
 ** Floating/unmodeled pin fixups **
 R__UC0001   M_UN0001  0   {1/GMIN}
 R__UC0002   M_UN0002  0   {1/GMIN}
@@ -624,7 +625,7 @@ X$CD4000_PWR 0 CD4000_PWR
 +   +0s 1
 +   300ns 0
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -649,7 +650,7 @@ X$CD4000_PWR 0 CD4000_PWR
          CJO   10.000000E-12    2.000000E-12 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -689,7 +690,7 @@ X$CD4000_PWR 0 CD4000_PWR
            D     .52             .87             .87             .87         
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -709,7 +710,7 @@ X$CD4000_PWR 0 CD4000_PWR
           IS    2.500000E-12    2.500000E-12 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -729,7 +730,7 @@ X$CD4000_PWR 0 CD4000_PWR
         VOFF    0            
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -769,7 +770,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S5RHI    1.000000E+06  200.000000E+03  200.000000E+03 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -810,7 +811,7 @@ X$CD4000_PWR 0 CD4000_PWR
        S7VLO    -.5              .8                              .8          
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -850,7 +851,7 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHLMX    0              24.000000E-09   20.000000E-09   22.000000E-09 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -884,7 +885,7 @@ X$CD4000_PWR 0 CD4000_PWR
       TPHZMX  120.000000E-09 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -936,7 +937,7 @@ X$CD4000_PWR 0 CD4000_PWR
    THCECLKMX    0               0               0            
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -996,7 +997,7 @@ X$CD4000_PWR 0 CD4000_PWR
        TPWRT  100.000000E+03  100.000000E+03  100.000000E+03  100.000000E+03 
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1011,15 +1012,15 @@ X$CD4000_PWR 0 CD4000_PWR
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(   I0)     .1015  (   I1)     .1015  (  VCC)   10.0000  (  VIN)    4.0000      
+(   I0)     .1015  (   I1)     .1015  (  VCC)   10.0000  (  VIN)    0.0000      
 
-(  VSS)  -10.0000  (N01906)-89.25E-06 (N01917)-89.25E-06 (N29993)-106.1E-06     
+(  VSS)  -10.0000  (N01906)-89.25E-06 (N01917)-89.25E-06 (N29993)-173.7E-06     
 
 (N33002)   -5.0000 (RST_IN)    4.9975 ($G_DGND)    0.0000                       
 
-($G_DPWR)    5.0000                   (N180505)    9.0812                       
+($G_DPWR)    5.0000                   (N180505)    9.0809                       
 
-(N291780)-89.27E-06                   (N294365)-89.25E-06                       
+(N291780)-89.29E-06                   (N294365)-89.25E-06                       
 
 (X_U88.7)    1.3929                   (X_U88.8)     .6428                       
 
@@ -1041,9 +1042,9 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_U88.11)     .7182                  (X_U88.21)     .7499                      
 
-(X_U88.22)     .7500                  (X_U123B.6) 1.408E-09                     
+(X_U88.22)     .7500                  (X_U123B.6) 1.419E-09                     
 
-(X_U123B.7)-89.27E-06                 (X_U123B.8)-89.27E-06                     
+(X_U123B.7)-89.29E-06                 (X_U123B.8)-89.29E-06                     
 
 (X_U123B.9)    0.0000                 (X_U85B.10)     .7970                     
 
@@ -1051,7 +1052,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_U85B.53)    8.0000                 (X_U85B.54)   -8.0000                     
 
-(X_U85B.90) 153.2E-09                 (X_U85B.91)   15.0000                     
+(X_U85B.90) 805.8E-09                 (X_U85B.91)   15.0000                     
 
 (X_U85B.92)  -15.0000                 (X_U85B.99)    0.0000                     
 
@@ -1059,7 +1060,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_U123B.12)    9.8561                (X_U123B.53)    8.0000                    
 
-(X_U123B.54)   -8.0000                (X_U123B.90)-25.05E-06                    
+(X_U123B.54)   -8.0000                (X_U123B.90)-25.07E-06                    
 
 (X_U123B.91)   15.0000                (X_U123B.92)  -15.0000                    
 
@@ -1099,7 +1100,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X$I0_DtoA1.DPWR_OH)    3.4493        (X$I1_DtoA1.DGND_OL)     .1014            
 
-(X$I1_DtoA1.DPWR_OH)    3.4493        (X$N180505_AtoD1.NORM)    1.0203          
+(X$I1_DtoA1.DPWR_OH)    3.4493        (X$N180505_AtoD1.NORM)    1.0202          
 
 (X$RST_IN_DtoA1.DGND_OL)     .0022    (X$RST_IN_DtoA1.DPWR_OH)    4.9975        
 
@@ -1220,23 +1221,23 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_IC12.C1) : 0    (     NY1) : 1     ( 0$AtoD8) : 0     (X_IC13.P) : 0         
 
-(  N99368) : 0     (X_OUTPUTBUFF1.TOD3) : 0              (X_STATEBUFF.TOD4) : 0 
+(X_OUTPUTBUFF1.TOD3) : 0              (X_STATEBUFF.TOD4) : 0                    
 
 (0$AtoD20) : 0     (X_IC10.DB) : 1    (X_IC10.T0) : 1    (      N0) : 1         
 
-(X_IC11.D21) : 1   (0$AtoD18) : 0     ( N243538) : 0     (X_IC13.D41) : 0       
+(     SB0) : 1     (X_IC11.D21) : 1   (0$AtoD18) : 0     ( N243538) : 0         
 
-( N301325) : 0     ( 0$AtoD5) : 0     (X_CNTA.CLR) : 1   (X_OUTPUTBUFF1.D3) : 0 
+(X_IC13.D41) : 0   ( N301325) : 0     ( 0$AtoD5) : 0     (X_CNTA.CLR) : 1       
 
-(X_OUTPUTBUFF2.RST) : 1               (      Y5) : 0     (X_CNTA.CK1) : 1       
+(X_OUTPUTBUFF1.D3) : 0                (X_OUTPUTBUFF2.RST) : 1                   
 
-(X_STATEBUFF.TOD1) : 1                (S0CHANGE) : 0     ( I1$DtoA) : 0         
+(      Y5) : 0     (X_CNTA.CK1) : 1   (X_STATEBUFF.TOD1) : 1                    
 
-(X_IC10.T5) : 0    (X_CNTB.1QB) : 1   ( 0$AtoD6) : 0     (X_CNTB.2Q) : 0        
+(S0CHANGE) : 0     ( I1$DtoA) : 0     (X_IC10.T5) : 0    (X_CNTB.1QB) : 1       
 
-(X_IC12.OEN) : 1   (VCC$AtoD5) : 1    (      Y2) : 0     ( N271757) : 0         
+( 0$AtoD6) : 0     (X_CNTB.2Q) : 0    (X_IC12.OEN) : 1   (VCC$AtoD5) : 1        
 
-(X_CNTB.CK4) : 1   (X_CNTA.CK2) : 1   (X_IC11.B1) : 0    (     NX4) : 0         
+(      Y2) : 0     (X_CNTB.CK4) : 1   (X_CNTA.CK2) : 1   (X_IC11.B1) : 0        
 
 (   $D_HI) : 1     (X_OUTPUTBUFF1.OUT_DIS) : 0                                  
 
@@ -1244,23 +1245,21 @@ X$CD4000_PWR 0 CD4000_PWR
 
 ( 0$AtoD3) : 0     (VCC$AtoD6) : 1    (     NZ5) : 0     (X_IC13.A0) : 1        
 
-(X_CNTB.CK1) : 1   ( N162460) : 1     (     NX1) : 0                            
+(X_CNTB.CK1) : 1   ( N162460) : 1     (X_OUTPUTBUFF1.IN_EN) : 1                 
 
-(X_OUTPUTBUFF1.IN_EN) : 1             (X_IC11.Q) : 0     (X_OUTPUTBUFF1.G2) : 0 
+(X_IC11.Q) : 0     (X_OUTPUTBUFF1.G2) : 0                (X_OUTPUTBUFF1.Q2) : 0 
 
-(X_OUTPUTBUFF1.Q2) : 0                (X_OUTPUTBUFF2.D1) : 0                    
+(X_OUTPUTBUFF2.D1) : 0                (X_CNTB.END) : 0   (X_OUTPUTBUFF2.M) : 1  
 
-(X_CNTB.END) : 0   (X_OUTPUTBUFF2.M) : 1                 (X_IC11.OEN) : 1       
+(X_IC11.OEN) : 1   (X_IC11.D31) : 1   (     NZ2) : 1     (X_IC13.D51) : 0       
 
-(X_IC11.D31) : 1   (     NZ2) : 1     (X_IC13.D51) : 0   (0$AtoD15) : 0         
+(0$AtoD15) : 0     (X_CNTA.4Q) : 0    (X_IC11.R) : 0     (      Q5) : 0         
 
-(X_CNTA.4Q) : 0    (X_IC11.R) : 0     (      Q5) : 0     ( N271786) : 0         
+( N271786) : 0     (X_STATEBUFF.RESET) : 0               (X_CNTB.3Q) : 0        
 
-(X_STATEBUFF.RESET) : 0               (X_CNTB.3Q) : 0    (X_OUTPUTBUFF2.Q3) : 0 
+(X_OUTPUTBUFF2.Q3) : 0                (M_UN0009$DtoA) : 0                       
 
-(M_UN0009$DtoA) : 0                   (0$AtoD12) : 0                            
-
-(X_OUTPUTBUFF2.TOD1) : 0              (X_OUTPUTBUFF1.Q4) : 0                    
+(0$AtoD12) : 0     (X_OUTPUTBUFF2.TOD1) : 0              (X_OUTPUTBUFF1.Q4) : 0 
 
 (      Q2) : 0     ( N251743) : 1     (X_IC11.C1) : 0    (X_STATEBUFF.Q2) : 0   
 
@@ -1268,17 +1267,19 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_IC11.1OUT) : 1  (      NP) : 0     (X_CNTA.CK1B) : 0  ( N162594) : 0         
 
-(     NY5) : 0     (X_IC13.B0) : 1    (0$AtoD24) : 0     (X_CNTB.2QB) : 1       
+(     NY5) : 0     (X_IC13.B0) : 1    ( N160004) : 0     (0$AtoD24) : 0         
 
-(      S0) : 0     (X_IC10.AF) : 0    (X_IC11.D41) : 0   (N2370941) : 0         
+(     SB4) : 0     (X_CNTB.2QB) : 1   (      S0) : 0     (X_IC10.AF) : 0        
 
-(X_OUTPUTBUFF2.IN_EN) : 1             ( 0$AtoD9) : 0     (X_IC13.D61) : 0       
+(X_IC11.D41) : 0   (N2370941) : 0     (X_OUTPUTBUFF2.IN_EN) : 1                 
 
-(X_IC13.Q) : 0     (    MEAS) : 0     (X_CNTA.2Q) : 0    (0$AtoD21) : 0         
+( 0$AtoD9) : 0     (X_IC13.D61) : 0   (X_IC13.Q) : 0     (    MEAS) : 0         
 
-(X_IC10.T1) : 0    (      N1) : 0     (0$AtoD19) : 0     (N2434742) : 1         
+(X_CNTA.2Q) : 0    (0$AtoD21) : 0     (X_IC10.T1) : 0    (      N1) : 0         
 
-(X_IC13.R) : 0     (M_UN0007$DtoA) : 0                   (      Y6) : 0         
+(     SB1) : 0     (0$AtoD19) : 0     (N2434742) : 1     (X_IC13.R) : 0         
+
+(M_UN0007$DtoA) : 0                   (      Y6) : 0                            
 
 (X_OUTPUTBUFF1.TOD1) : 0              ( N086260) : 1     (X_STATEBUFF.TOD2) : 0 
 
@@ -1324,7 +1325,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (X_STATEBUFF.D3) : 0                  (CLK_EN_OVERIDE) : 1                      
 
-(X_IC12.IEN) : 1   (RST_IN$AtoD) : 1  (X_OUTPUTBUFF2.Q1) : 0                    
+(X_IC12.IEN) : 1   (RST_IN$AtoD) : 1  ( N326631) : 0     (X_OUTPUTBUFF2.Q1) : 0 
 
 (X_OUTPUTBUFF2.G1) : 0                (0$AtoD10) : 0     (X_IC12.P) : 0         
 
@@ -1336,15 +1337,15 @@ X$CD4000_PWR 0 CD4000_PWR
 
 (      S1) : 0     (X_IC11.A0) : 1    (X_OUTPUTBUFF2.TOD4) : 0                  
 
-(     NY3) : 0     ( N140538) : 0     ( N254178) : 0     (X_IC11.IEN) : 1       
+(     NY3) : 0     ( N254178) : 0     (X_IC11.IEN) : 1   ( N301089) : 1         
 
-( N301089) : 1     (M_UN0006$DtoA) : 0                   (0$AtoD22) : 0         
+(M_UN0006$DtoA) : 0                   (0$AtoD22) : 0                            
 
-(X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0     (X_IC12.C0) : 1        
+(X_STATEBUFF.OUT_DIS) : 0             (      N2) : 0     (     SB2) : 0         
 
-(     NY0) : 0     (X_IC12.D61) : 0   (       T) : 0     (X_IC13.1OUT) : 0      
+(X_IC12.C0) : 1    (     NY0) : 0     (X_IC12.D61) : 0   (       T) : 0         
 
-(X_STATEBUFF.CLK) : 1                 (      Y7) : 0                            
+(X_IC13.1OUT) : 0  (X_STATEBUFF.CLK) : 1                 (      Y7) : 0         
 
 (X_OUTPUTBUFF1.TOD2) : 0              (X_STATEBUFF.TOD3) : 0                    
 
@@ -1370,7 +1371,7 @@ X$CD4000_PWR 0 CD4000_PWR
 
 ( 0$AtoD2) : 0     (X_OUTPUTBUFF1.D4) : 0                (X_STATEBUFF.G2) : 0   
 
-(     NX0) : 1     (X_IC12.D71) : 0   (X_IC12.D01) : 0   
+(X_IC12.D71) : 0   (X_IC12.D01) : 0   
 
 
 
@@ -1381,22 +1382,22 @@ X$CD4000_PWR 0 CD4000_PWR
     V_V4        -1.227E+01
     V_Vref       8.445E-10
     V_V5         3.166E-04
-    V_V7        -6.756E-10
+    V_V6        -2.934E-14
     X_U85B.vb    1.402E-14
-    X_U85B.vc    8.001E-12
-    X_U85B.ve    9.096E-12
-    X_U85B.vlim   1.532E-10
-    X_U85B.vlp  -1.500E-11
-    X_U85B.vln  -1.500E-11
+    X_U85B.vc    2.530E-11
+    X_U85B.ve    2.547E-11
+    X_U85B.vlim   8.058E-10
+    X_U85B.vlp  -4.744E-11
+    X_U85B.vln  -4.744E-11
     X_U88.VI1    2.503E-08
     X_U88.VI2    2.494E-08
     X_U88.V1     2.720E-07
-    X_U123B.vb   1.408E-14
-    X_U123B.vc   8.001E-12
-    X_U123B.ve   9.096E-12
-    X_U123B.vlim  -2.505E-08
-    X_U123B.vlp  -1.500E-11
-    X_U123B.vln  -1.500E-11
+    X_U123B.vb   1.419E-14
+    X_U123B.vc   2.530E-11
+    X_U123B.ve   2.547E-11
+    X_U123B.vlim  -2.507E-08
+    X_U123B.vlp  -4.744E-11
+    X_U123B.vln  -4.743E-11
     X$DIGIFPWR.VDPWR  -1.219E-04
     X$DIGIFPWR.VDGND  -5.000E-06
     X$CD4000_PWR.VVDD   1.226E+01
@@ -1405,7 +1406,7 @@ X$CD4000_PWR 0 CD4000_PWR
     TOTAL POWER DISSIPATION   6.13E+01  WATTS
 
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1466,10 +1467,205 @@ DIGITAL INPUT VOLTAGE Hazard at time 0s
   Voltage V(X$VCC_AtoD8.NORM,$G_CD4000_VSS)= 3.7500 is beyond the ranges defined in model DO4000B
 
 
+DIGITAL Message ID#9 (WARNING):
+SETUP/HOLD Violation at time 29.0302835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 29.0302835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 15.7ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 19.7ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 12.7ns
+
+
+DIGITAL Message ID#10 (WARNING):
+SETUP/HOLD Violation at time 40.3662835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 40.3662835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 44.6ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 48.6ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 41.6ns
+
+
+DIGITAL Message ID#11 (WARNING):
+SETUP/HOLD Violation at time 59.9462835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 59.9462835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 11.4ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 15.4ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 8.4ns
+
+
+DIGITAL Message ID#12 (WARNING):
+SETUP/HOLD Violation at time 75.4042835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 75.4042835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 48ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 52ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 45ns
+
+
+DIGITAL Message ID#13 (WARNING):
+SETUP/HOLD Violation at time 83.6482835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 83.6482835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 78.1ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 75.1ns
+
+
+DIGITAL Message ID#14 (WARNING):
+SETUP/HOLD Violation at time 145.4802835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 145.4802835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 49ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 53ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 46ns
+
+
+DIGITAL Message ID#15 (WARNING):
+SETUP/HOLD Violation at time 181.5482835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 181.5482835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 18.8ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 22.8ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 15.8ns
+
+
+DIGITAL Message ID#16 (WARNING):
+SETUP/HOLD Violation at time 200.0982835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 200.0982835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 200ps
+
+
+DIGITAL Message ID#17 (WARNING):
+SETUP/HOLD Violation at time 250.6982835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 250.6982835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 5.8ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 9.8ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 2.8ns
+
+
+DIGITAL Message ID#18 (WARNING):
+SETUP/HOLD Violation at time 301.1942835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 301.1942835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 46.9ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 50.9ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 43.9ns
+
+
+DIGITAL Message ID#19 (WARNING):
+SETUP/HOLD Violation at time 320.7742835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 320.7742835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 21.5ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 25.5ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 18.5ns
+
+
+DIGITAL Message ID#20 (WARNING):
+SETUP/HOLD Violation at time 336.2322835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 336.2322835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 76.3ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 73.3ns
+
+
+DIGITAL Message ID#21 (WARNING):
+SETUP/HOLD Violation at time 390.8502835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 390.8502835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 67.5ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 71.5ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 64.5ns
+
+
+DIGITAL Message ID#22 (WARNING):
+SETUP/HOLD Violation at time 406.3082835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 406.3082835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 54ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 58ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 51ns
+
+
+DIGITAL Message ID#23 (WARNING):
+SETUP/HOLD Violation at time 441.3462835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 441.3462835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 60.2ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 64.2ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 57.2ns
+
+
+DIGITAL Message ID#24 (WARNING):
+SETUP/HOLD Violation at time 445.4682835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 445.4682835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 200ps
+
+
+DIGITAL Message ID#25 (WARNING):
+SETUP/HOLD Violation at time 472.4922835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 472.4922835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 61.1ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 65.1ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 58.1ns
+
+
+DIGITAL Message ID#26 (WARNING):
+SETUP/HOLD Violation at time 507.5302835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 507.5302834999999ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 64.3ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 68.3ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 61.3ns
+
+
+DIGITAL Message ID#27 (WARNING):
+SETUP/HOLD Violation at time 562.1482835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 562.1482835ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 69.2ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 73.2ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 66.2ns
+
+
+DIGITAL Message ID#28 (WARNING):
+SETUP/HOLD Violation at time 597.1862835ms
+  Device: X_STATEBUFF.U76BDLY
+  CLOCK: X_STATEBUFF.CLK, changed low-to-high at 597.1862835000001ms
+  Minimum SETUP time = 80ns
+    DATA: X_STATEBUFF.D1, measured SETUP time = 21ns
+    DATA: X_STATEBUFF.D2, measured SETUP time = 25ns
+    DATA: X_STATEBUFF.D3, measured SETUP time = 18ns
+  ERRORLIMIT reached
+
+
 
           JOB CONCLUDED
 
-**** 09/07/21 00:01:58 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 09/14/21 13:30:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "root-7"  [ e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-pspicefiles\root\7.sim ] 
 
@@ -1481,6 +1677,5 @@ DIGITAL INPUT VOLTAGE Hazard at time 0s
 
 
 
-  License check-out time            =        9.92
-  Total job time (using Solver 1)   =        4.67
+  Total job time (using Solver 1)   =       70.02
 

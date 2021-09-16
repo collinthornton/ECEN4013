@@ -1,6 +1,6 @@
 (ExpressProject "adc"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/14/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/16/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -43,7 +43,7 @@
     (FLDSTUFF_Create_Report_File "FALSE")
     ("Allegro Netlist Directory"
        "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro")
-    ("Allegro Netlist Output Board File" "allegro\adc.brd")
+    ("Allegro Netlist Output Board File" ".\allegro\adc.brd")
     (DRC_Scope "0")
     (DRC_Action "0")
     (DRC_Create_Warnings "TRUE")
@@ -210,20 +210,17 @@
         (Type "PSpice Profile"))
       (ActiveProfile ".\adc-pspicefiles\root\7.sim")
       (Folder "root-7_Configuration"
-        (Folder "Profile Stimulus Files"
-          (File ".\adc-pspicefiles\root\7\2.stl"
-            (Type "PSpiceLibrary")
-            (DisplayName ".\adc-pspicefiles\root\7\2.stl")))))
+        (Folder "Profile Stimulus Files")))
     (Folder "Include Files"
       (Sort User))
     (Folder "Model Libraries"
       (Sort User)
-      (File ".\adc-pspicefiles\adc.lib"
-        (Type "PSpiceLibrary")
-        (DisplayName ".\adc-pspicefiles\adc.lib"))
       (File "..\models\cd4000.lib"
         (Type "PSpiceLibrary")
         (DisplayName "..\models\cd4000.lib"))
+      (File ".\adc-pspicefiles\adc.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\adc-pspicefiles\adc.lib"))
       (File "..\models\tl082.lib"
         (Type "PSpiceLibrary")
         (DisplayName "..\models\tl082.lib"))
@@ -238,6 +235,26 @@
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector
+    (MC1458
+      (FullPartName "MC1458.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "1"))
+    (CD40106B
+      (FullPartName "CD40106B.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "3"))
+    (CD4520B
+      (FullPartName "CD4520B.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\COUNTER.OLB")
+      (DeviceIndex "1"))
+    (CD4081B
+      (FullPartName "CD4081B.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "0"))
+    (CD4071B
+      (FullPartName "CD4071B.Normal")
+      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
+      (DeviceIndex "1"))
     (CD4069/SO
       (FullPartName "CD4069/SO.Normal")
       (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\GATE.OLB")
@@ -327,29 +344,6 @@
       (FullPartName "LM2903/5_1/TI.Normal")
       (LibraryName
          "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\TEX_INST.OLB")
-      (DeviceIndex "0"))
-    (8 HEADER
-      (FullPartName "8 HEADER.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
-      (DeviceIndex "0"))
-    (INV
-      (FullPartName "INV.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\DATACONV.OLB")
-      (DeviceIndex "0"))
-    (OPAMP
-      (FullPartName "OPAMP.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
-      (DeviceIndex "0"))
-    (CD40106B
-      (FullPartName "CD40106B.Normal")
-      (LibraryName
-         "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\PSPICE\CD4000.OLB")
-      (DeviceIndex "0"))
-    (AD840
-      (FullPartName "AD840.Normal")
-      (LibraryName "C:\CADENCE\SPB_17.4\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_17.4\tools\capture\library")
   (MPSSessionName "colli")
@@ -357,26 +351,26 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn")
+         "E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\schematic\adc.dsn")
       (Path "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
+         "E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\schematic\adc.dsn"
          "root")
       (Path "Outputs")
       (Select "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
+         "E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\schematic\adc.dsn"
          "root"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 255 0 399"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 137 0 832"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1619 24 417")
-        (Scroll "2625 377")
-        (Zoom "156")
+        (Placement "44 0 1 -1 -1 5 24 5 1737 24 850")
+        (Scroll "1510 983")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")

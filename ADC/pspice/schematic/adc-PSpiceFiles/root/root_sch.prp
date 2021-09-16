@@ -535,22 +535,21 @@
                 )
             )
         )
-        ("CD40106B_0")
-        ("VPULSE")
-        ("74LS08")
-        ("74LS32")
         ("CD4512BNSR")
         ("JKFF")
         ("CD4028BEE4")
         ("CD4076BM")
-        ("CD4520B_0")
         ("CD4068BEE4")
         ("DigClock")
-        ("CD4069/SO_0")
-        ("CD4069/SO_1")
-        ("CD4069/SO_2")
-        ("CD4069/SO_4")
-        ("CD4069/SO_5")
+        ("CD4069/SO_11")
+        ("CD4069/SO_10")
+        ("CD4069/SO_8")
+        ("CD4069/SO_7")
+        ("CD4069/SO_9")
+        ("CD4071B_0")
+        ("CD4081B_0")
+        ("CD4520B_2")
+        ("CD40106B_2")
     )
     ("instances"
         ("C1"
@@ -867,6 +866,12 @@
             ("device_name"	"MC1458")
             ("pspice_path"	"X_U85B")
             ("level"	"0")
+            ("model_params"
+                ("PER"
+                    ("value"	"")
+                    ("pspice_param"	"PER")
+                )
+            )
         )
         ("U88"
             ("device_name"	"LM2903/5_1/TI")
@@ -1007,25 +1012,16 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("U91A"
-            ("device_name"	"CD40106B_0")
-            ("pspice_path"	"X_U91A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
         ("U123B"
             ("device_name"	"MC1458")
             ("pspice_path"	"X_U123B")
             ("level"	"0")
+            ("model_params"
+                ("PER"
+                    ("value"	"")
+                    ("pspice_param"	"PER")
+                )
+            )
         )
         ("R4"
             ("device_name"	"R")
@@ -1133,68 +1129,6 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("U124A"
-            ("device_name"	"CD40106B_0")
-            ("pspice_path"	"X_U124A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("V6"
-            ("device_name"	"VPULSE")
-            ("pspice_path"	"V_V6")
-            ("level"	"0")
-            ("model_params"
-                ("TF"
-                    ("value"	"5")
-                    ("pspice_param"	"TF")
-                )
-                ("PW"
-                    ("value"	"0")
-                    ("pspice_param"	"PW")
-                )
-                ("TD"
-                    ("value"	"0")
-                    ("pspice_param"	"TD")
-                )
-                ("V2"
-                    ("value"	"5")
-                    ("pspice_param"	"V2")
-                )
-                ("V1"
-                    ("value"	"2.5")
-                    ("pspice_param"	"V1")
-                )
-                ("PER"
-                    ("value"	"10")
-                    ("pspice_param"	"PER")
-                )
-                ("TR"
-                    ("value"	"1")
-                    ("pspice_param"	"TR")
-                )
-                ("AC"
-                    ("value"	"")
-                    ("pspice_param"	"AC")
-                )
-                ("DC"
-                    ("value"	"")
-                    ("pspice_param"	"DC")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
         ("C2"
             ("device_name"	"C")
             ("pspice_path"	"C_C2")
@@ -1266,75 +1200,6 @@
                 ("MAX_TEMP"	"125.0")
             )
         )
-        ("U59A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U59A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U64B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U64B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U114A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U114A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
         ("IC13"
             ("device_name"	"CD4512BNSR")
             ("pspice_path"	"X_IC13")
@@ -1375,52 +1240,6 @@
                 ("Height"
                     ("value"	"2 mm")
                     ("pspice_param"	"Height")
-                )
-            )
-        )
-        ("U95B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U95B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U119B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U119B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
@@ -1467,98 +1286,6 @@
                 )
             )
         )
-        ("U125A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U125A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U6B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U6B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U29A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U29A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U30B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U30B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
         ("U109"
             ("device_name"	"JKFF")
             ("pspice_path"	"X_U109")
@@ -1574,98 +1301,6 @@
                 )
             )
         )
-        ("U8A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U8A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U11B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U11B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U66B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U66B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U126B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U126B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
         ("U105"
             ("device_name"	"JKFF")
             ("pspice_path"	"X_U105")
@@ -1673,98 +1308,6 @@
             ("model_params"
                 ("IMPL"
                     ("value"	"PLSYN")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U31A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U31A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U10B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U10B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U59B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U59B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("U63B"
-            ("device_name"	"74LS32")
-            ("pspice_path"	"X_U63B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("IMPL"
-                    ("value"	"")
                     ("pspice_param"	"IMPL")
                 )
                 ("PSpice Model Type"
@@ -1813,29 +1356,6 @@
                 ("Height"
                     ("value"	"5.08 mm")
                     ("pspice_param"	"Height")
-                )
-            )
-        )
-        ("U125B"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U125B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
                 )
             )
         )
@@ -1968,21 +1488,6 @@
                 )
             )
         )
-        ("U121B"
-            ("device_name"	"CD40106B_0")
-            ("pspice_path"	"X_U121B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
         ("U120"
             ("device_name"	"JKFF")
             ("pspice_path"	"X_U120")
@@ -1995,44 +1500,6 @@
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U78A"
-            ("device_name"	"74LS08")
-            ("pspice_path"	"X_U78A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("IMPL"
-                    ("value"	"")
-                    ("pspice_param"	"IMPL")
-                )
-            )
-        )
-        ("CNTA"
-            ("device_name"	"CD4520B_0")
-            ("pspice_path"	"X_CNTA")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
                 )
             )
         )
@@ -2076,36 +1543,6 @@
                 ("Height"
                     ("value"	"1.75 mm")
                     ("pspice_param"	"Height")
-                )
-            )
-        )
-        ("U122B"
-            ("device_name"	"CD40106B_0")
-            ("pspice_path"	"X_U122B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-            )
-        )
-        ("CNTB"
-            ("device_name"	"CD4520B_0")
-            ("pspice_path"	"X_CNTB")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
                 )
             )
         )
@@ -2192,7 +1629,7 @@
             )
         )
         ("U129B"
-            ("device_name"	"CD4069/SO_0")
+            ("device_name"	"CD4069/SO_11")
             ("pspice_path"	"X_U129B")
             ("level"	"0")
             ("model_params"
@@ -2204,10 +1641,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U129C"
-            ("device_name"	"CD4069/SO_0")
+            ("device_name"	"CD4069/SO_11")
             ("pspice_path"	"X_U129C")
             ("level"	"0")
             ("model_params"
@@ -2219,10 +1668,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U129D"
-            ("device_name"	"CD4069/SO_0")
+            ("device_name"	"CD4069/SO_11")
             ("pspice_path"	"X_U129D")
             ("level"	"0")
             ("model_params"
@@ -2234,10 +1695,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U129A"
-            ("device_name"	"CD4069/SO_1")
+            ("device_name"	"CD4069/SO_10")
             ("pspice_path"	"X_U129A")
             ("level"	"0")
             ("model_params"
@@ -2249,10 +1722,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U129E"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U129E")
             ("level"	"0")
             ("model_params"
@@ -2264,10 +1749,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U129F"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U129F")
             ("level"	"0")
             ("model_params"
@@ -2279,10 +1776,22 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
             )
         )
         ("U131A"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U131A")
             ("level"	"0")
             ("model_params"
@@ -2294,10 +1803,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U131B"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U131B")
             ("level"	"0")
             ("model_params"
@@ -2309,10 +1822,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U131C"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U131C")
             ("level"	"0")
             ("model_params"
@@ -2324,10 +1841,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U131D"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U131D")
             ("level"	"0")
             ("model_params"
@@ -2339,25 +1860,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
-            )
-        )
-        ("U131E"
-            ("device_name"	"CD4069/SO_2")
-            ("pspice_path"	"X_U131E")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
         ("U131F"
-            ("device_name"	"CD4069/SO_2")
+            ("device_name"	"CD4069/SO_8")
             ("pspice_path"	"X_U131F")
             ("level"	"0")
             ("model_params"
@@ -2369,10 +1879,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132A"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132A")
             ("level"	"0")
             ("model_params"
@@ -2384,10 +1898,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132B"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132B")
             ("level"	"0")
             ("model_params"
@@ -2399,10 +1917,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132C"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132C")
             ("level"	"0")
             ("model_params"
@@ -2414,10 +1936,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132D"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132D")
             ("level"	"0")
             ("model_params"
@@ -2429,10 +1955,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132E"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132E")
             ("level"	"0")
             ("model_params"
@@ -2444,10 +1974,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U132F"
-            ("device_name"	"CD4069/SO_4")
+            ("device_name"	"CD4069/SO_7")
             ("pspice_path"	"X_U132F")
             ("level"	"0")
             ("model_params"
@@ -2459,10 +1993,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U133A"
-            ("device_name"	"CD4069/SO_5")
+            ("device_name"	"CD4069/SO_9")
             ("pspice_path"	"X_U133A")
             ("level"	"0")
             ("model_params"
@@ -2473,6 +2011,412 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U134A"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U134A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U134B"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U134B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U134C"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U134C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U134D"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U134D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U135A"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U135A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U135B"
+            ("device_name"	"CD4071B_0")
+            ("pspice_path"	"X_U135B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U136A"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U136A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U136B"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U136B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U136C"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U136C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U136D"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U136D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U137A"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U137A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U137B"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U137B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U137C"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U137C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U137D"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U137D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U138A"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U138A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U138B"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U138B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U138C"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U138C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U138D"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U138D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U139A"
+            ("device_name"	"CD4081B_0")
+            ("pspice_path"	"X_U139A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U140A"
+            ("device_name"	"CD4520B_2")
+            ("pspice_path"	"X_U140A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U140B"
+            ("device_name"	"CD4520B_2")
+            ("pspice_path"	"X_U140B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U141A"
+            ("device_name"	"CD40106B_2")
+            ("pspice_path"	"X_U141A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U141B"
+            ("device_name"	"CD40106B_2")
+            ("pspice_path"	"X_U141B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U141C"
+            ("device_name"	"CD40106B_2")
+            ("pspice_path"	"X_U141C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("U141D"
+            ("device_name"	"CD40106B_2")
+            ("pspice_path"	"X_U141D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+            )
+        )
+        ("Vref1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_Vref1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"2.56")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-4.223nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )

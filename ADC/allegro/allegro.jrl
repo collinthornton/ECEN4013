@@ -1,0 +1,36 @@
+\t (00:00:02) allegro 17.4 P001 Windows SPB 64-bit Edition
+\t (00:00:02)     Journal start - Fri Sep 17 18:07:34 2021
+\t (00:00:02)         Host=DESKTOP-E5H89N4 User=colli Pid=14048 CPUs=12
+\t (00:00:02) CmdLine= C:\Cadence\SPB_17.4\tools\bin\allegro.exe
+\t (00:00:02) 
+   (00:00:02) Loading axlcore.cxt 
+\t (00:00:07) Opening existing design...
+\i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged ADC
+\d (00:00:08) Design opened: E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/allegro/ADC.brd
+\i (00:00:08) trapsize 3070
+\i (00:00:08) trapsize 3420
+\i (00:00:08) trapsize 1103
+\i (00:00:08) trapsize 1320
+\i (00:00:09) generaledit 
+\i (00:00:15) place manual 
+\i (00:00:15) setwindow form.plc_manual
+\i (00:00:15) FORM plc_manual tree  'Components by refdes' 
+\i (00:00:17) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:18) FORM plc_manual advanced_settings  
+\i (00:00:19) FORM plc_manual library YES 
+\i (00:00:20) FORM plc_manual placement_list  
+\i (00:00:21) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:22) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:23) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:23) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:23) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:23) FORM plc_manual tree 'MULTISEL YES' 'Components by refdes' 
+\i (00:00:25) FORM plc_manual categories Package symbols 
+\i (00:00:36) FORM plc_manual tree  JUMPER8 'Package symbols' 
+\i (00:03:13) setwindow pcb
+\i (00:03:13) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged "Start Page"
+\i (00:03:14) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged ADC
+\i (00:03:18) exit 
+\e (00:03:18) Do you want to save the changes you made to ADC.brd?
+\i (00:03:21) fillin no 
+\t (00:03:21)     Journal end - Fri Sep 17 18:10:53 2021

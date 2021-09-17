@@ -1,23 +1,12 @@
-{ Using PSTWRITER 17.4.0 d001Sep-14-2021 at 17:16:53 }
+{ Using PSTWRITER 17.4.0 d001Sep-17-2021 at 18:20:19 }
 
-#1 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
-Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
-Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
- on all sections of the part.
-#2 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
-Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
-Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
- on all sections of the part.
-#3 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
-Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_0_DIP14_3_CD4069_CD4069/SO 
-Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
- on all sections of the part.
-#4 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
-Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_2_DIP14_3_CD4069_CD4069/SO 
-Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
- on all sections of the part.
-#5 ERROR(ORCAP-36004): Conflicting values of part name found on different sections of "U129".
-Conflicting values: CD4069/SO_1_DIP14_3_CD4069_CD4069/SO & CD4069/SO_2_DIP14_3_CD4069_CD4069/SO 
-Property values of "Device","PCB FootPrint", "Class" and "Value" should be identical 
- on all sections of the part.
-#6 ERROR(ORCAP-36018): Netlisting cannot complete because of the errors listed above in the session log. Correct the errors and netlist design.
+INFO(ORCAP-36080): Scanning netlist files ...
+
+Loading... e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro\pstchip.dat
+
+Loading... e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro\pstchip.dat
+
+Loading... e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro\pstxprt.dat
+
+Loading... e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro\pstxnet.dat
+packaging the design view...

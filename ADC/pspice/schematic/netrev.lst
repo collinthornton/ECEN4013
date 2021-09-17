@@ -1,0 +1,92 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Allegro Netrev Import Logic                                      )
+(                                                                     )
+(    Drawing          : adc.brd                                       )
+(    Software Version : unreleased                                    )
+(    Date/Time        : Fri Sep 17 18:20:20 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+------ Directives ------------
+
+Ripup etch:                  No
+Ripup delete first segment:  No
+Ripup retain bondwire:       No
+Ripup symbols:               Always
+Missing symbol has error:    No
+DRC update:                  Yes
+Schematic directory:         'e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro'
+Design Directory:            'E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro'
+Old design name:             'e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd'
+New design name:             'E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd'
+
+CmdLine: netrev.exe -y 1 -i e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro\adc.brd E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd
+
+------ Preparing to read pst files ------
+
+Starting to read e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstchip.dat 
+   Finished reading e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstchip.dat (00:00:00.01)
+Starting to read e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxprt.dat 
+   Finished reading e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxprt.dat (00:00:00.00)
+Starting to read e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxnet.dat 
+   Finished reading e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxnet.dat (00:00:00.00)
+
+------ Oversights/Warnings/Errors ------
+
+
+------ Library Paths ------
+MODULEPATH =  . 
+           C:/Cadence/SPB_17.4/share/local/pcb/modules 
+
+PSMPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.4/share/local/pcb/symbols 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.4/share/pcb/allegrolib/symbols 
+           E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/models/cd4066-cd4060 
+           E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/models/capture 
+
+PADPATH =  . 
+           symbols 
+           .. 
+           ../symbols 
+           C:/Cadence/SPB_17.4/share/local/pcb/padstacks 
+           C:/Cadence/SPB_17.4/share/pcb/pcb_lib/symbols 
+           C:/Cadence/SPB_17.4/share/pcb/allegrolib/symbols 
+
+
+------ Summary Statistics ------
+
+
+netrev run on Sep 17 18:20:20 2021
+   DESIGN NAME : 'ADC'
+   PACKAGING ON Oct  7 2019 04:16:49
+
+   COMPILE 'logic'
+   CHECK_PIN_NAMES OFF
+   CROSS_REFERENCE OFF
+   FEEDBACK OFF
+   INCREMENTAL OFF
+   INTERFACE_TYPE PHYSICAL
+   MAX_ERRORS 500
+   MERGE_MINIMUM 5
+   NET_NAME_CHARS '#%&()*+-./:=>?@[]^_`|'
+   NET_NAME_LENGTH 24
+   OVERSIGHTS ON
+   REPLACE_CHECK OFF
+   SINGLE_NODE_NETS ON
+   SPLIT_MINIMUM 0
+   SUPPRESS   20
+   WARNINGS ON
+
+ No error detected
+ No oversight detected
+ No warning detected
+
+cpu time      0:02:18
+elapsed time  0:00:01
+

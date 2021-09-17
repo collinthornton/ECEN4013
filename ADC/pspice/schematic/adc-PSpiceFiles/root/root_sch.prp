@@ -108,8 +108,19 @@
         )
         ("VDC")
         ("DigStim1")
-        ("CD4066BNS")
-        ("MC1458"
+        ("CD4512BNSR")
+        ("CD4028BEE4")
+        ("CD4076BM")
+        ("CD4068BEE4")
+        ("DigClock")
+        ("CD4069/SO_8")
+        ("CD4069/SO_7")
+        ("CD4069/SO_9")
+        ("CD4071B_1")
+        ("CD4081B_0")
+        ("CD4520B_2")
+        ("CD40106B_2")
+        ("MC1458_2"
             ("info"
                 ("spice_dsg"	"X")
             )
@@ -367,189 +378,10 @@
                 )
             )
         )
-        ("LM2903/5_1/TI"
-            ("info"
-                ("spice_dsg"	"X")
-            )
-            ("smoke"
-                ("max_ops_desc"
-                    ("IPLUS"
-                        ("description"	"Max input current(+)")
-                        ("unit"	"A")
-                    )
-                    ("IMINUS"
-                        ("description"	"Max input current(-)")
-                        ("unit"	"A")
-                    )
-                    ("IOUT"
-                        ("description"	"Output current")
-                        ("unit"	"A")
-                    )
-                    ("VDIFF"
-                        ("description"	"Differential VIN")
-                        ("unit"	"V")
-                    )
-                    ("VSUPM"
-                        ("description"	"Max supply volt diff")
-                        ("unit"	"V")
-                    )
-                    ("VSMAX"
-                        ("description"	"Max supply volt diff")
-                        ("unit"	"V")
-                    )
-                    ("VCCMAX"
-                        ("description"	"Max Pos supply volt")
-                        ("unit"	"V")
-                    )
-                    ("VEEMAX"
-                        ("description"	"Max Neg supply volt")
-                        ("unit"	"V")
-                    )
-                    ("VPMAX"
-                        ("description"	"Max input voltage(+)")
-                        ("unit"	"V")
-                    )
-                    ("VPMIN"
-                        ("description"	"Min input voltage(+)")
-                        ("unit"	"V")
-                    )
-                    ("VMMAX"
-                        ("description"	"Max input voltage(-)")
-                        ("unit"	"V")
-                    )
-                    ("VMMIN"
-                        ("description"	"Min input voltage(-)")
-                        ("unit"	"V")
-                    )
-                )
-                ("pre_smoke"
-                    ("NODE_POS"	"PIN")
-                    ("NODE_NEG"	"NIN")
-                    ("NODE_VCC"	"PVss")
-                    ("NODE_VEE"	"NVss")
-                    ("NODE_GND"	"0")
-                    ("TERM_POS"	"-1")
-                    ("TERM_NEG"	"-2")
-                    ("TERM_OUT"	"-3")
-                    ("DERATE_TYPE"	"OPAMP")
-                )
-                ("max_ops")
-                ("smoke_tests"
-                    ("IMINUS"
-                        ("test"	"current_test")
-                        ("term"	"TERM_NEG")
-                    )
-                    ("IPLUS"
-                        ("test"	"current_test")
-                        ("term"	"TERM_POS")
-                    )
-                    ("IOUT"
-                        ("test"	"abs_current_test")
-                        ("term"	"TERM_OUT")
-                    )
-                    ("VDIFF"
-                        ("test"	"abs_voltage_test")
-                        ("nodes"
-                            ("NODE_POS")
-                            ("NODE_NEG")
-                        )
-                    )
-                    ("VMMAX"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_NEG")
-                            ("NODE_VCC")
-                        )
-                    )
-                    ("VMMIN"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_VEE")
-                            ("NODE_NEG")
-                        )
-                    )
-                    ("VPMAX"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_POS")
-                            ("NODE_VCC")
-                        )
-                    )
-                    ("VPMIN"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_VEE")
-                            ("NODE_POS")
-                        )
-                    )
-                    ("VCCMAX"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_VCC")
-                            ("NODE_GND")
-                        )
-                    )
-                    ("VEEMAX"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_GND")
-                            ("NODE_VEE")
-                        )
-                    )
-                    ("VSUPM"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_VCC")
-                            ("NODE_VEE")
-                        )
-                    )
-                    ("VSMAX"
-                        ("test"	"voltage_test")
-                        ("nodes"
-                            ("NODE_VCC")
-                            ("NODE_VEE")
-                        )
-                    )
-                )
-                ("device_max_ops"
-                    ("IOUT"	"20m")
-                    ("VDIFF"	"36")
-                    ("VSMAX"	"36")
-                    ("VCCMAX"	"36")
-                    ("VEEMAX"	"0")
-                    ("VPMAX"	"36")
-                    ("VPMIN"	"-0.3")
-                    ("VMMAX"	"36")
-                    ("VMMIN"	"-0.3")
-                )
-                ("device_pre_smoke"
-                    ("TERM_POS"	"+")
-                    ("TERM_NEG"	"-")
-                    ("TERM_OUT"	"OUT")
-                    ("NODE_POS"	"+")
-                    ("NODE_NEG"	"-")
-                    ("NODE_GND"	"0")
-                    ("NODE_VCC"	"V+")
-                    ("NODE_VEE"	"V-")
-                    ("DERATE_TYPE"	"opamp")
-                )
-            )
-        )
-        ("CD4512BNSR")
-        ("JKFF")
-        ("CD4028BEE4")
-        ("CD4076BM")
-        ("CD4068BEE4")
-        ("DigClock")
-        ("CD4069/SO_11")
+        ("CD4066BM_2")
+        ("CD4027B_3")
+        ("VPULSE")
         ("CD4069/SO_10")
-        ("CD4069/SO_8")
-        ("CD4069/SO_7")
-        ("CD4069/SO_9")
-        ("CD4071B_0")
-        ("CD4081B_0")
-        ("CD4520B_2")
-        ("CD40106B_2")
     )
     ("instances"
         ("C1"
@@ -686,7 +518,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"10V")
+                    ("value"	"15V")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
@@ -704,6 +536,10 @@
             ("pspice_path"	"U_DSTM5")
             ("level"	"0")
             ("model_params"
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
                 ("STIMTYPE"
                     ("value"	"DIGITAL")
                     ("pspice_param"	"STIMTYPE")
@@ -718,67 +554,13 @@
                 )
             )
         )
-        ("Vref"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_Vref")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"-5")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-4.223nW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("IC9"
-            ("device_name"	"CD4066BNS")
-            ("pspice_path"	"X_IC9")
-            ("level"	"0")
-            ("model_params"
-                ("Mouser Part Number"
-                    ("value"	"595-CD4066BNS")
-                    ("pspice_param"	"Mouser Part Number")
-                )
-                ("Mouser Price/Stock"
-                    ("value"	"https://www.mouser.co.uk/ProductDetail/Texas-Instruments/CD4066BNS?qs=byeeYqUIh0PidQRe7LWghQ%3D%3D")
-                    ("pspice_param"	"Mouser Price/Stock")
-                )
-                ("Manufacturer_Name"
-                    ("value"	"Texas Instruments")
-                    ("pspice_param"	"Manufacturer_Name")
-                )
-                ("Manufacturer_Part_Number"
-                    ("value"	"CD4066BNS")
-                    ("pspice_param"	"Manufacturer_Part_Number")
-                )
-                ("Description"
-                    ("value"	"Analogue Switch ICs CMOS Quad Bilateral Switch 14-SO")
-                    ("pspice_param"	"Description")
-                )
-                ("Datasheet Link"
-                    ("value"	"")
-                    ("pspice_param"	"Datasheet Link")
-                )
-                ("Height"
-                    ("value"	"2 mm")
-                    ("pspice_param"	"Height")
-                )
-            )
-        )
         ("V5"
             ("device_name"	"VDC")
             ("pspice_path"	"V_V5")
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"-10")
+                    ("value"	"-5")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
@@ -860,28 +642,6 @@
                 ("SLOPE"	"0.005")
                 ("KNEE"	"125.0")
                 ("MAX_TEMP"	"125.0")
-            )
-        )
-        ("U85B"
-            ("device_name"	"MC1458")
-            ("pspice_path"	"X_U85B")
-            ("level"	"0")
-            ("model_params"
-                ("PER"
-                    ("value"	"")
-                    ("pspice_param"	"PER")
-                )
-            )
-        )
-        ("U88"
-            ("device_name"	"LM2903/5_1/TI")
-            ("pspice_path"	"X_U88")
-            ("level"	"0")
-            ("model_params"
-                ("Schematics' Source Library"
-                    ("value"	"C:\\library\\tex_inst142\\tex_inst_new.slb")
-                    ("pspice_param"	"Schematics' Source Library")
-                )
             )
         )
         ("C4"
@@ -1010,17 +770,6 @@
                 ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
                 ("MAX_TEMP"	"200.0")
-            )
-        )
-        ("U123B"
-            ("device_name"	"MC1458")
-            ("pspice_path"	"X_U123B")
-            ("level"	"0")
-            ("model_params"
-                ("PER"
-                    ("value"	"")
-                    ("pspice_param"	"PER")
-                )
             )
         )
         ("R4"
@@ -1286,36 +1035,6 @@
                 )
             )
         )
-        ("U109"
-            ("device_name"	"JKFF")
-            ("pspice_path"	"X_U109")
-            ("level"	"0")
-            ("model_params"
-                ("IMPL"
-                    ("value"	"PLSYN")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("U105"
-            ("device_name"	"JKFF")
-            ("pspice_path"	"X_U105")
-            ("level"	"0")
-            ("model_params"
-                ("IMPL"
-                    ("value"	"PLSYN")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
         ("IC10"
             ("device_name"	"CD4028BEE4")
             ("pspice_path"	"X_IC10")
@@ -1359,9 +1078,9 @@
                 )
             )
         )
-        ("STATEBUFF"
+        ("STATEBUFF1"
             ("device_name"	"CD4076BM")
-            ("pspice_path"	"X_STATEBUFF")
+            ("pspice_path"	"X_STATEBUFF1")
             ("level"	"0")
             ("model_params"
                 ("IO_LEVEL"
@@ -1488,21 +1207,6 @@
                 )
             )
         )
-        ("U120"
-            ("device_name"	"JKFF")
-            ("pspice_path"	"X_U120")
-            ("level"	"0")
-            ("model_params"
-                ("IMPL"
-                    ("value"	"PLSYN")
-                    ("pspice_param"	"IMPL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
         ("OUTPUTBUFF1"
             ("device_name"	"CD4076BM")
             ("pspice_path"	"X_OUTPUTBUFF1")
@@ -1594,21 +1298,25 @@
             ("pspice_path"	"U_DSTM1")
             ("level"	"0")
             ("model_params"
-                ("ONTIME"
-                    ("value"	"500n")
-                    ("pspice_param"	"ONTIME")
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
-                ("DELAY"
+                ("STARTVAL"
                     ("value"	"0")
-                    ("pspice_param"	"DELAY")
+                    ("pspice_param"	"STARTVAL")
                 )
                 ("OFFTIME"
                     ("value"	"500n")
                     ("pspice_param"	"OFFTIME")
                 )
-                ("STARTVAL"
+                ("DELAY"
                     ("value"	"0")
-                    ("pspice_param"	"STARTVAL")
+                    ("pspice_param"	"DELAY")
+                )
+                ("ONTIME"
+                    ("value"	"500n")
+                    ("pspice_param"	"ONTIME")
                 )
                 ("PSpice Model Type"
                     ("value"	"0011")
@@ -1625,168 +1333,6 @@
                 ("IO_LEVEL"
                     ("value"	"0")
                     ("pspice_param"	"IO_LEVEL")
-                )
-            )
-        )
-        ("U129B"
-            ("device_name"	"CD4069/SO_11")
-            ("pspice_path"	"X_U129B")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-            )
-        )
-        ("U129C"
-            ("device_name"	"CD4069/SO_11")
-            ("pspice_path"	"X_U129C")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-            )
-        )
-        ("U129D"
-            ("device_name"	"CD4069/SO_11")
-            ("pspice_path"	"X_U129D")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-            )
-        )
-        ("U129A"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U129A")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-            )
-        )
-        ("U129E"
-            ("device_name"	"CD4069/SO_8")
-            ("pspice_path"	"X_U129E")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-            )
-        )
-        ("U129F"
-            ("device_name"	"CD4069/SO_8")
-            ("pspice_path"	"X_U129F")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
                 )
             )
         )
@@ -1980,25 +1526,6 @@
                 )
             )
         )
-        ("U132F"
-            ("device_name"	"CD4069/SO_7")
-            ("pspice_path"	"X_U132F")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-            )
-        )
         ("U133A"
             ("device_name"	"CD4069/SO_9")
             ("pspice_path"	"X_U133A")
@@ -2019,7 +1546,7 @@
             )
         )
         ("U134A"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U134A")
             ("level"	"0")
             ("model_params"
@@ -2031,10 +1558,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U134B"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U134B")
             ("level"	"0")
             ("model_params"
@@ -2046,10 +1577,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U134C"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U134C")
             ("level"	"0")
             ("model_params"
@@ -2061,10 +1596,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U134D"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U134D")
             ("level"	"0")
             ("model_params"
@@ -2076,10 +1615,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U135A"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U135A")
             ("level"	"0")
             ("model_params"
@@ -2091,10 +1634,14 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U135B"
-            ("device_name"	"CD4071B_0")
+            ("device_name"	"CD4071B_1")
             ("pspice_path"	"X_U135B")
             ("level"	"0")
             ("model_params"
@@ -2105,6 +1652,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2121,6 +1672,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U136B"
@@ -2135,6 +1690,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2151,6 +1710,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U136D"
@@ -2165,6 +1728,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2181,6 +1748,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U137B"
@@ -2195,6 +1766,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2211,6 +1786,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U137D"
@@ -2225,6 +1804,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2241,6 +1824,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U138B"
@@ -2255,6 +1842,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2271,6 +1862,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U138D"
@@ -2286,6 +1881,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U139A"
@@ -2300,6 +1899,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"VSS=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2354,6 +1957,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U141B"
@@ -2368,6 +1975,10 @@
                 ("MNTYMXDLY"
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
                 )
             )
         )
@@ -2384,6 +1995,10 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
         ("U141D"
@@ -2399,15 +2014,79 @@
                     ("value"	"0")
                     ("pspice_param"	"MNTYMXDLY")
                 )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
             )
         )
-        ("Vref1"
+        ("U142A"
+            ("device_name"	"MC1458_2")
+            ("pspice_path"	"X_U142A")
+            ("level"	"0")
+            ("model_params"
+                ("POWER_GROUP"
+                    ("value"	"V-=VSS;V+=VDD")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U142B"
+            ("device_name"	"MC1458_2")
+            ("pspice_path"	"X_U142B")
+            ("level"	"0")
+            ("model_params"
+                ("POWER_GROUP"
+                    ("value"	"V-=VSS;V+=VDD")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U143B"
+            ("device_name"	"CD4066BM_2")
+            ("pspice_path"	"X_U143B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U143C"
+            ("device_name"	"CD4066BM_2")
+            ("pspice_path"	"X_U143C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("VREF1"
             ("device_name"	"VDC")
-            ("pspice_path"	"V_Vref1")
+            ("pspice_path"	"V_VREF1")
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"2.56")
+                    ("value"	"-5")
                     ("pspice_param"	"DC")
                 )
                 ("BiasValue Power"
@@ -2417,6 +2096,282 @@
                 ("PSpice Model Type"
                     ("value"	"0011")
                     ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U143A"
+            ("device_name"	"CD4066BM_2")
+            ("pspice_path"	"X_U143A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U144B"
+            ("device_name"	"CD4027B_3")
+            ("pspice_path"	"X_U144B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U144A"
+            ("device_name"	"CD4027B_3")
+            ("pspice_path"	"X_U144A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("U145A"
+            ("device_name"	"CD4027B_3")
+            ("pspice_path"	"X_U145A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("POWER_GROUP"
+                    ("value"	"GND=0")
+                    ("pspice_param"	"POWER_GROUP")
+                )
+            )
+        )
+        ("V6"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V6")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"8m")
+                    ("pspice_param"	"DC")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("V7"
+            ("device_name"	"VPULSE")
+            ("pspice_path"	"V_V7")
+            ("level"	"0")
+            ("model_params"
+                ("PW"
+                    ("value"	"0")
+                    ("pspice_param"	"PW")
+                )
+                ("TR"
+                    ("value"	"2")
+                    ("pspice_param"	"TR")
+                )
+                ("V2"
+                    ("value"	"4")
+                    ("pspice_param"	"V2")
+                )
+                ("V1"
+                    ("value"	"2")
+                    ("pspice_param"	"V1")
+                )
+                ("TD"
+                    ("value"	"0")
+                    ("pspice_param"	"TD")
+                )
+                ("TF"
+                    ("value"	"3")
+                    ("pspice_param"	"TF")
+                )
+                ("PER"
+                    ("value"	"5")
+                    ("pspice_param"	"PER")
+                )
+                ("AC"
+                    ("value"	"")
+                    ("pspice_param"	"AC")
+                )
+                ("DC"
+                    ("value"	"")
+                    ("pspice_param"	"DC")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("U146A"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146B"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146C"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146D"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146E"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146E")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146F"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146F")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("CLASS"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
                 )
             )
         )

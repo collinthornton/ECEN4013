@@ -1,0 +1,4 @@
+2021-09-17T18:20:20 ===> "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstchip.dat"
+2021-09-17T18:20:20 ===> "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxnet.dat"
+2021-09-17T18:20:20 ===> "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstxprt.dat"
+2021-09-17T18:20:20 ===> "e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/pstdmlmodels.dat"

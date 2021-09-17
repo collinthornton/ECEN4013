@@ -1,235 +1,87 @@
-Date and Time : 09/16/21 16:33:22
-
---------------------------------------------------
-Checking Schematic: cd40106_schmitt_test
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections VSS 
-                    cd40106_schmitt_test, PAGE1  (5.90, 2.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections VCC 
-                    cd40106_schmitt_test, PAGE1  (6.50, 2.00) 
-WARNING(ORCAP-1600): Net has fewer than two connections VDD 
-                    cd40106_schmitt_test, PAGE1  (5.90, 2.00) 
-WARNING(ORCAP-1600): Net has fewer than two connections GND 
-                    cd40106_schmitt_test, PAGE1  (6.50, 2.60) 
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: jkff
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: cd4072_ora_test
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections N00276 
-                    cd4072_ora_test, PAGE1  (2.90, 3.10) 
-WARNING(ORCAP-1600): Net has fewer than two connections N00538 
-                    cd4072_ora_test, PAGE1  (1.80, 3.00) 
-
-Checking For Unconnected Bus Nets
+Date and Time : 09/17/21 18:06:36
 
 --------------------------------------------------
 Checking Schematic: root
 --------------------------------------------------
 Checking Electrical Rules 
+WARNING(ORCAP-1829): Possible pin type conflict U143,OUT/IN  Bidirectional Connected to Output
+                    root, adc  (4.80, 2.20) 
+WARNING(ORCAP-1829): Possible pin type conflict U142,OUT  Output Connected to Bidirectional
+                    root, adc  (4.70, 3.30) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 WARNING(ORCAP-1608): Net has no driving source NEXTSTATECOMBLOGIC[0..17] 
-                    root, adc  (19.00, 9.20) 
+                    root, adc  (19.20, 9.40) 
 
 Checking For Single Node Nets
 WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ4 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY2 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ2 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY3 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ5 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX3 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY5 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX2 
-                    root, adc  (19.00, 13.90) 
+                    root, adc  (19.20, 4.80) 
 WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY0 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY4 
-                    root, adc  (19.00, 13.90) 
+                    root, adc  (19.20, 4.80) 
 WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY1 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ0 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX0 
-                    root, adc  (19.00, 13.90) 
+                    root, adc  (19.20, 4.80) 
 WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ1 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ3 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX4 
-                    root, adc  (19.00, 13.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX5 
-                    root, adc  (19.00, 13.90) 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX0 
+                    root, adc  (19.20, 4.80) 
 WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX1 
-                    root, adc  (19.00, 13.90) 
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: counter
---------------------------------------------------
-Checking Electrical Rules 
-WARNING(ORCAP-1830): Unconnected port  LO 
-                    counter, counter  (0.60, 1.90) 
-WARNING(ORCAP-1830): Unconnected port  RST 
-                    counter, counter  (0.60, 0.90) 
-WARNING(ORCAP-1830): Unconnected port  HI 
-                    counter, counter  (0.60, 1.70) 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections RST 
-                    counter, counter  (0.60, 0.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections LO 
-                    counter, counter  (0.60, 1.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections HI 
-                    counter, counter  (0.60, 1.70) 
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: cd4076_buffer_test
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: cd4520_cntr_test
---------------------------------------------------
-Checking Electrical Rules 
-WARNING(ORCAP-1831): Unconnected pin CNT1,EN 
-                    cd4520_cntr_test, PAGE1  (3.50, 3.50) 
-WARNING(ORCAP-1831): Unconnected pin CNT1,RESET 
-                    cd4520_cntr_test, PAGE1  (3.90, 3.90) 
-WARNING(ORCAP-1831): Unconnected pin CNT,EN 
-                    cd4520_cntr_test, PAGE1  (3.50, 2.30) 
-WARNING(ORCAP-1831): Unconnected pin CNT,RESET 
-                    cd4520_cntr_test, PAGE1  (3.90, 2.70) 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections Q2 
-                    cd4520_cntr_test, PAGE1  (4.10, 2.30) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q6 
-                    cd4520_cntr_test, PAGE1  (4.10, 3.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q5 
-                    cd4520_cntr_test, PAGE1  (4.20, 3.40) 
-WARNING(ORCAP-1600): Net has fewer than two connections 0 
-                    cd4520_cntr_test, PAGE1  (3.50, 3.40) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q1 
-                    cd4520_cntr_test, PAGE1  (4.20, 2.20) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q0 
-                    cd4520_cntr_test, PAGE1  (4.10, 2.10) 
-WARNING(ORCAP-1600): Net has fewer than two connections N51562 
-                    cd4520_cntr_test, PAGE1  (2.90, 3.70) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q7 
-                    cd4520_cntr_test, PAGE1  (4.20, 3.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q3 
-                    cd4520_cntr_test, PAGE1  (3.30, 3.60) 
-WARNING(ORCAP-1600): Net has fewer than two connections Q4 
-                    cd4520_cntr_test, PAGE1  (4.10, 3.30) 
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: npn_switch
---------------------------------------------------
-Checking Electrical Rules 
-WARNING(ORCAP-1608): Net has no driving source N27726 
-                    npn_switch, switch  (4.80, 1.80) 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections GND 
-                    npn_switch, switch  (1.10, 3.30) 
-WARNING(ORCAP-1600): Net has fewer than two connections VCC 
-                    npn_switch, switch  (1.10, 2.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections N27726 
-                    npn_switch, switch  (4.80, 1.80) 
-
-Checking For Unconnected Bus Nets
-
---------------------------------------------------
-Checking Schematic: cd4028_decoder_test
---------------------------------------------------
-Checking Electrical Rules 
-
-Checking For Single Node Nets
-WARNING(ORCAP-1600): Net has fewer than two connections N84411 
-                    cd4028_decoder_test, PAGE1  (5.00, 3.00) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84642 
-                    cd4028_decoder_test, PAGE1  (5.00, 3.10) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84630 
-                    cd4028_decoder_test, PAGE1  (4.00, 3.50) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84401 
-                    cd4028_decoder_test, PAGE1  (5.00, 2.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84638 
-                    cd4028_decoder_test, PAGE1  (5.00, 3.20) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84389 
-                    cd4028_decoder_test, PAGE1  (4.00, 2.90) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84415 
-                    cd4028_decoder_test, PAGE1  (5.00, 3.30) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84393 
-                    cd4028_decoder_test, PAGE1  (4.00, 3.00) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84397 
-                    cd4028_decoder_test, PAGE1  (5.00, 2.80) 
-WARNING(ORCAP-1600): Net has fewer than two connections N84634 
-                    cd4028_decoder_test, PAGE1  (5.00, 3.40) 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX2 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ5 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX5 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX3 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NX4 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY2 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY5 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY3 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ2 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ0 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NZ3 
+                    root, adc  (19.20, 4.80) 
+WARNING(ORCAP-1600): Net has fewer than two connections NEXTSTATECOMBLOGIC.NY4 
+                    root, adc  (19.20, 4.80) 
 
 Checking For Unconnected Bus Nets
 
@@ -237,38 +89,6 @@ Checking Physical Rules
 
 
 Checking Pins and Pin Connections
-ERROR(ORCAP-1606): Wire crosses pin but is not connected U134,VSS 
-                    root, adc  (21.90, 8.90) 
-
---------------------------------------------------
-Checking Schematic: cd40106_schmitt_test
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: jkff
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-
---------------------------------------------------
-Checking Schematic: cd4072_ora_test
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
 
 --------------------------------------------------
 Checking Schematic: root
@@ -277,138 +97,8 @@ Checking Schematic: root
 INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
 
 Report for Invalid References
-ERROR(ORCAP-1616): Reference is invalid for this part Vref 
-                    root, adc  (1.40, 4.90) 
-ERROR(ORCAP-1616): Reference is invalid for this part STATEBUFF 
-                    root, adc  (15.10, 16.10) 
-ERROR(ORCAP-1621): This reference has already been assigned to a different package type. U129 
-                    root, adc  (17.50, 13.80) 
-ERROR(ORCAP-1621): This reference has already been assigned to a different package type. U129 
-                    root, adc  (17.40, 10.00) 
-ERROR(ORCAP-1621): This reference has already been assigned to a different package type. U129 
-                    root, adc  (4.70, 10.30) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. R1 
-                    root, adc  (2.20, 2.90) 
 
 Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference R1 
-                    root, adc  (2.20, 2.90) 
-ERROR(ORCAP-1631): Duplicate reference R4 
-                    root, adc  (4.40, 2.50) 
-ERROR(ORCAP-1631): Duplicate reference R3 
-                    root, adc  (7.00, 2.70) 
-
---------------------------------------------------
-Checking Schematic: counter
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U7 
-                    counter, counter  (3.00, 2.20) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U6 
-                    counter, counter  (1.20, 2.20) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U9 
-                    counter, counter  (6.80, 2.20) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U10 
-                    counter, counter  (1.20, 4.60) 
-
-Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference U7 
-                    counter, counter  (3.00, 2.20) 
-ERROR(ORCAP-1631): Duplicate reference U6 
-                    counter, counter  (1.20, 2.20) 
-ERROR(ORCAP-1631): Duplicate reference U9 
-                    counter, counter  (6.80, 2.20) 
-ERROR(ORCAP-1631): Duplicate reference U10 
-                    counter, counter  (1.20, 4.60) 
-
---------------------------------------------------
-Checking Schematic: cd4076_buffer_test
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-ERROR(ORCAP-1616): Reference is invalid for this part STATEBUFF 
-                    cd4076_buffer_test, PAGE1  (2.70, 2.20) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U1 
-                    cd4076_buffer_test, PAGE1  (3.70, 1.30) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U2 
-                    cd4076_buffer_test, PAGE1  (3.70, 0.80) 
-
-Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference STATEBUFF 
-                    cd4076_buffer_test, PAGE1  (2.70, 2.20) 
-ERROR(ORCAP-1631): Duplicate reference V1 
-                    cd4076_buffer_test, PAGE1  (7.00, 1.70) 
-ERROR(ORCAP-1631): Duplicate reference DSTM1 
-                    cd4076_buffer_test, PAGE1  (1.70, 2.80) 
-ERROR(ORCAP-1631): Duplicate reference U2 
-                    cd4076_buffer_test, PAGE1  (3.70, 0.80) 
-ERROR(ORCAP-1631): Duplicate reference U3 
-                    cd4076_buffer_test, PAGE1  (3.70, 0.30) 
-
---------------------------------------------------
-Checking Schematic: cd4520_cntr_test
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-ERROR(ORCAP-1616): Reference is invalid for this part CNT 
-                    cd4520_cntr_test, PAGE1  (3.60, 2.00) 
-
-Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference DSTM2 
-                    cd4520_cntr_test, PAGE1  (1.50, 3.10) 
-ERROR(ORCAP-1631): Duplicate reference DSTM1 
-                    cd4520_cntr_test, PAGE1  (2.50, 2.10) 
-
---------------------------------------------------
-Checking Schematic: npn_switch
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-ERROR(ORCAP-1621): This reference has already been assigned to a different package type. DSTM1 
-                    npn_switch, switch  (0.80, 3.00) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. C1 
-                    npn_switch, switch  (5.70, 2.00) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. R1 
-                    npn_switch, switch  (4.70, 2.40) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. U1 
-                    npn_switch, switch  (5.60, 2.40) 
-ERROR(ORCAP-1605): Other parts in this package have different values or PCB footprints. DSTM1 
-                    npn_switch, switch  (0.80, 3.00) 
-
-Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference C1 
-                    npn_switch, switch  (5.70, 2.00) 
-ERROR(ORCAP-1631): Duplicate reference V1 
-                    npn_switch, switch  (2.50, 2.00) 
-ERROR(ORCAP-1631): Duplicate reference R1 
-                    npn_switch, switch  (4.70, 2.40) 
-ERROR(ORCAP-1631): Duplicate reference U1 
-                    npn_switch, switch  (5.60, 2.40) 
-ERROR(ORCAP-1631): Duplicate reference DSTM1 
-                    npn_switch, switch  (0.80, 3.00) 
-
---------------------------------------------------
-Checking Schematic: cd4028_decoder_test
---------------------------------------------------
-
-INFO(ORCAP-2242): Checking Incorrect Pin Group Assignment
-
-Report for Invalid References
-
-Report for Duplicate References
-ERROR(ORCAP-1631): Duplicate reference IC10 
-                    cd4028_decoder_test, PAGE1  (4.20, 2.70) 
-ERROR(ORCAP-1631): Duplicate reference V1 
-                    cd4028_decoder_test, PAGE1  (2.70, 2.80) 
 
 --------------------------------------------------
 Checking Entire Design: ADC 
@@ -421,33 +111,6 @@ INFO(ORCAP-36105): Checking Missing Pin Numbers
 
 Checking Device with Zero pins  
 INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
-#1 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U138A: root, adc (17.40, 7.60).
-#2 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U138B: root, adc (17.40, 8.10).
-#3 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U138C: root, adc (17.40, 11.90).
-#4 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U138D: root, adc (17.40, 12.50).
-#5 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U139A: root, adc (3.70, 12.90).
-#6 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U142A: root, adc (3.10, 2.90).
-#7 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U142B: root, adc (4.90, 2.60).
-#8 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U141A: root, adc (7.70, 2.90).
-#9 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U141B: root, adc (8.30, 2.90).
-#10 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U141C: root, adc (12.30, 0.70).
-#11 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U141D: root, adc (14.20, 0.90).
-#12 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U140A: root, adc (5.20, 12.80).
-#13 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U140B: root, adc (5.20, 14.40).
-#14 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U136A: root, adc (24.50, 6.30).
-#15 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U136B: root, adc (24.50, 6.90).
-#16 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U136C: root, adc (26.60, 7.60).
-#17 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U136D: root, adc (23.00, 9.00).
-#18 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U137A: root, adc (22.20, 10.00).
-#19 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U137B: root, adc (21.80, 11.40).
-#20 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U137C: root, adc (22.60, 12.20).
-#21 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U137D: root, adc (22.60, 12.80).
-#22 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U134A: root, adc (25.50, 6.50).
-#23 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U134B: root, adc (21.70, 8.20).
-#24 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U134C: root, adc (23.50, 11.20).
-#25 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U134D: root, adc (17.40, 7.10).
-#26 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U135A: root, adc (17.40, 11.20).
-#27 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U135B: root, adc (17.40, 9.10).
 
 Checking Name Property for Hierarchical Instances  
 
@@ -455,21 +118,29 @@ INFO(ORCAP-2211): Check High Speed Properties Syntax
 
 INFO(ORCAP-2212): Check Power Ground Mismatch
 QUESTION(ORCAP-1589): Net has two or more aliases - possible short? IC10,VSS  VSS  0
-                    root, adc  (19.00, 16.00) 
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U88,V-  V-  0
-                    root, adc  (6.40, 3.30) 
-QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U88,V+  V+  VDD
-                    root, adc  (6.40, 2.70) 
+                    root, adc  (19.20, 16.20) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U147,GND  GND  0
+                    root, adc  (7.00, 3.70) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U142,V+  V+  VDD
+                    root, adc  (4.40, 3.60) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U147,VCC  VCC  VDD
+                    root, adc  (7.00, 2.70) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U142,V+  V+  VDD
+                    root, adc  (5.80, 3.30) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U142,V-  V-  VSS
+                    root, adc  (5.80, 2.70) 
+QUESTION(ORCAP-1589): Net has two or more aliases - possible short? U142,V-  V-  VSS
+                    root, adc  (4.40, 3.00) 
 
 Reporting Unused Refdes in multiple part packages
 Part	                       Quantity	                       Reference
 -----------------------------------------------------------------------------------------
-   CD40106B_1	                       5	                       U1: F  E  D  C  B  
-   CD4520B_0	                       1	                       CNT: B  
    CD4081B_0	                       3	                       U139: D  C  B  
+   CD4066BM_2	                       1	                       U143: D  
    CD40106B_2	                       2	                       U141: F  E  
+   CD4069/SO_7	                       1	                       U132: F  
    CD4069/SO_9	                       5	                       U133: F  E  D  C  B  
+   LM2903/SO	                       1	                       U147: B  
    CD4069/SO_8	                       1	                       U131: E  
-   CD4520B_0	                       1	                       CNT1: A  
-   CD4071B_0	                       2	                       U135: D  C  
-   CD4069/SO_11	                       5	                       U129: F  E  D  C  A  
+   CD4027B_3	                       1	                       U145: B  
+   CD4071B_1	                       2	                       U135: D  C  

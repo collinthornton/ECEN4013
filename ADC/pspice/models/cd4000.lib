@@ -12,6 +12,24 @@
 * $Date:   2 JAN 2012 $
 * $Revision History : Added Part CD4015.
 *$
+*
+.model D_CD40066B ugate (
++	TPLHTY=35NS	TPHLTY=35NS
++	TPLHMX=70NS	TPHLMX=70NS
++	)
+*$
+*-------------------------------------------------------------------------
+* CD4000A  CMOS NOR GATE DUAL 3 INPUT PLUS INVERTER
+*
+* The CMOS Integrated Circuits Data Book, 1983, RCA Solid State
+* tvh	09/29/89	Update interface and model names
+*
+.subckt CD4066B  IN/OUT OUT/IN CTRL
++	optional: VDD=$G_CD4000_VDD VSS=$G_CD4000_VSS
+Sw1 IN/OUT OUT/IN CTRL VSS Smod
+.MODEL Smod VSWITCH(Ron=240 Roff=10MEG Von=4 Voff=2) 
+.ends
+*$
 *-------------------------------------------------------------------------
 * CD4000A  CMOS NOR GATE DUAL 3 INPUT PLUS INVERTER
 *
@@ -2957,11 +2975,11 @@ U2 or(8) VDD VSS
 * The CMOS Integrated Circuits Data Book, 1983, RCA Solid State
 * tvh	09/29/89	Update interface and model names
 *
-.subckt CD4081B  A B C D E F G H J K L M
+.subckt CD4081B  A B J
 +	optional: VDD=$G_CD4000_VDD VSS=$G_CD4000_VSS
 +	params: MNTYMXDLY=0 IO_LEVEL=0
-U1 anda(2,4) VDD VSS
-+	A B C D E F G H   J K L M 
+U1 and(2) VDD VSS
++	A B   J 
 +	D_CD4081B IO_4000B MNTYMXDLY={MNTYMXDLY} IO_LEVEL={IO_LEVEL} 
 .ends
 *$

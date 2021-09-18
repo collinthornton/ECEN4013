@@ -1,0 +1,37 @@
+{
+	"Gate Swap" : [],
+	"Ref Des" : [],
+	"Pin Swap" : [],
+	"Component Property" : [],
+	"Net Property" : [],
+	"Pin Property" : [],
+	"Component" : [
+		{
+			"Name" : "Y1",
+			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_0.normal\\(chips)",
+			"Logical" : null,
+			"Physical" : "Y1"
+		},
+		{
+			"Name" : "Y1",
+			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips)",
+			"Logical" : "Y1",
+			"Physical" : null
+		}
+	],
+	"Net" : [],
+	"Connection" : [
+		{
+			"Name" : "Y1.5",
+			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips):\\out\\",
+			"Logical" : "N521218",
+			"Physical" : null
+		},
+		{
+			"Name" : "Y1.1",
+			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips):EN",
+			"Logical" : "VDD",
+			"Physical" : null
+		}
+	]
+}

@@ -106,13 +106,10 @@
                 ("device_max_ops")
             )
         )
-        ("VDC")
-        ("DigStim1")
         ("CD4512BNSR")
         ("CD4028BEE4")
         ("CD4076BM")
         ("CD4068BEE4")
-        ("DigClock")
         ("CD4069/SO_8")
         ("CD4069/SO_7")
         ("CD4069/SO_9")
@@ -380,8 +377,12 @@
         )
         ("CD4066BM_2")
         ("CD4027B_3")
-        ("VPULSE")
         ("CD4069/SO_10")
+        ("LM2903/SO")
+        ("DigStim1")
+        ("VDC")
+        ("VPULSE")
+        ("DigClock")
     )
     ("instances"
         ("C1"
@@ -397,6 +398,10 @@
                 ("IC"
                     ("value"	"0")
                     ("pspice_param"	"IC")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
                 ("PSpice Model Type"
                     ("value"	"0011")
@@ -469,6 +474,10 @@
                     ("value"	"2.852fW")
                     ("pspice_param"	"BiasValue Power")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
                 ("DIST"
                     ("value"	"FLAT")
                     ("pspice_param"	"DIST")
@@ -512,138 +521,6 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("V4"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_V4")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"15V")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-122.7W")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("DSTM5"
-            ("device_name"	"DigStim1")
-            ("pspice_path"	"U_DSTM5")
-            ("level"	"0")
-            ("model_params"
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("STIMTYPE"
-                    ("value"	"DIGITAL")
-                    ("pspice_param"	"STIMTYPE")
-                )
-                ("IOMODEL"
-                    ("value"	"IO_STM")
-                    ("pspice_param"	"IOMODEL")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("V5"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_V5")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"-5")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-1.583mW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-            )
-        )
-        ("C3"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C3")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"10u")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
-                )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
-                )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
-                ("VOLTAGE"
-                    ("value"	"CMAX")
-                    ("pspice_param"	"VOLTAGE")
-                )
-                ("CURRENT"
-                    ("value"	"CIMAX")
-                    ("pspice_param"	"CURRENT")
-                )
-                ("KNEE"
-                    ("value"	"CBMAX")
-                    ("pspice_param"	"KNEE")
-                )
-                ("SLOPE"
-                    ("value"	"CSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("MAX_TEMP"
-                    ("value"	"CTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("VC1"
-                    ("value"	"0")
-                    ("pspice_param"	"VC1")
-                )
-                ("VC2"
-                    ("value"	"0")
-                    ("pspice_param"	"VC2")
-                )
-            )
-            ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
-                ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
-            )
-        )
         ("C4"
             ("device_name"	"C")
             ("pspice_path"	"C_C4")
@@ -653,6 +530,10 @@
                     ("value"	"15p")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
                 ("PSpice Model Type"
                     ("value"	"0011")
@@ -729,6 +610,10 @@
                     ("value"	"844.1uW")
                     ("pspice_param"	"BiasValue Power")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
                 ("DIST"
                     ("value"	"FLAT")
                     ("pspice_param"	"DIST")
@@ -781,6 +666,10 @@
                     ("value"	"1k")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
                 ("DIST"
                     ("value"	"FLAT")
@@ -835,6 +724,10 @@
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
                 ("DIST"
                     ("value"	"FLAT")
                     ("pspice_param"	"DIST")
@@ -876,77 +769,6 @@
                 ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
                 ("MAX_TEMP"	"200.0")
-            )
-        )
-        ("C2"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C2")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"10u")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("TC2"
-                    ("value"	"0")
-                    ("pspice_param"	"TC2")
-                )
-                ("TC1"
-                    ("value"	"0")
-                    ("pspice_param"	"TC1")
-                )
-                ("DIST"
-                    ("value"	"FLAT")
-                    ("pspice_param"	"DIST")
-                )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
-                ("VOLTAGE"
-                    ("value"	"CMAX")
-                    ("pspice_param"	"VOLTAGE")
-                )
-                ("CURRENT"
-                    ("value"	"CIMAX")
-                    ("pspice_param"	"CURRENT")
-                )
-                ("KNEE"
-                    ("value"	"CBMAX")
-                    ("pspice_param"	"KNEE")
-                )
-                ("SLOPE"
-                    ("value"	"CSMAX")
-                    ("pspice_param"	"SLOPE")
-                )
-                ("MAX_TEMP"
-                    ("value"	"CTMAX")
-                    ("pspice_param"	"MAX_TEMP")
-                )
-                ("VC1"
-                    ("value"	"0")
-                    ("pspice_param"	"VC1")
-                )
-                ("VC2"
-                    ("value"	"0")
-                    ("pspice_param"	"VC2")
-                )
-            )
-            ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
-                ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
             )
         )
         ("IC13"
@@ -1290,49 +1112,6 @@
                 ("Height"
                     ("value"	"5.08 mm")
                     ("pspice_param"	"Height")
-                )
-            )
-        )
-        ("DSTM1"
-            ("device_name"	"DigClock")
-            ("pspice_path"	"U_DSTM1")
-            ("level"	"0")
-            ("model_params"
-                ("POWER_GROUP"
-                    ("value"	"GND=0")
-                    ("pspice_param"	"POWER_GROUP")
-                )
-                ("STARTVAL"
-                    ("value"	"0")
-                    ("pspice_param"	"STARTVAL")
-                )
-                ("OFFTIME"
-                    ("value"	"500n")
-                    ("pspice_param"	"OFFTIME")
-                )
-                ("DELAY"
-                    ("value"	"0")
-                    ("pspice_param"	"DELAY")
-                )
-                ("ONTIME"
-                    ("value"	"500n")
-                    ("pspice_param"	"ONTIME")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
-                )
-                ("OPPVAL"
-                    ("value"	"1")
-                    ("pspice_param"	"OPPVAL")
-                )
-                ("IO_MODEL"
-                    ("value"	"IO_STM")
-                    ("pspice_param"	"IO_MODEL")
-                )
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
                 )
             )
         )
@@ -1961,6 +1740,10 @@
                     ("value"	"GND=0")
                     ("pspice_param"	"POWER_GROUP")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
             )
         )
         ("U141B"
@@ -1979,6 +1762,10 @@
                 ("POWER_GROUP"
                     ("value"	"GND=0")
                     ("pspice_param"	"POWER_GROUP")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
             )
         )
@@ -2029,6 +1816,10 @@
                     ("value"	"V-=VSS;V+=VDD")
                     ("pspice_param"	"POWER_GROUP")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
             )
         )
         ("U142B"
@@ -2039,6 +1830,10 @@
                 ("POWER_GROUP"
                     ("value"	"V-=VSS;V+=VDD")
                     ("pspice_param"	"POWER_GROUP")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
             )
         )
@@ -2059,6 +1854,10 @@
                     ("value"	"GND=0")
                     ("pspice_param"	"POWER_GROUP")
                 )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
             )
         )
         ("U143C"
@@ -2078,24 +1877,9 @@
                     ("value"	"GND=0")
                     ("pspice_param"	"POWER_GROUP")
                 )
-            )
-        )
-        ("VREF1"
-            ("device_name"	"VDC")
-            ("pspice_path"	"V_VREF1")
-            ("level"	"0")
-            ("model_params"
-                ("DC"
-                    ("value"	"-5")
-                    ("pspice_param"	"DC")
-                )
-                ("BiasValue Power"
-                    ("value"	"-4.223nW")
-                    ("pspice_param"	"BiasValue Power")
-                )
-                ("PSpice Model Type"
-                    ("value"	"0011")
-                    ("pspice_param"	"PSpice Model Type")
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
             )
         )
@@ -2115,6 +1899,10 @@
                 ("POWER_GROUP"
                     ("value"	"GND=0")
                     ("pspice_param"	"POWER_GROUP")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
             )
         )
@@ -2175,13 +1963,338 @@
                 )
             )
         )
-        ("V6"
+        ("U146A"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146A")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+            )
+        )
+        ("U146B"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146B")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146C"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146C")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146D"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146D")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U146E"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146E")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+            )
+        )
+        ("U146F"
+            ("device_name"	"CD4069/SO_10")
+            ("pspice_path"	"X_U146F")
+            ("level"	"0")
+            ("model_params"
+                ("IO_LEVEL"
+                    ("value"	"0")
+                    ("pspice_param"	"IO_LEVEL")
+                )
+                ("MNTYMXDLY"
+                    ("value"	"0")
+                    ("pspice_param"	"MNTYMXDLY")
+                )
+                ("DEVICE"
+                    ("value"	"CD4069")
+                    ("pspice_param"	"DEVICE")
+                )
+                ("CLASS"
+                    ("value"	"")
+                    ("pspice_param"	"CLASS")
+                )
+            )
+        )
+        ("U147A"
+            ("device_name"	"LM2903/SO")
+            ("pspice_path"	"X_U147A")
+            ("level"	"0")
+            ("model_params"
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
+            )
+        )
+        ("DSTM5"
+            ("device_name"	"DigStim1")
+            ("pspice_path"	"U_DSTM5")
+            ("level"	"0")
+            ("model_params"
+                ("STIMTYPE"
+                    ("value"	"DIGITAL")
+                    ("pspice_param"	"STIMTYPE")
+                )
+                ("IOMODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IOMODEL")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("C6"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C6")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10u")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
+                )
+                ("VOLTAGE"
+                    ("value"	"CMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("CURRENT"
+                    ("value"	"CIMAX")
+                    ("pspice_param"	"CURRENT")
+                )
+                ("KNEE"
+                    ("value"	"CBMAX")
+                    ("pspice_param"	"KNEE")
+                )
+                ("SLOPE"
+                    ("value"	"CSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"CTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("VC1"
+                    ("value"	"0")
+                    ("pspice_param"	"VC1")
+                )
+                ("VC2"
+                    ("value"	"0")
+                    ("pspice_param"	"VC2")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("V8"
             ("device_name"	"VDC")
-            ("pspice_path"	"V_V6")
+            ("pspice_path"	"V_V8")
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"8m")
+                    ("value"	"-5V")
+                    ("pspice_param"	"DC")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+            )
+        )
+        ("C5"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C5")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10u")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("TC2"
+                    ("value"	"0")
+                    ("pspice_param"	"TC2")
+                )
+                ("TC1"
+                    ("value"	"0")
+                    ("pspice_param"	"TC1")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
+                )
+                ("VOLTAGE"
+                    ("value"	"CMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("CURRENT"
+                    ("value"	"CIMAX")
+                    ("pspice_param"	"CURRENT")
+                )
+                ("KNEE"
+                    ("value"	"CBMAX")
+                    ("pspice_param"	"KNEE")
+                )
+                ("SLOPE"
+                    ("value"	"CSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"CTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("VC1"
+                    ("value"	"0")
+                    ("pspice_param"	"VC1")
+                )
+                ("VC2"
+                    ("value"	"0")
+                    ("pspice_param"	"VC2")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("V9"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V9")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"5V")
                     ("pspice_param"	"DC")
                 )
                 ("PSpice Model Type"
@@ -2200,7 +2313,7 @@
                     ("pspice_param"	"PW")
                 )
                 ("TR"
-                    ("value"	"2")
+                    ("value"	"1")
                     ("pspice_param"	"TR")
                 )
                 ("V2"
@@ -2237,142 +2350,209 @@
                 )
             )
         )
-        ("U146A"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146A")
+        ("C7"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C7")
             ("level"	"0")
             ("model_params"
-                ("IO_LEVEL"
+                ("VALUE"
+                    ("value"	"10u")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("TC2"
                     ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
+                    ("pspice_param"	"TC2")
                 )
-                ("MNTYMXDLY"
+                ("TC1"
                     ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
+                    ("pspice_param"	"TC1")
                 )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
                 )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
+                )
+                ("VOLTAGE"
+                    ("value"	"CMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("CURRENT"
+                    ("value"	"CIMAX")
+                    ("pspice_param"	"CURRENT")
+                )
+                ("KNEE"
+                    ("value"	"CBMAX")
+                    ("pspice_param"	"KNEE")
+                )
+                ("SLOPE"
+                    ("value"	"CSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"CTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("VC1"
+                    ("value"	"0")
+                    ("pspice_param"	"VC1")
+                )
+                ("VC2"
+                    ("value"	"0")
+                    ("pspice_param"	"VC2")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("VREF1"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_VREF1")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"-5V")
+                    ("pspice_param"	"DC")
+                )
+                ("BiasValue Power"
+                    ("value"	"-4.223nW")
+                    ("pspice_param"	"BiasValue Power")
+                )
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
-        ("U146B"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146B")
+        ("DSTM6"
+            ("device_name"	"DigClock")
+            ("pspice_path"	"U_DSTM6")
             ("level"	"0")
             ("model_params"
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
+                )
+                ("DELAY"
+                    ("value"	"")
+                    ("pspice_param"	"DELAY")
+                )
+                ("ONTIME"
+                    ("value"	".5uS")
+                    ("pspice_param"	"ONTIME")
+                )
+                ("OFFTIME"
+                    ("value"	".5uS")
+                    ("pspice_param"	"OFFTIME")
+                )
+                ("STARTVAL"
+                    ("value"	"0")
+                    ("pspice_param"	"STARTVAL")
+                )
+                ("OPPVAL"
+                    ("value"	"1")
+                    ("pspice_param"	"OPPVAL")
+                )
+                ("IO_MODEL"
+                    ("value"	"IO_STM")
+                    ("pspice_param"	"IO_MODEL")
+                )
                 ("IO_LEVEL"
                     ("value"	"0")
                     ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
                 )
             )
         )
-        ("U146C"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146C")
+        ("V10"
+            ("device_name"	"VDC")
+            ("pspice_path"	"V_V10")
             ("level"	"0")
             ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
+                ("DC"
+                    ("value"	"9m")
+                    ("pspice_param"	"DC")
                 )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
                 )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
         )
-        ("U146D"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146D")
+        ("R7"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R7")
             ("level"	"0")
             ("model_params"
-                ("IO_LEVEL"
+                ("VALUE"
+                    ("value"	"200k")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+                ("Room"
+                    ("value"	"ANALOG")
+                    ("pspice_param"	"Room")
+                )
+                ("DIST"
+                    ("value"	"FLAT")
+                    ("pspice_param"	"DIST")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
+                )
+                ("VOLTAGE"
+                    ("value"	"RVMAX")
+                    ("pspice_param"	"VOLTAGE")
+                )
+                ("SLOPE"
+                    ("value"	"RSMAX")
+                    ("pspice_param"	"SLOPE")
+                )
+                ("MAX_TEMP"
+                    ("value"	"RTMAX")
+                    ("pspice_param"	"MAX_TEMP")
+                )
+                ("POWER"
+                    ("value"	"RMAX")
+                    ("pspice_param"	"POWER")
+                )
+                ("TC1"
                     ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
+                    ("pspice_param"	"TC1")
                 )
-                ("MNTYMXDLY"
+                ("TC2"
                     ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
+                    ("pspice_param"	"TC2")
                 )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
+                ("PSpice Model Type"
+                    ("value"	"0011")
+                    ("pspice_param"	"PSpice Model Type")
                 )
             )
-        )
-        ("U146E"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146E")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-            )
-        )
-        ("U146F"
-            ("device_name"	"CD4069/SO_10")
-            ("pspice_path"	"X_U146F")
-            ("level"	"0")
-            ("model_params"
-                ("IO_LEVEL"
-                    ("value"	"0")
-                    ("pspice_param"	"IO_LEVEL")
-                )
-                ("MNTYMXDLY"
-                    ("value"	"0")
-                    ("pspice_param"	"MNTYMXDLY")
-                )
-                ("CLASS"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"CLASS")
-                )
-                ("DEVICE"
-                    ("value"	"CD4069")
-                    ("pspice_param"	"DEVICE")
-                )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
             )
         )
     )

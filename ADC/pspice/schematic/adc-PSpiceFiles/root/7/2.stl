@@ -1,10 +1,10 @@
-* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\7\2.stl written on Fri Sep  3 14:14:57 2021
-* by Stimulus Editor -- Serial Number: 1005 -- Version 17.4.0
+* e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc-PSpiceFiles\root\7\2.stl written on Sat Sep 18 13:28:44 2021
+* by Stimulus Editor -- Serial Number: 3014757 -- Version 17.4.0
 ;!Stimulus Get
-;! TRIGGER Digital RST Digital
+;! TRIGGER Digital
 ;!Ok
 ;!Plot Axis_Settings
-;!Xrange 0s 847.26867335565ns
+;!Xrange 0s 14ms
 ;!AutoUniverse
 ;!XminRes 1ns
 ;!YminRes 1n
@@ -12,8 +12,4 @@
 .STIMULUS TRIGGER STIM (1, 1)
 +   +0s 0
 +   83.333us 1
-+   6.241667ms 0
 +   10.475ms 1
-.STIMULUS RST STIM (1, 1)
-+   +0s 1
-+   300ns 0

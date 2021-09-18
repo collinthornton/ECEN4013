@@ -1,0 +1,63 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2010 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Sat Sep 18 18:16:33 2021
+# 
+# Allegro PCB Router v17-4-0 made 2019/09/12 at 15:39:59
+# Running on: desktop-e5h89n4, OS Version: WindowsNT 6.2.9200, Architecture: Intel Pentium II, III, or 4
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro\adc.dsn
+# Batch File Name: pasde.do
+# Did File Name: E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/specctra.did
+# Current time = Sat Sep 18 18:16:36 2021
+# PCB E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro
+# Master Unit set up as: MIL 1000
+# PCB Limits xlo=-300.0000 ylo=-300.0000 xhi=6300.0000 yhi=6300.0000
+# Total 31 Images Consolidated.
+# Via VIA z=1, 2 xlo=-12.0000 ylo=-12.0000 xhi= 12.0000 yhi= 12.0000
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# <<WARNING:>> Potential non fixed positive shape alignment with the host CAD system exists.
+#              Allegro PCB Router does not perform any operations to remove or identify slivers and isolations.
+#              If the host CAD system performs such an operation, the user may experience unrouted
+#              or DRC alignment issues.
+#              The user must perform final unrouted/DRC validation within the host CAD system.
+# Wires Processed 405, Vias Processed 91
+# Using colormap in design file.
+# Layers Processed: Signal Layers 2
+# Components Placed 39, Images Processed 47, Padstacks Processed 10
+# Nets Processed 93, Net Terminals 437
+# PCB Area=36000000.000  EIC=28  Area/EIC=1285714.286  SMDs=0
+# Total Pin Count: 405
+# Signal Connections Created 17
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro\adc.dsn
+# Nets 93 Connections 253 Unroutes 17
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 80, at vias 3 Total Vias 91
+# Percent Connected   74.31
+# Manhattan Length 308581.4700 Horizontal 160100.8390 Vertical 148480.6310
+# Routed Length 378210.7200 Horizontal 194136.1200 Vertical 184074.6000
+# Ratio Actual / Manhattan   1.2256
+# Unconnected Length 28062.7500 Horizontal 18542.5000 Vertical 9520.2500
+# Total Conflicts: 24 (Cross: 0, Clear: 24, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# Loading Do File pasde.do ...
+# Loading Do File E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro\adc_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <quit

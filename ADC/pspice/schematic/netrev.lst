@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : adc.brd                                       )
 (    Software Version : unreleased                                    )
-(    Date/Time        : Fri Sep 17 18:20:20 2021                      )
+(    Date/Time        : Sat Sep 18 14:09:17 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -36,6 +36,23 @@ Starting to read e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/p
 ------ Oversights/Warnings/Errors ------
 
 
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'JUMPER6' used by RefDes J4 for device 'HEADER 6_JUMPER6_HEADER 6' not found. 
+The symbol either does not exist in the library path (PSMPATH) or is an old symbol from a previous release.  
+
+Set the correct library path if not set or use dbdoctor to migrate old symbols.
+
+#2   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+ERROR(SPMHNI-196): Symbol 'DIP8_3' for device 'OSC14A_0_DIP8_3_GND=0_OSC14A' has extra pin '2'.
+
+ERROR(SPMHNI-196): Symbol 'DIP8_3' for device 'OSC14A_0_DIP8_3_GND=0_OSC14A' has extra pin '3'.
+
+ERROR(SPMHNI-196): Symbol 'DIP8_3' for device 'OSC14A_0_DIP8_3_GND=0_OSC14A' has extra pin '7'.
+
+ERROR(SPMHNI-196): Symbol 'DIP8_3' for device 'OSC14A_0_DIP8_3_GND=0_OSC14A' has extra pin '6'.
+
 ------ Library Paths ------
 MODULEPATH =  . 
            C:/Cadence/SPB_17.4/share/local/pcb/modules 
@@ -62,7 +79,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Sep 17 18:20:20 2021
+netrev run on Sep 18 14:09:17 2021
    DESIGN NAME : 'ADC'
    PACKAGING ON Oct  7 2019 04:16:49
 
@@ -85,8 +102,8 @@ netrev run on Sep 17 18:20:20 2021
 
  No error detected
  No oversight detected
- No warning detected
+  2 warnings detected
 
-cpu time      0:02:18
+cpu time      0:02:07
 elapsed time  0:00:01
 

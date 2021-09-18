@@ -3,7 +3,7 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -11,9 +11,10 @@
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   0            pins ADDED TO this existing net (pins not previously on any net)
                                  AND8.7                         
-                                 C2.1                           
-                                 C3.1                           
                                  C4.1                           
+                                 C5.1                           
+                                 C6.1                           
+                                 C7.1                           
                                  IC10.8                         
                                  IC10.11                        
                                  IC11.7                         
@@ -31,6 +32,7 @@
                                  IC13.9                         
                                  IC13.10                        
                                  IC13.15                        
+                                 J4.3                           
                                  OUTPUTBUFF1.8                  
                                  OUTPUTBUFF1.9                  
                                  OUTPUTBUFF1.10                 
@@ -39,6 +41,7 @@
                                  OUTPUTBUFF2.9                  
                                  OUTPUTBUFF2.10                 
                                  OUTPUTBUFF2.15                 
+                                 R6.2                           
                                  STATEBUFF1.6                   
                                  STATEBUFF1.8                   
                                  STATEBUFF1.9                   
@@ -51,20 +54,20 @@
                                  U144.7                         
                                  U144.9                         
                                  U145.4                         
-                                 U145.7                         
-                                 U147.4                         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   2  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |                net     pins                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 U145.7                         
+                                 U147.4                         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   A            pins ADDED TO this new net
                                  AND8.1         U136.9         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
@@ -107,20 +110,19 @@
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N29993       pins ADDED TO this new net
                                  R1.2           U143.2         U143.3         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N201913      pins ADDED TO this new net
-                                 C4.2           R3.1           U141.1         
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   3  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |                net     pins                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N201913      pins ADDED TO this new net
+                                 C4.2           R3.1           U141.1         
                                  U147.1         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N291780      pins ADDED TO this new net
@@ -164,29 +166,22 @@
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N414529      pins ADDED TO this new net
                                  U132.1         U134.4         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N426095      pins ADDED TO this new net
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page   4  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   net  name |  type of change |                net     pins                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+  N426095      pins ADDED TO this new net
                                  U139.3         U140.2         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N434393      pins ADDED TO this new net
                                  U141.6         U145.3         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N447583      pins ADDED TO this new net
-                                 U143.1         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N447991      pins ADDED TO this new net
-                                 U143.4         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N449503      pins ADDED TO this new net
                                  U141.2         U141.3         
@@ -198,13 +193,13 @@
                                  U136.5         U144.2         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N497810      pins ADDED TO this new net
-                                 U147.2         
+                                 R6.3           R7.2           U147.2         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N501202      pins ADDED TO this new net
                                  U146.2         U146.3         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  N3833160     pins ADDED TO this new net
-                                 U141.5         
+  N521218      pins ADDED TO this new net
+                                 U141.5         Y1.5           
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   N4911441     pins ADDED TO this new net
                                  U146.4         U146.5         
@@ -222,23 +217,22 @@
                                  U131.4         U134.13        U135.1         
                                  U135.6         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   5  |
-|------------------------------------------------------------------------------|
-|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   NX2          pins ADDED TO this new net
                                  IC11.3         U135.4         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   NX3          pins ADDED TO this new net
                                  IC11.4         U135.3         
- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   5  |
+|------------------------------------------------------------------------------|
+|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
+|                                                    Sat Sep 18 14:09:17 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   NX5          pins ADDED TO this new net
                                  IC11.6         U134.11        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
@@ -278,22 +272,23 @@
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   Q2           pins ADDED TO this new net
                                  AND8.4         OUTPUTBUFF1.5  U140.5         
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   6  |
-|------------------------------------------------------------------------------|
-|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   Q3           pins ADDED TO this new net
                                  AND8.5         OUTPUTBUFF1.6  U140.6         
                                  U140.10        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   Q4           pins ADDED TO this new net
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   6  |
+|------------------------------------------------------------------------------|
+|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
+|                                                    Sat Sep 18 14:09:17 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
                                  AND8.12        OUTPUTBUFF2.3  U140.11        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   Q5           pins ADDED TO this new net
@@ -334,22 +329,22 @@
                                  U137.6         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   SB0          pins ADDED TO this new net
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   7  |
-|------------------------------------------------------------------------------|
-|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
                                  IC10.3         IC11.1         U131.9         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   SB1          pins ADDED TO this new net
                                  IC10.14        IC11.2         U131.13        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   7  |
+|------------------------------------------------------------------------------|
+|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
+|                                                    Sat Sep 18 14:09:17 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   SB2          pins ADDED TO this new net
                                  IC10.2         U146.11        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
@@ -358,31 +353,55 @@
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   T            pins ADDED TO this new net
                                  IC12.3         IC13.2         IC13.5         
-                                 U131.3         U138.2         U138.6         
-                                 U138.8         U138.12        
+                                 J4.4           U131.3         U138.2         
+                                 U138.6         U138.8         U138.12        
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-  VCC          pins ADDED TO this new net
-                                 AND8.14        IC11.16        IC12.16        
-                                 IC13.16        OUTPUTBUFF1.16 OUTPUTBUFF2.16 
-                                 STATEBUFF1.16  
+  VCC          pins ADDED TO this existing net (pins not previously on any net)
+                                 AND8.14                        
+                                 IC11.16                        
+                                 IC12.16                        
+                                 IC13.16                        
+                                 OUTPUTBUFF1.16                 
+                                 OUTPUTBUFF2.16                 
+                                 STATEBUFF1.16                  
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   VDD          pins ADDED TO this existing net (pins not previously on any net)
-                                 C2.2                           
+                                 C5.2                           
                                  IC10.16                        
+                                 J4.1                           
                                  OUTPUTBUFF1.1                  
                                  OUTPUTBUFF1.2                  
                                  OUTPUTBUFF2.1                  
                                  OUTPUTBUFF2.2                  
                                  R3.2                           
+                                 R7.1                           
                                  STATEBUFF1.1                   
                                  STATEBUFF1.2                   
                                  U142.8                         
                                  U145.5                         
                                  U145.6                         
                                  U147.8                         
+                                 Y1.1                           
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VIN          pins ADDED TO this new net
+                                 J4.6           U143.1         
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
+  VREF         pins ADDED TO this new net
+                                 C7.2           J4.5           U143.4         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   VSS          pins ADDED TO this new net
-                                 C3.2           U142.4         
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page   8  |
+|------------------------------------------------------------------------------|
+|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
+|                                                    Sat Sep 18 14:09:17 2021  |
+|------------------------------------------------------------------------------|
+| NET CHANGES                                                                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   net  name |  type of change |                net     pins                  |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+                                 C6.2           J4.2           U142.4         
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
   WR           pins ADDED TO this new net
                                  OUTPUTBUFF1.7  OUTPUTBUFF2.7  U132.2         
@@ -390,17 +409,6 @@
   Y0           pins ADDED TO this new net
                                  J1.1           OUTPUTBUFF1.14 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   8  |
-|------------------------------------------------------------------------------|
-|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
-|------------------------------------------------------------------------------|
-| NET CHANGES                                                                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   net  name |  type of change |                net     pins                  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
   Y1           pins ADDED TO this new net
                                  J1.2           OUTPUTBUFF1.13 
  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
@@ -426,7 +434,7 @@
 |                                                                    Page   9  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | COMPONENT DEFINITION added to design                                         |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -434,6 +442,7 @@
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
  8 HEADER_JUMPER8_8 HEADER
  CD4027B_3_DIP16_3_GND=0_CD4027B
+ CD4027B_3_DIP10016W300L825_GND=
  CD4028BEE4_DIP16_3_CD4028BEE4
  CD4066BM_2_DIP14_3_GND=0_CD4066
  CD4068BEE4_DIP14_3_CD4068BEE4
@@ -450,16 +459,20 @@
  C_CAP196_10U
  C_CAP196_15P
  C_CAP196_32N
+ HEADER 6_JUMPER6_HEADER 6
  LM2903/SO_DIP8_3_LM2903/SO
  MC1458_2_DIP8_3_V-=VSS;V+=VDD_M
+ OSC14A_0_DIP8_3_GND=0_OSC14A
+ POT/SM_BLKCON100RHTM1SQW4253_PO
  R_AXRC05_1K
  R_AXRC05_100K
+ R_AXRC05_200K
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page  10  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | COMPONENTS ADDED to design                                                   |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -467,20 +480,24 @@
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
  AND8                CD4068BEE4_DIP14_3_CD4068BEE4 
  C1                  C_CAP196_32N          
- C2                  C_CAP196_10U          
- C3                  C_CAP196_10U          
  C4                  C_CAP196_15P          
+ C5                  C_CAP196_10U          
+ C6                  C_CAP196_10U          
+ C7                  C_CAP196_10U          
  IC10                CD4028BEE4_DIP16_3_CD4028BEE4 
  IC11                CD4512BNSR_DIP16_3_CD4512BNSR 
  IC12                CD4512BNSR_DIP16_3_CD4512BNSR 
  IC13                CD4512BNSR_DIP16_3_CD4512BNSR 
  J1                  8 HEADER_JUMPER8_8 HEADER 
+ J4                  HEADER 6_JUMPER6_HEADER 6 
  OUTPUTBUFF1         CD4076BM_DIP16_3_CD4076BM 
  OUTPUTBUFF2         CD4076BM_DIP16_3_CD4076BM 
  R1                  R_AXRC05_100K         
  R3                  R_AXRC05_1K           
  R4                  R_AXRC05_1K           
  R5                  R_AXRC05_1K           
+ R6                  POT/SM_BLKCON100RHTM1SQW4253_PO 
+ R7                  R_AXRC05_200K         
  STATEBUFF1          CD4076BM_DIP16_3_CD4076BM 
  U131                CD4069/SO_8_DIP14_3_GND=0_CD406 
  U132                CD4069/SO_7_DIP14_3_GND=0_CD406 
@@ -496,15 +513,16 @@
  U142                MC1458_2_DIP8_3_V-=VSS;V+=VDD_M 
  U143                CD4066BM_2_DIP14_3_GND=0_CD4066 
  U144                CD4027B_3_DIP16_3_GND=0_CD4027B 
- U145                CD4027B_3_DIP16_3_GND=0_CD4027B 
+ U145                CD4027B_3_DIP10016W300L825_GND= 
  U146                CD4069                
  U147                LM2903/SO_DIP8_3_LM2903/SO 
+ Y1                  OSC14A_0_DIP8_3_GND=0_OSC14A 
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page  11  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to design                                              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
@@ -512,20 +530,24 @@
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
  AND8.7                         PRIM_FILE      .\pstchip.dat
  C1.2                           PRIM_FILE      .\pstchip.dat
- C2.2                           PRIM_FILE      .\pstchip.dat
- C3.2                           PRIM_FILE      .\pstchip.dat
  C4.2                           PRIM_FILE      .\pstchip.dat
+ C5.2                           PRIM_FILE      .\pstchip.dat
+ C6.2                           PRIM_FILE      .\pstchip.dat
+ C7.2                           PRIM_FILE      .\pstchip.dat
  IC10.8                         PRIM_FILE      .\pstchip.dat
  IC11.8                         PRIM_FILE      .\pstchip.dat
  IC12.8                         PRIM_FILE      .\pstchip.dat
  IC13.8                         PRIM_FILE      .\pstchip.dat
  J1.8                           PRIM_FILE      .\pstchip.dat
+ J4.6                           PRIM_FILE      .\pstchip.dat
  OUTPUTBUFF1.8                  PRIM_FILE      .\pstchip.dat
  OUTPUTBUFF2.8                  PRIM_FILE      .\pstchip.dat
  R1.2                           PRIM_FILE      .\pstchip.dat
  R3.2                           PRIM_FILE      .\pstchip.dat
  R4.2                           PRIM_FILE      .\pstchip.dat
  R5.2                           PRIM_FILE      .\pstchip.dat
+ R6.2                           PRIM_FILE      .\pstchip.dat
+ R7.2                           PRIM_FILE      .\pstchip.dat
  STATEBUFF1.8                   PRIM_FILE      .\pstchip.dat
  U131.2                         PRIM_FILE      .\pstchip.dat
  U131.4                         PRIM_FILE      .\pstchip.dat
@@ -551,21 +573,21 @@
  U137.3                         PRIM_FILE      .\pstchip.dat
  U137.4                         PRIM_FILE      .\pstchip.dat
  U137.10                        PRIM_FILE      .\pstchip.dat
- U137.11                        PRIM_FILE      .\pstchip.dat
- U138.3                         PRIM_FILE      .\pstchip.dat
- U138.4                         PRIM_FILE      .\pstchip.dat
- U138.10                        PRIM_FILE      .\pstchip.dat
 |------------------------------------------------------------------------------|
 |                                 ECO   REPORT                                 |
 |                                                                    Page  12  |
 |------------------------------------------------------------------------------|
 |  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
-|                                                    Fri Sep 17 18:20:20 2021  |
+|                                                    Sat Sep 18 14:09:17 2021  |
 |------------------------------------------------------------------------------|
 | SLOT PROPERTIES added to design                                              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
 |   slot_id    |   x   |   y   |   property   |             value              |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+ U137.11                        PRIM_FILE      .\pstchip.dat
+ U138.3                         PRIM_FILE      .\pstchip.dat
+ U138.4                         PRIM_FILE      .\pstchip.dat
+ U138.10                        PRIM_FILE      .\pstchip.dat
  U138.11                        PRIM_FILE      .\pstchip.dat
  U139.3                         PRIM_FILE      .\pstchip.dat
  U140.7                         PRIM_FILE      .\pstchip.dat
@@ -589,11 +611,23 @@
  U146.10                        PRIM_FILE      .\pstchip.dat
  U146.12                        PRIM_FILE      .\pstchip.dat
  U147.3                         PRIM_FILE      .\pstchip.dat
+ Y1.5                           PRIM_FILE      .\pstchip.dat
+|------------------------------------------------------------------------------|
+|                                 ECO   REPORT                                 |
+|                                                                    Page  13  |
 |------------------------------------------------------------------------------|
-|       Nets changed          :     295                                        |
-|       Comp definitions added:      22                                        |
-|       Components added      :      34                                        |
-|       Slot property added   :      68                                        |
+|  e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/allegro/adc.brd       |
+|                                                    Sat Sep 18 14:09:17 2021  |
+|------------------------------------------------------------------------------|
+| SLOT PROPERTIES added to design                                              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|   slot_id    |   x   |   y   |   property   |             value              |
+|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
+|------------------------------------------------------------------------------|
+|       Nets changed          :     309                                        |
+|       Comp definitions added:      27                                        |
+|       Components added      :      39                                        |
+|       Slot property added   :      73                                        |
 |                                                                              |
-|   Total ECO changes reported:     419                                        |
+|   Total ECO changes reported:     448                                        |
 |------------------------------------------------------------------------------|

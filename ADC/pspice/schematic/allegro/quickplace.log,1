@@ -1,0 +1,32 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : adc.brd                                       )
+(    Software Version : 17.4P001                                      )
+(    Date/Time        : Sat Sep 18 17:24:58 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  OUTPUTBUFF2 / CD4076BM_DIP16_3_CD4076BM / DIP16_3 at (53.00 6795.50)
+         Placed symbol:  J1 / 8 HEADER_JUMPER8_8 HEADER / JUMPER8 at (504.00 6058.00)
+
+
+Placed 2 of 2 applicable (39 total) symbols.
+
+-----------------------------------------------------------------------
+
+State: Placing on layer TOP
+
+         Placed symbol:  IC12 / CD4512BNSR_DIP16_3_CD4512BNSR / DIP16_3 at (732.00 6795.50)
+         Placed symbol:  IC13 / CD4512BNSR_DIP16_3_CD4512BNSR / DIP16_3 at (1130.00 6795.50)
+         Placed symbol:  U131 / CD4069/SO_8_DIP14_3_GND=0_CD406 / DIP14_3 at (1533.00 6683.00)
+
+
+Placed 3 of 3 applicable (37 total) symbols.
+
+-----------------------------------------------------------------------
+

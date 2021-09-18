@@ -1,0 +1,8 @@
+#Allegro PCB Router v17-4-0 made 2019/09/12 at 15:39:59
+#Host 
+#ROUTING STATUS <<< E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro\adc.dsn >>>
+Start  Time: Report Time: Sat Sep 18 18:16:37 2021
+
+Nets         =       93   Connections         =      253
+Current Wire =        0   Reroute wires       =      405
+Completion   =   74.31%   Unconnections       =       17

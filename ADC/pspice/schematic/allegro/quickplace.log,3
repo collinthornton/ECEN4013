@@ -1,0 +1,32 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    QUICKPLACE LOG                                                   )
+(                                                                     )
+(    Drawing          : adc.brd                                       )
+(    Software Version : 17.4P001                                      )
+(    Date/Time        : Sat Sep 18 17:37:18 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+State: Placing on layer TOP
+
+         Placed symbol:  U145 / CD4027B_3_DIP10016W300L825_GND= / DIP10016W300L825 at (74.50 6062.00)
+         Placed symbol:  U143 / CD4066BM_2_DIP14_3_GND=0_CD4066 / DIP14_3 at (899.00 6683.00)
+         Placed symbol:  U133 / CD4069/SO_9_DIP14_3_GND=0_CD406 / DIP14_3 at (1307.00 6683.00)
+         Placed symbol:  U147 / LM2903/SO_DIP8_3_LM2903/SO / DIP8_3 at (1715.00 6358.00)
+         Placed symbol:  U142 / MC1458_2_DIP8_3_V-=VSS;V+=VDD_M / DIP8_3 at (2123.00 6358.00)
+         Placed symbol:  R6 / POT/SM_BLKCON100RHTM1SQW4253_PO / BLKCON100RHTM1SQW4253 at (2540.00 6052.00)
+         Placed symbol:  R5 / R_AXRC05_1K / AXRC05 at (2844.50 6049.50)
+         Placed symbol:  R7 / R_AXRC05_200K / AXRC05 at (3227.50 6049.50)
+         Placed symbol:  R4 / R_AXRC05_1K / AXRC05 at (3610.50 6049.50)
+         Placed symbol:  R3 / R_AXRC05_1K / AXRC05 at (3993.50 6049.50)
+         Placed symbol:  R1 / R_AXRC05_100K / AXRC05 at (4376.50 6049.50)
+         Placed symbol:  C4 / C_CAP196_15P / CAP196 at (4832.00 6058.00)
+         Placed symbol:  C1 / C_CAP196_32N / CAP196 at (5060.00 6058.00)
+
+
+Placed 13 of 13 applicable (13 total) symbols.
+
+-----------------------------------------------------------------------
+

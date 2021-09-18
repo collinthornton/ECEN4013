@@ -1,1 +1,1 @@
-.STMLIB	".\2.stl" 
+.STMLIB	"./2.stl" 

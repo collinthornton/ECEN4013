@@ -4,50 +4,8 @@
 (                                                                     )
 (    Drawing          : adc.brd                                       )
 (    Software Version : 17.4P001                                      )
-(    Date/Time        : Fri Sep 17 18:23:36 2021                      )
+(    Date/Time        : Sat Sep 18 18:26:22 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
-
-State: Placing on layer TOP
-
-         Placed symbol:  IC10 / CD4028BEE4_DIP16_3_CD4028BEE4 / DIP16_3 at (8053.0 14895.5)
-         Placed symbol:  U145 / CD4027B_3_DIP16_3_GND=0_CD4027B / DIP16_3 at (8451.0 14895.5)
-         Placed symbol:  U144 / CD4027B_3_DIP16_3_GND=0_CD4027B / DIP16_3 at (8849.0 14895.5)
-         Placed symbol:  U140 / CD4520B_2_DIP16_3_GND=0_CD4520B / DIP16_3 at (9247.0 14895.5)
-         Placed symbol:  STATEBUFF1 / CD4076BM_DIP16_3_CD4076BM / DIP16_3 at (9645.0 14895.5)
-         Placed symbol:  IC11 / CD4512BNSR_DIP16_3_CD4512BNSR / DIP16_3 at (10043.0 14895.5)
-         Placed symbol:  IC13 / CD4512BNSR_DIP16_3_CD4512BNSR / DIP16_3 at (10441.0 14895.5)
-         Placed symbol:  IC12 / CD4512BNSR_DIP16_3_CD4512BNSR / DIP16_3 at (10839.0 14895.5)
-         Placed symbol:  OUTPUTBUFF2 / CD4076BM_DIP16_3_CD4076BM / DIP16_3 at (11237.0 14895.5)
-         Placed symbol:  OUTPUTBUFF1 / CD4076BM_DIP16_3_CD4076BM / DIP16_3 at (11635.0 14895.5)
-         Placed symbol:  AND8 / CD4068BEE4_DIP14_3_CD4068BEE4 / DIP14_3 at (12038.0 14783.0)
-         Placed symbol:  U131 / CD4069/SO_8_DIP14_3_GND=0_CD406 / DIP14_3 at (12446.0 14783.0)
-         Placed symbol:  U137 / CD4081B_0_DIP14_3_VSS=0_CD4081B / DIP14_3 at (12854.0 14783.0)
-         Placed symbol:  U146 / CD4069 / DIP14_3 at (13262.0 14783.0)
-         Placed symbol:  U143 / CD4066BM_2_DIP14_3_GND=0_CD4066 / DIP14_3 at (13670.0 14783.0)
-         Placed symbol:  U141 / CD40106B_2_DIP14_3_GND=0_CD4010 / DIP14_3 at (14078.0 14783.0)
-         Placed symbol:  U139 / CD4081B_0_DIP14_3_VSS=0_CD4081B / DIP14_3 at (14486.0 14783.0)
-         Placed symbol:  U138 / CD4081B_0_DIP14_3_VSS=0_CD4081B / DIP14_3 at (14894.0 14783.0)
-         Placed symbol:  U132 / CD4069/SO_7_DIP14_3_GND=0_CD406 / DIP14_3 at (15302.0 14783.0)
-         Placed symbol:  U133 / CD4069/SO_9_DIP14_3_GND=0_CD406 / DIP14_3 at (15710.0 14783.0)
-         Placed symbol:  U134 / CD4071B_1_DIP14_3_VSS=0_CD4071B / DIP14_3 at (16118.0 14783.0)
-         Placed symbol:  U135 / CD4071B_1_DIP14_3_VSS=0_CD4071B / DIP14_3 at (16526.0 14783.0)
-         Placed symbol:  U136 / CD4081B_0_DIP14_3_VSS=0_CD4081B / DIP14_3 at (16934.0 14783.0)
-         Placed symbol:  J1 / 8 HEADER_JUMPER8_8 HEADER / JUMPER8 at (17390.0 14158.0)
-         Placed symbol:  U142 / MC1458_2_DIP8_3_V-=VSS;V+=VDD_M / DIP8_3 at (17623.0 14458.0)
-         Placed symbol:  U147 / LM2903/SO_DIP8_3_LM2903/SO / DIP8_3 at (8058.0 15343.5)
-         Placed symbol:  R5 / R_AXRC05_1K / AXRC05 at (8453.5 15035.0)
-         Placed symbol:  R4 / R_AXRC05_1K / AXRC05 at (8836.5 15035.0)
-         Placed symbol:  C3 / C_CAP196_10U / CAP196 at (9292.0 15043.5)
-         Placed symbol:  R3 / R_AXRC05_1K / AXRC05 at (9447.5 15035.0)
-         Placed symbol:  C2 / C_CAP196_10U / CAP196 at (9903.0 15043.5)
-         Placed symbol:  C1 / C_CAP196_32N / CAP196 at (10131.0 15043.5)
-         Placed symbol:  R1 / R_AXRC05_100K / AXRC05 at (10286.5 15035.0)
-         Placed symbol:  C4 / C_CAP196_15P / CAP196 at (10742.0 15043.5)
-
-
-Placed 34 of 34 applicable (34 total) symbols.
-
------------------------------------------------------------------------
 

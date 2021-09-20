@@ -1,6 +1,6 @@
 (ExpressProject "adc"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/18/21]")
+  (SoftwareVersion "17.4-2019 P001 (3823098) [10/7/2019]-[09/20/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -360,19 +360,20 @@
       (Path "Layout")
       (Path "Outputs")
       (Select "Design Resources"
-         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"))
+         "e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\pspice\schematic\adc.dsn"
+         "root" "adc"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 587"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 617"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 1408 24 605")
-        (Scroll "-251 -2")
-        (Zoom "27")
+        (Placement "44 0 1 -1 -1 5 24 5 1174 24 635")
+        (Scroll "1 0")
+        (Zoom "78")
         (Occurrence "/"))
       (Path
          "E:\LOCAL\COLLEGE\CLASSES\2021BF\ECEN4013\ECEN4013\ADC\PSPICE\SCHEMATIC\ADC.DSN")

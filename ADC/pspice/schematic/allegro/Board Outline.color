@@ -1,0 +1,9 @@
+#  View replacement method:
+#  Complete
+
+color -globvis off
+color -vis "BOARD GEOMETRY/DESIGN_OUTLINE"
+color -vis "DRAWING FORMAT"
+color -vis "ANALYSIS"
+color -vis "RIGID FLEX"
+color -vis "SURFACE FINISHES"

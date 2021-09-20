@@ -1,5 +1,9 @@
 A!NET_NAME!NET_LOGICAL_PATH!NET_VOLTAGE!
-J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sat Sep 18 14:13:23 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sun Sep 19 16:14:09 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+S!NC4!!!
+S!NC3!!!
+S!NC2!!!
+S!NC1!!!
 S!VIN!@adc.root(sch_1):vin!!
 S!VREF!@adc.root(sch_1):vref!!
 S!N426095!@adc.root(sch_1):n426095!!

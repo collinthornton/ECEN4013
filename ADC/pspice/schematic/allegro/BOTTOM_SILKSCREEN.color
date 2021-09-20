@@ -1,0 +1,5 @@
+#  View replacement method:
+#  Complete
+
+color -globvis off
+color -vis "MANUFACTURING/AUTOSILK_BOTTOM"

@@ -1,243 +1,184 @@
-\t (00:00:02) allegro 17.4 P001 Windows SPB 64-bit Edition
-\t (00:00:02)     Journal start - Sat Sep 18 14:09:21 2021
-\t (00:00:02)         Host=DESKTOP-E5H89N4 User=colli Pid=19180 CPUs=12
-\t (00:00:02) CmdLine= allegro.exe -proj e:/local/college/classes/2021bf/ecen4013/ecen4013/adc/pspice/schematic/adc.opj E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd
-\t (00:00:02) 
-   (00:00:02) Loading axlcore.cxt 
+\t (00:00:03) allegro 17.4 P001 Windows SPB 64-bit Edition
+\t (00:00:03)     Journal start - Mon Sep 20 00:07:53 2021
+\t (00:00:03)         Host=DESKTOP-E5H89N4 User=colli Pid=1996 CPUs=12
+\t (00:00:03) CmdLine= c:\cadence\spb_17.4\tools\bin\allegro.exe E:\local\college\classes\2021bF\ECEN4013\ECEN4013\ADC\pspice\schematic\allegro\adc.brd
+\t (00:00:03) 
+   (00:00:03) Loading axlcore.cxt 
 \t (00:00:08) Opening existing design...
 \i (00:00:08) QtSignal SPBFoldDockArea FoldAreaTabWidget currentChanged adc
 \d (00:00:08) Design opened: E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd
-\i (00:00:09) trapsize 3070
-\i (00:00:09) trapsize 3420
-\i (00:00:09) trapsize 1103
-\i (00:00:09) trapsize 1103
+\i (00:00:09) trapsize 4865
+\i (00:00:09) trapsize 5420
+\i (00:00:09) trapsize 2684
+\i (00:00:09) trapsize 2684
 \t (00:00:09) > Sending response DoneOpenBoard
-\i (00:00:09) trapsize 549
+\i (00:00:09) trapsize 1240
 \i (00:00:09) generaledit 
-\i (00:00:16) prepopup 3017.2 5442.0
-\i (00:00:19) pop dyn_option_select 'Quick Utilities@:@Design Parameters...' 
-\i (00:00:19) prmed 
-\i (00:00:21) setwindow form.prmedit
-\i (00:00:21) FORM prmedit design  
-\i (00:00:27) FORM prmedit x -5000.0 
-\i (00:00:30) FORM prmedit y -5000.0 
-\i (00:00:30) FORM prmedit accuracy 2 
-\i (00:00:31) FORM prmedit done  
-\i (00:00:31) setwindow pcb
-\i (00:00:31) trapsize 5486
-\t (00:00:31) Performing DRC...
-\t (00:00:31) Multithreaded DRC update (12 threads).
-\t (00:00:33) No DRC errors detected.
+\i (00:00:19) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: BOTTOM_COPPER"
+\i (00:00:19) QtSignal ColorVisibilityPane CVPViewDropdown activated "File: BOTTOM_COPPER"
+\i (00:00:19) color -globvis off 
+\i (00:00:19) color -vis 'DRC ERROR CLASS/BOTTOM' 
+\i (00:00:19) color -vis ETCH/BOTTOM 
+\i (00:00:19) color -vis PIN/BOTTOM 
+\i (00:00:19) color -vis 'VIA CLASS/BOTTOM' 
+\i (00:00:19) color -vis 'ANTI ETCH/BOTTOM' 
+\i (00:00:19) color -vis BOUNDARY/BOTTOM 
+\i (00:00:19) color -vis PLAN/BOTTOM 
+\i (00:00:19) color -vis CAVITY/BOTTOM 
+\i (00:00:19) trapsize 1240
+\i (00:00:19) generaledit 
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 3023.92 1282.73
+\i (00:00:20) trapsize 2480
+\i (00:00:20) zoom out 1 
+\i (00:00:20) setwindow pcb
+\i (00:00:20) zoom out 3023.92 1193.46
+\i (00:00:20) trapsize 4959
+\i (00:00:20) roam start
+\i (00:00:21) roam y -16
+\i (00:00:21) roam y -16
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -16
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -48
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -16
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -16
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -32
+\i (00:00:21) roam y -48
+\i (00:00:21) roam end
+\i (00:00:21) roam start
+\i (00:00:21) roam y 16
+\i (00:00:21) roam y 16
+\i (00:00:21) roam y 32
+\i (00:00:21) roam x 16
+\i (00:00:21) roam y 16
+\i (00:00:22) roam y 32
+\i (00:00:22) roam y 16
+\i (00:00:22) roam x 16
+\i (00:00:22) roam y 16
+\i (00:00:22) roam y 16
+\i (00:00:22) roam y 16
+\i (00:00:22) roam y 16
+\i (00:00:22) roam y 32
+\i (00:00:22) roam end
+\i (00:00:22) zoom in 1 
+\i (00:00:22) setwindow pcb
+\i (00:00:22) zoom in 4670.71 3599.49
+\i (00:00:22) trapsize 2480
+\i (00:00:24) roam start
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 48
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:24) roam x -16
+\i (00:00:24) roam y 16
+\i (00:00:25) roam x -16
+\i (00:00:25) roam y 16
+\i (00:00:25) roam x -16
+\i (00:00:25) roam y 16
+\i (00:00:25) roam x -16
+\i (00:00:25) roam x -16
+\i (00:00:25) roam y 16
+\i (00:00:25) roam end
+\i (00:00:27) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: TOP_COPPER"
+\i (00:00:27) QtSignal ColorVisibilityPane CVPViewDropdown activated "File: TOP_COPPER"
+\i (00:00:27) color -globvis off 
+\i (00:00:27) color -vis 'DRC ERROR CLASS/TOP' 
+\i (00:00:27) color -vis ETCH/TOP 
+\i (00:00:27) color -vis PIN/TOP 
+\i (00:00:27) color -vis 'VIA CLASS/TOP' 
+\i (00:00:27) color -vis 'ANTI ETCH/TOP' 
+\i (00:00:27) color -vis BOUNDARY/TOP 
+\i (00:00:27) color -vis PLAN/TOP 
+\i (00:00:27) color -vis CAVITY/TOP 
+\i (00:00:27) trapsize 2480
+\i (00:00:27) generaledit 
+\i (00:00:33) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: TOP_SOLDERMASK"
+\i (00:00:33) QtSignal ColorVisibilityPane CVPViewDropdown activated "File: TOP_SOLDERMASK"
+\i (00:00:33) color -globvis off 
+\i (00:00:33) color -vis 'DRC ERROR CLASS/SOLDERMASK_TOP' 
+\i (00:00:33) color -vis PIN/SOLDERMASK_TOP 
+\i (00:00:33) color -vis 'VIA CLASS/SOLDERMASK_TOP' 
+\i (00:00:33) trapsize 2480
 \i (00:00:33) generaledit 
-\i (00:00:49) show property 
+\i (00:00:35) QtSignal ColorVisibilityPane CVPViewDropdown CurrentIndexChanged "File: TOP_SILKSCREEN"
+\i (00:00:35) QtSignal ColorVisibilityPane CVPViewDropdown activated "File: TOP_SILKSCREEN"
+\i (00:00:35) color -globvis off 
+\i (00:00:35) color -vis MANUFACTURING/AUTOSILK_TOP 
+\i (00:00:35) trapsize 2480
+\i (00:00:35) generaledit 
+\i (00:00:36) roam start
+\i (00:00:36) roam y 48
+\i (00:00:36) roam x -16
+\i (00:00:36) roam y 16
+\i (00:00:36) roam y 32
+\i (00:00:36) roam x -16
+\i (00:00:36) roam y 16
+\i (00:00:36) roam end
+\i (00:00:49) color192 
 \i (00:00:49) generaledit 
-\i (00:00:51) setwindow form.show_prop
-\i (00:00:51) FORM show_prop done  
-\i (00:00:56) setwindow pcb
-\i (00:00:56) showhide options 
-\i (00:00:56) trapsize 6637
-\i (00:00:56) generaledit 
-\i (00:01:12) setwindow form.mini
-\i (00:01:12) FORM mini subclass DESIGN_OUTLINE 
-\i (00:01:19) setwindow pcb
-\i (00:01:19) pick 0 0 
-\t (00:01:19) last pick:  0.00 0.00
-\i (00:01:24) pick grid 296.46 5601.76
-\t (00:01:24) last pick:  300.00 5600.00
-\i (00:01:26) shape add rect 
-\i (00:01:29) pick 0 0 
-\t (00:01:29) last pick:  0.00 0.00
-\i (00:01:35) pick grid 6455.75 5946.89
-\t (00:01:35) last pick:  6500.00 5900.00
-\i (00:01:36) zoom out 1 
-\i (00:01:36) setwindow pcb
-\i (00:01:36) zoom out 814.16 1871.67
-\i (00:01:36) trapsize 10533
-\i (00:01:36) zoom out 1 
-\i (00:01:36) setwindow pcb
-\i (00:01:36) zoom out 4247.83 -1945.48
-\i (00:01:36) trapsize 10533
-\i (00:01:36) zoom out 1 
-\i (00:01:36) setwindow pcb
-\i (00:01:36) zoom out 3089.22 -1102.85
-\i (00:01:36) trapsize 10533
-\i (00:01:38) zoom in 1 
-\i (00:01:38) setwindow pcb
-\i (00:01:38) zoom in 2794.30 350.68
-\i (00:01:38) trapsize 5266
-\i (00:01:39) roam start
-\i (00:01:39) roam x -64
-\i (00:01:39) roam x -16
-\i (00:01:39) roam y 16
-\i (00:01:39) roam x 16
-\i (00:01:39) roam x 16
-\i (00:01:39) roam x 48
-\i (00:01:39) roam x 32
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -32
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -32
-\i (00:01:39) roam y -16
-\i (00:01:39) roam y -16
-\i (00:01:40) roam x -16
-\i (00:01:40) roam x -16
-\i (00:01:40) roam x -48
-\i (00:01:40) roam y 16
-\i (00:01:40) roam x -64
-\i (00:01:40) roam x -144
-\i (00:01:40) roam x -96
-\i (00:01:40) roam y 16
-\i (00:01:40) roam x -16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam y 16
-\i (00:01:40) roam x 16
-\i (00:01:40) roam x 32
-\i (00:01:40) roam y -32
-\i (00:01:40) roam x 80
-\i (00:01:40) roam y -32
-\i (00:01:40) roam x 48
-\i (00:01:40) roam y -16
-\i (00:01:40) roam x 80
-\i (00:01:40) roam y -32
-\i (00:01:40) roam x 80
-\i (00:01:40) roam y -16
-\i (00:01:40) roam x 64
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:40) roam y -16
-\i (00:01:41) roam x -16
-\i (00:01:41) roam x -32
-\i (00:01:41) roam y -16
-\i (00:01:41) roam x -48
-\i (00:01:41) roam x -96
-\i (00:01:41) roam x -80
-\i (00:01:41) roam x -96
-\i (00:01:41) roam x -32
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam x 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam y 16
-\i (00:01:41) roam end
-\i (00:01:45) shape add rect 
-\i (00:01:49) setwindow form.mini
-\i (00:01:49) FORM mini class PACKAGE KEEPIN 
-\i (00:01:53) setwindow pcb
-\i (00:01:53) pick grid 108.43 87.36
-\t (00:01:53) last pick:  100.00 100.00
-\i (00:01:55) pick grid 6375.47 5754.03
-\t (00:01:55) last pick:  6400.00 5800.00
-\i (00:01:56) prepopup 4732.34 3668.53
-\i (00:01:57) done 
-\i (00:01:57) generaledit 
-\i (00:02:01) xrefdes J4 
-\t (00:02:01) Can not select unplaced component J4.
-\t (00:02:01) Can not select unplaced component J4.
-\i (00:02:01) xname_flush '!' 
-\i (00:02:03) place manual 
-\i (00:02:03) setwindow form.plc_manual
-\i (00:02:03) FORM plc_manual tree  'Components by refdes' 
-\i (00:02:05) setwindow pcb
-\i (00:02:05) refdes J4 
-\e (00:02:05) Cannot load symbol 'JUMPER6'
-\i (00:02:05) xname_flush 
-\i (00:02:13) refdes J4 
-\i (00:02:13) xname_flush '!' 
-\i (00:02:13) refdes U143 
-\i (00:02:13) xname_flush 
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 5248.45 3036.56
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15201.98 5132.59
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15265.18 5216.85
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15286.25 5258.98
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15307.31 5322.18
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15370.51 5427.51
-\i (00:02:17) trapsize 10533
-\i (00:02:17) zoom out 1 
-\i (00:02:17) setwindow pcb
-\i (00:02:17) zoom out 15391.57 5532.84
-\i (00:02:17) trapsize 10533
-\i (00:02:18) zoom in 1 
-\i (00:02:18) setwindow pcb
-\i (00:02:18) zoom in 3847.58 2688.97
-\i (00:02:18) trapsize 5266
-\i (00:02:20) place manual 
-\i (00:02:20) setwindow form.plc_manual
-\i (00:02:20) FORM plc_manual tree  'Components by refdes' 
-\i (00:02:23) FORM plc_manual tree  OUTPUTBUFF1 'Components by refdes' 
-\i (00:03:09) FORM plc_manual categories Package symbols 
-\i (00:03:10) FORM plc_manual tree  'Package symbols' 
-\i (00:03:10) FORM plc_manual tree 'MULTISEL YES' 'Package symbols' 
-\i (00:03:11) FORM plc_manual advanced_settings  
-\i (00:03:12) FORM plc_manual library YES 
-\i (00:03:12) FORM plc_manual placement_list  
-\i (00:03:22) FORM plc_manual tree  JUMPER8 'Package symbols' 
-\i (00:03:22) FORM plc_manual tree  JUMPER600 'Package symbols' 
-\i (00:03:24) FORM plc_manual tree  JUMPER8 'Package symbols' 
-\i (00:03:30) setwindow pcb
-\i (00:03:30) refdes U143 
-\t (00:03:30) Placing U143 / CD4066BM_2_DIP14_3_GND=0_CD4066 / DIP14_3 on Top.
-\i (00:03:30) xname_flush '!' 
-\i (00:03:30) refdes J4 
-\e (00:03:30) Cannot load symbol 'JUMPER6'
-\i (00:03:30) xname_flush 
-\i (00:03:48) xname_flush 
-\i (00:03:49) xname_flush '!' 
-\i (00:03:52) xname_flush 
-\t (00:04:03) > DoPhysicalNetlistGenerate message received
-\t (00:04:03) > Generating physical netlist...
-\t (00:04:03) Starting genfeedformat...
-\t (00:04:03) > Sending response DonePhysicalNetlistGeneration
-\t (00:04:03) > Physical Netlist Generated
-\t (00:04:09) > DoPullSchematic message received
-\t (00:04:09) > Pulling schematic...
-\t (00:04:09) Starting Cadence Logic Import...
-\w (00:04:10) WARNING(SPMHGE-269): netrev had warnings, use Viewlog to review the log file.
-\i (00:04:10) setwindow form.plc_manual
-\i (00:04:10) FORM plc_manual cancel  
-\t (00:04:10) Opening existing design...
-\i (00:04:10) setwindow pcb
-\i (00:04:10) trapsize 5266
-\t (00:04:10) > Sending response DonePullSchematic
-\t (00:04:10) > Schematic pulled successfully
+\i (00:00:52) QtSignal CVDLayerTable VertHeader clickedCheckBox 0 1
+\i (00:00:52) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 0 0
+\i (00:00:53) QtSignal CVDLayerTable VertHeader clickedCheckBox 1 1
+\i (00:00:53) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 1 0
+\i (00:00:58) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
+\i (00:01:00) QtSignal CVDLayerTable VertHeader clickedCheckBox 8 1
+\i (00:01:00) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 8 0
+\i (00:01:02) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Areas
+\i (00:01:04) QtSignal CVDLayerSplitter CVDLayerTable allBoxClicked
+\i (00:01:06) zoom in 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom in 911.53 2230.71
+\i (00:01:06) trapsize 1240
+\i (00:01:06) zoom out 1 
+\i (00:01:06) setwindow pcb
+\i (00:01:06) zoom out 911.53 2228.23
+\i (00:01:06) trapsize 2480
+\i (00:01:09) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Manufacturing
+\i (00:01:14) color192 
+\i (00:01:14) generaledit 
+\i (00:01:17) QtSignal CVDLayerTable VertHeader clickedCheckBox 1 1
+\i (00:01:17) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 1 0
+\i (00:01:17) QtSignal CVDLayerTable VertHeader clickedCheckBox 0 1
+\i (00:01:17) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 0 0
+\i (00:01:19) QtSignal CVDLayerTable VertHeader clickedCheckBox 2 1
+\i (00:01:19) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 2 0
+\i (00:01:19) QtSignal CVDLayerTable VertHeader clickedCheckBox 3 1
+\i (00:01:19) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 3 0
+\i (00:01:25) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Geometry
+\i (00:01:27) QtSignal CVDLayerTable VertHeader clickedCheckBox 8 1
+\i (00:01:27) QtSignal CVDLayerSplitter CVDLayerTable dataChanged 8 0
+\i (00:01:28) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Areas
+\i (00:01:28) QtSignal CVDLayerSplitter CVDLayerTable allBoxClicked
+\i (00:01:29) QtSignal CVDLayerSplitter CVDLayersTree itemSelectionChanged Manufacturing
+\i (00:01:31) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:32) QtSignal ColorVisibilityDialog CVDApplyButton clicked
+\i (00:01:33) QtSignal ColorVisibilityDialog CVDOkButton clicked
+\i (00:01:35) pick grid -427.49 3279.61
+\t (00:01:35) last pick:  -400.00 3300.00
+\i (00:01:36) save 
+\i (00:01:39) fillin yes 
+\t (00:01:39) > Sending response DoneOpenBoard
+\i (00:01:39) generaledit 
+\i (00:01:41) exit 
+\t (00:01:41)     Journal end - Mon Sep 20 00:09:31 2021

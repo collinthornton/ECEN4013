@@ -1,4 +1,32 @@
 FILE_TYPE=LIBRARY_PARTS;
+primitive 'OSC14A_1_DIP8_3_GND=0_OSC14A';
+  pin
+	 'OUT':
+	   PIN_NUMBER='(5)';
+	   OUTPUT_TYPE='(TS,TS)';
+	   BIDIRECTIONAL='TRUE';
+	   INPUT_LOAD='(-0.01,0.01)';
+	   OUTPUT_LOAD='(1.0,-1.0)';
+	 'EN':
+	   PIN_NUMBER='(1)';
+	   INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+	 PART_NAME='OSC14A_1';
+	 VALUE='OSC14A';
+	 BODY_NAME='OSC14A_1_DIP8_3_GND=0_OSC14A';
+	 JEDEC_TYPE='DIP8_3';
+	 PHYS_DES_PREFIX='Y';
+	 CLASS='IC';
+	 POWER_PINS='(0:4)';
+	 POWER_PINS='(VCC:8)';
+	 POWER_PINS='(NC1:2)';
+	 POWER_PINS='(NC2:3)';
+	 POWER_PINS='(NC3:6)';
+	 POWER_PINS='(NC4:7)';
+  end_body;
+end_primitive;
+
 primitive 'CD4068BEE4_DIP14_3_CD4068BEE4';
   pin
 	 'VSS':
@@ -565,67 +593,6 @@ primitive '8 HEADER_JUMPER8_8 HEADER';
 	 VALUE='8 HEADER';
 	 BODY_NAME='8 HEADER_JUMPER8_8 HEADER';
 	 JEDEC_TYPE='JUMPER8';
-	 PHYS_DES_PREFIX='J';
-	 CLASS='IC';
-  end_body;
-end_primitive;
-
-primitive 'HEADER 6_JUMPER6_HEADER 6';
-  pin
-	 '6':
-	   PIN_NUMBER='(6)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-	 '5':
-	   PIN_NUMBER='(5)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-	 '4':
-	   PIN_NUMBER='(4)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-	 '3':
-	   PIN_NUMBER='(3)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-	 '2':
-	   PIN_NUMBER='(2)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-	 '1':
-	   PIN_NUMBER='(1)';
-	   PINUSE='UNSPEC';
-	   NO_LOAD_CHECK='Both';
-	   NO_IO_CHECK='Both';
-	   NO_ASSERT_CHECK='TRUE';
-	   NO_DIR_CHECK='TRUE';
-	   ALLOW_CONNECT='TRUE';
-  end_pin;
-  body
-	 PART_NAME='HEADER 6';
-	 VALUE='HEADER 6';
-	 BODY_NAME='HEADER 6_JUMPER6_HEADER 6';
-	 JEDEC_TYPE='JUMPER6';
 	 PHYS_DES_PREFIX='J';
 	 CLASS='IC';
   end_body;
@@ -1259,30 +1226,6 @@ primitive 'LM2903/SO_DIP8_3_LM2903/SO';
 	 JEDEC_TYPE='DIP8_3';
 	 PHYS_DES_PREFIX='U';
 	 CLASS='IC';
-  end_body;
-end_primitive;
-
-primitive 'OSC14A_0_DIP8_3_GND=0_OSC14A';
-  pin
-	 'OUT':
-	   PIN_NUMBER='(5)';
-	   OUTPUT_TYPE='(TS,TS)';
-	   BIDIRECTIONAL='TRUE';
-	   INPUT_LOAD='(-0.01,0.01)';
-	   OUTPUT_LOAD='(1.0,-1.0)';
-	 'EN':
-	   PIN_NUMBER='(1)';
-	   INPUT_LOAD='(-0.01,0.01)';
-  end_pin;
-  body
-	 PART_NAME='OSC14A_0';
-	 VALUE='OSC14A';
-	 BODY_NAME='OSC14A_0_DIP8_3_GND=0_OSC14A';
-	 JEDEC_TYPE='DIP8_3';
-	 PHYS_DES_PREFIX='Y';
-	 CLASS='IC';
-	 POWER_PINS='(0:4)';
-	 POWER_PINS='(VCC:8)';
   end_body;
 end_primitive;
 

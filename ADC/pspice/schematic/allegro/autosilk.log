@@ -1,0 +1,36 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Auto Silkscreen Log File                                         )
+(                                                                     )
+(    Drawing          : adc.brd                                       )
+(    Software Version : 17.4P001                                      )
+(    Date/Time        : Sun Sep 19 22:23:08 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Generating Auto Silkscreen for the top of the board.
+
+Copying all elements.
+
+Element to Pad clearance is 0.00
+Max Text displacement is 100.00
+Min Line Length is 0.00
+Allowing 0, 90, 180 and 270 degree text rotations.
+Text Allowed Under Components.
+Subclass Selections:
+ Board Geometry       : Any
+ Component Value      : Any
+ Device Type          : None
+ Package Geometry     : Any
+ Reference Designator : Any
+ Tolerance            : None
+ User Part Number     : None
+
+Text string 'CD4076BM' is not at a suitable location
+(location: 2850.00, 175.00)
+
+Total Failures: 1
+
+Log End
+

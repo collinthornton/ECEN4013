@@ -1,0 +1,32 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Silkscreen Audit Log File                                        )
+(                                                                     )
+(    Drawing          : adc.brd                                       )
+(    Software Version : 17.4P001                                      )
+(    Date/Time        : Sun Sep 19 22:22:06 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+Auditing silkscreen for the top of the board.
+
+Element to Pad clearance is 0.00
+
+     ----- Top Silkscreen Audit -----
+
+TEXT 'CD4076BM' @ (2885.00, 210.00) ... with text 'OUTPUTBUFF1' @ (2875.00, 175.00)
+TEXT 'OUTPUTBUFF1' @ (2875.00, 175.00) ... with text 'CD4076BM' @ (2885.00, 210.00)
+TEXT 'OUTPUTBUFF2' @ (3423.33, 1781.67) ... with pin @ (3500.00, 1600.00)
+TEXT 'OUTPUTBUFF2' @ (3423.33, 1781.67) ... with pin @ (3500.00, 1700.00)
+TEXT 'OUTPUTBUFF2' @ (3423.33, 1781.67) ... with pin @ (3500.00, 1800.00)
+TEXT 'OUTPUTBUFF2' @ (3423.33, 1781.67) ... with pin @ (3500.00, 1900.00)
+TEXT 'CD4076BM' @ (2755.00, 2080.00) ... with via @ (2927.50, 2036.25)
+
+Audit Errors: 7
+
+
+Total Audit Errors: 7
+
+Log End
+

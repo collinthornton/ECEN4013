@@ -4,7 +4,7 @@
 (                                                                     )
 (    Drawing          : adc.brd                                       )
 (    Software Version : unreleased                                    )
-(    Date/Time        : Sat Sep 18 14:16:14 2021                      )
+(    Date/Time        : Sun Sep 19 21:50:13 2021                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -22,7 +22,7 @@ Design Directory:            'E:/local/college/classes/2021bF/ECEN4013/ECEN4013/
 Old design name:             'E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd'
 New design name:             'E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd'
 
-CmdLine: netrev -i e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro -y 1 -q netrev_constraint_report.xml E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/#Taaaabi19180.tmp
+CmdLine: netrev -i e:\local\college\classes\2021bf\ecen4013\ecen4013\adc\allegro -y 1 -q netrev_constraint_report.xml E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/#Taaaaay12996.tmp
 
 ------ Preparing to read pst files ------
 
@@ -62,7 +62,7 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Sep 18 14:16:14 2021
+netrev run on Sep 19 21:50:13 2021
    DESIGN NAME : 'ADC'
    PACKAGING ON Oct  7 2019 04:16:49
 
@@ -87,6 +87,6 @@ netrev run on Sep 18 14:16:14 2021
  No oversight detected
  No warning detected
 
-cpu time      0:02:02
-elapsed time  0:00:02
+cpu time      0:02:07
+elapsed time  0:00:01
 

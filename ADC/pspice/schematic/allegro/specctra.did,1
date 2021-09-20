@@ -175,7 +175,7 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/colli/AppData/Local/Temp/#Taaaacc19180.tmp
+# do C:/Users/colli/AppData/Local/Temp/#Taaaaan02248.tmp
 unselect all routing
 set route_diagonal 0
 grid wire 0.010000 (direction x) (offset 0.000000)
@@ -202,5 +202,5 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 smart_route (auto_fanout on) (auto_fanout_via_share on) (auto_fanout_pin_share on) (auto_testpoint on (side Both) ) (auto_miter off)
-write routes (changed_only) (reset_changed) C:/Users/colli/AppData/Local/Temp/#Taaaacd19180.tmp
+write routes (changed_only) (reset_changed) C:/Users/colli/AppData/Local/Temp/#Taaaaao02248.tmp
 quit -c

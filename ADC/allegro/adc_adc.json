@@ -5,33 +5,57 @@
 	"Component Property" : [],
 	"Net Property" : [],
 	"Pin Property" : [],
-	"Component" : [
+	"Component" : [],
+	"Net" : [
 		{
-			"Name" : "Y1",
-			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_0.normal\\(chips)",
+			"Name" : "VCC",
+			"C_PATH" : "@adc.root(sch_1):vcc",
 			"Logical" : null,
-			"Physical" : "Y1"
-		},
-		{
-			"Name" : "Y1",
-			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips)",
-			"Logical" : "Y1",
-			"Physical" : null
+			"Physical" : "VCC"
 		}
 	],
-	"Net" : [],
 	"Connection" : [
 		{
-			"Name" : "Y1.5",
-			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips):\\out\\",
-			"Logical" : "N521218",
-			"Physical" : null
+			"Name" : "AND8.14",
+			"C_PATH" : "@adc.root(sch_1):ins385384@cd4068bee4.\\cd4068bee4.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
 		},
 		{
-			"Name" : "Y1.1",
-			"C_PATH" : "@adc.root(sch_1):ins508511@adc.\\osc14a_1.normal\\(chips):EN",
+			"Name" : "IC11.16",
+			"C_PATH" : "@adc.root(sch_1):ins363413@cd4512bnsr.\\cd4512bnsr.normal\\(chips):VDD",
 			"Logical" : "VDD",
-			"Physical" : null
+			"Physical" : "VCC"
+		},
+		{
+			"Name" : "IC12.16",
+			"C_PATH" : "@adc.root(sch_1):ins363855@cd4512bnsr.\\cd4512bnsr.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
+		},
+		{
+			"Name" : "IC13.16",
+			"C_PATH" : "@adc.root(sch_1):ins364287@cd4512bnsr.\\cd4512bnsr.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
+		},
+		{
+			"Name" : "OUTPUTBUFF1.16",
+			"C_PATH" : "@adc.root(sch_1):ins383594@cd4076bm.\\cd4076bm.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
+		},
+		{
+			"Name" : "OUTPUTBUFF2.16",
+			"C_PATH" : "@adc.root(sch_1):ins384142@cd4076bm.\\cd4076bm.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
+		},
+		{
+			"Name" : "STATEBUFF1.16",
+			"C_PATH" : "@adc.root(sch_1):ins366493@cd4076bm.\\cd4076bm.normal\\(chips):VDD",
+			"Logical" : "VDD",
+			"Physical" : "VCC"
 		}
 	]
 }

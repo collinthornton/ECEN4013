@@ -3,41 +3,29 @@
 |                                                                    Page   1  |
 |------------------------------------------------------------------------------|
 |  E:.../2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd         |
-|                                                    Sat Sep 18 14:16:14 2021  |
+|                                                    Sun Sep 19 21:50:13 2021  |
 |------------------------------------------------------------------------------|
-| COMPONENT DEFINITION added to design                                         |
+| NET CHANGES                                                                  |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    device type                                                               |
+|   net  name |  type of change |    pin_id     |   x   |   y   |   to  net    |
 |- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- OSC14A_1_DIP8_3_GND=0_OSC14A
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   2  |
+  VCC          pins MOVED FROM this net (to net name listed on right)
+                                 AND8.14         2500.00  875.00
+                                                                            VDD
+                                 IC11.16         2500.00 2900.00
+                                                                            VDD
+                                 IC12.16         2975.00 1925.00
+                                                                            VDD
+                                 IC13.16         2500.00 1925.00
+                                                                            VDD
+                                 OUTPUTBUFF1.16  2675.00  275.00
+                                                                            VDD
+                                 OUTPUTBUFF2.16  3500.00 1900.00
+                                                                            VDD
+                                 STATEBUFF1.16   2675.00 2200.00
+                                                                            VDD
 |------------------------------------------------------------------------------|
-|  E:.../2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd         |
-|                                                    Sat Sep 18 14:16:14 2021  |
-|------------------------------------------------------------------------------|
-| COMPONENTS CHANGED from one device type to another in design                 |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|    ref des        | new device type     |   x   |   y   |  old  device type  |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Y1                  OSC14A_1_DIP8_3_GND=0_OSC14A                 OSC14A_0_DIP8_3_GND=0_OSC14A
-|------------------------------------------------------------------------------|
-|                                 ECO   REPORT                                 |
-|                                                                    Page   3  |
-|------------------------------------------------------------------------------|
-|  E:.../2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd         |
-|                                                    Sat Sep 18 14:16:14 2021  |
-|------------------------------------------------------------------------------|
-| SLOT PROPERTIES added to design                                              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
-|   slot_id    |   x   |   y   |   property   |             value              |
-|- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - |
- Y1.5                           PRIM_FILE      .\pstchip.dat
-|------------------------------------------------------------------------------|
-|       Comp definitions added:       1                                        |
-|       Components changed    :       1                                        |
-|       Slot property added   :       1                                        |
+|       Nets changed          :       7                                        |
 |                                                                              |
-|   Total ECO changes reported:       3                                        |
+|   Total ECO changes reported:       7                                        |
 |------------------------------------------------------------------------------|

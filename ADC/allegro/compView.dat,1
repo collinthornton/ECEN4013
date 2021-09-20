@@ -1,5 +1,6 @@
 A!REFDES!COMP_REUSE_ID!COMP_SIGNAL_MODEL!COMP_NO_XNET_CONNECTION!COMP_PARENT_PPT!COMP_SYMBOL_EDITED!COMP_PARENT_PPT_PART!COMP_EMBEDDED_PLACEMENT!
-J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sat Sep 18 14:13:23 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sun Sep 19 16:14:09 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+S!Y1!!!!!!!!
 S!AND8!!!!!!!!
 S!C1!!!!!!!!
 S!C4!!!!!!!!
@@ -10,8 +11,8 @@ S!IC10!!!!!!!!
 S!IC11!!!!!!!!
 S!IC12!!!!!!!!
 S!IC13!!!!!!!!
+S!J2!!!!!!!!
 S!J1!!!!!!!!
-S!J4!!!!!!!!
 S!OUTPUTBUFF1!!!!!!!!
 S!OUTPUTBUFF2!!!!!!!!
 S!STATEBUFF1!!!!!!!!
@@ -38,4 +39,3 @@ S!U144!!!!!!!!
 S!U145!!!!!!!!
 S!U146!!!!!!!!
 S!U147!!!!!!!!
-S!Y1!!!!!!!!

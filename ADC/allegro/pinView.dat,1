@@ -1,5 +1,13 @@
 A!NET_NAME!REFDES!PIN_NUMBER!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!PIN_CDS_PINID!PIN_TERMINATION!PIN_TERM_IDENT!PIN_NET_SHORT!PIN_XNET_PINS!
-J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sat Sep 18 14:13:23 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sun Sep 19 16:14:09 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+S!NC4!Y1!7!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!NC3!Y1!6!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!NC2!Y1!3!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!NC1!Y1!2!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!VCC!Y1!8!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!0!Y1!4!!OSC14A_1_DIP8_3_GND=0_OSC14A!!!!!!!!!
+S!VDD!Y1!1!@adc.root(sch_1):ins508511@adc.\osc14a_1.normal\(chips)!OSC14A_1_DIP8_3_GND=0_OSC14A!!!F0!!!!!!
+S!N521218!Y1!5!@adc.root(sch_1):ins508511@adc.\osc14a_1.normal\(chips)!OSC14A_1_DIP8_3_GND=0_OSC14A!!!F0!!!!!!
 S!Q0!AND8!2!@adc.root(sch_1):ins385384@cd4068bee4.\cd4068bee4.normal\(chips)!CD4068BEE4_DIP14_3_CD4068BEE4!!!F72!!!!!!
 S!Q1!AND8!3!@adc.root(sch_1):ins385384@cd4068bee4.\cd4068bee4.normal\(chips)!CD4068BEE4_DIP14_3_CD4068BEE4!!!F72!!!!!!
 S!Q2!AND8!4!@adc.root(sch_1):ins385384@cd4068bee4.\cd4068bee4.normal\(chips)!CD4068BEE4_DIP14_3_CD4068BEE4!!!F72!!!!!!
@@ -88,6 +96,14 @@ S!0!IC13!10!@adc.root(sch_1):ins364287@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4
 S!N2!IC13!14!@adc.root(sch_1):ins364287@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!!!F63!!!!!!
 S!VCC!IC13!16!@adc.root(sch_1):ins364287@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!!!F63!!!!!!
 S!0!IC13!8!@adc.root(sch_1):ins364287@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!!!F63!!!!!!
+S!VDD!J2!1!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!VSS!J2!2!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!0!J2!3!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!T!J2!4!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!VREF!J2!5!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!VIN!J2!6!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!!J2!7!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
+S!!J2!8!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F61!!!!!!
 S!Y0!J1!1!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
 S!Y1!J1!2!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
 S!Y2!J1!3!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
@@ -96,12 +112,6 @@ S!Y4!J1!5!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER
 S!Y5!J1!6!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
 S!Y6!J1!7!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
 S!Y7!J1!8!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!!!F62!!!!!!
-S!VDD!J4!1!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
-S!VSS!J4!2!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
-S!0!J4!3!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
-S!T!J4!4!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
-S!VREF!J4!5!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
-S!VIN!J4!6!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!!!F61!!!!!!
 S!WR!OUTPUTBUFF1!7!@adc.root(sch_1):ins383594@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!!!F60!!!!!!
 S!Y0!OUTPUTBUFF1!14!@adc.root(sch_1):ins383594@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!!!F60!!!!!!
 S!Y1!OUTPUTBUFF1!13!@adc.root(sch_1):ins383594@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!!!F60!!!!!!
@@ -399,7 +409,3 @@ S!VDD!U147!8!!LM2903/SO_DIP8_3_LM2903/SO!!!TF-2!!!!!!
 S!!U147!5!!LM2903/SO_DIP8_3_LM2903/SO!!!TF-2!!!!!!
 S!!U147!6!!LM2903/SO_DIP8_3_LM2903/SO!!!TF-2!!!!!!
 S!!U147!7!!LM2903/SO_DIP8_3_LM2903/SO!!!TF-2!!!!!!
-S!VCC!Y1!8!!OSC14A_0_DIP8_3_GND=0_OSC14A!!!!!!!!!
-S!0!Y1!4!!OSC14A_0_DIP8_3_GND=0_OSC14A!!!!!!!!!
-S!VDD!Y1!1!@adc.root(sch_1):ins508511@adc.\osc14a_0.normal\(chips)!OSC14A_0_DIP8_3_GND=0_OSC14A!!!F0!!!!!!
-S!N521218!Y1!5!@adc.root(sch_1):ins508511@adc.\osc14a_0.normal\(chips)!OSC14A_0_DIP8_3_GND=0_OSC14A!!!F0!!!!!!

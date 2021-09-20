@@ -1,5 +1,6 @@
 A!FUNC_LOGICAL_PATH!COMP_DEVICE_TYPE!REFDES!FUNC_PRIM_FILE!COMP_PARENT_PPT!COMP_PARENT_PPT_PART!COMP_PARENT_PART_TYPE!FUNC_SCH_SIZE!FUNC_HAS_FIXED_SIZE!FUNC_DES!FUNC_GROUP!FUNC_ROOM!FUNC_TERM_IDENT!FUNC_CDS_FSP_INSTANCE_ID!FUNC_CDS_FSP_IS_FPGA!FUNC_CDS_FSP_UID!
-J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sat Sep 18 14:13:23 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+J!E:/local/college/classes/2021bF/ECEN4013/ECEN4013/ADC/pspice/schematic/allegro/adc.brd!Sun Sep 19 16:14:09 2021!-5000.00!-5000.00!16000.00!12000.00!0.01!mils!ADC!10.400000 mil!2!UP TO DATE!
+S!@adc.root(sch_1):ins508511@adc.\osc14a_1.normal\(chips)!OSC14A_1_DIP8_3_GND=0_OSC14A!Y1!.\chipsView.dat!!!!!!F0!!!!!!!
 S!@adc.root(sch_1):ins385384@cd4068bee4.\cd4068bee4.normal\(chips)!CD4068BEE4_DIP14_3_CD4068BEE4!AND8!.\chipsView.dat!!!!!!F72!!!!!!!
 S!@adc.root(sch_1):ins1691@analog.\c.normal\(chips)!C_CAP196_32N!C1!.\chipsView.dat!!!!!!F71!!!!!!!
 S!@adc.root(sch_1):ins201783@analog.\c.normal\(chips)!C_CAP196_15P!C4!.\chipsView.dat!!!!!!F70!!!!!!!
@@ -10,8 +11,8 @@ S!@adc.root(sch_1):ins366317@cd4028bee4.\cd4028bee4.normal\(chips)!CD4028BEE4_DI
 S!@adc.root(sch_1):ins363413@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!IC11!.\chipsView.dat!!!!!!F65!!!!!!!
 S!@adc.root(sch_1):ins363855@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!IC12!.\chipsView.dat!!!!!!F64!!!!!!!
 S!@adc.root(sch_1):ins364287@cd4512bnsr.\cd4512bnsr.normal\(chips)!CD4512BNSR_DIP16_3_CD4512BNSR!IC13!.\chipsView.dat!!!!!!F63!!!!!!!
+S!@adc.root(sch_1):ins527341@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!J2!.\chipsView.dat!!!!!!F61!!!!!!!
 S!@adc.root(sch_1):ins384754@connector.\8 header.normal\(chips)!8 HEADER_JUMPER8_8 HEADER!J1!.\chipsView.dat!!!!!!F62!!!!!!!
-S!@adc.root(sch_1):ins517776@connector.\header 6.normal\(chips)!HEADER 6_JUMPER6_HEADER 6!J4!.\chipsView.dat!!!!!!F61!!!!!!!
 S!@adc.root(sch_1):ins383594@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!OUTPUTBUFF1!.\chipsView.dat!!!!!!F60!!!!!!!
 S!@adc.root(sch_1):ins384142@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!OUTPUTBUFF2!.\chipsView.dat!!!!!!F59!!!!!!!
 S!@adc.root(sch_1):ins366493@cd4076bm.\cd4076bm.normal\(chips)!CD4076BM_DIP16_3_CD4076BM!STATEBUFF1!.\chipsView.dat!!!!!!F58!!!!!!!
@@ -89,4 +90,3 @@ S!@adc.root(sch_1):ins491355@adc.\cd4069/so_10.normal\(chips)!CD4069!U146!.\chip
 S!@adc.root(sch_1):ins491428@adc.\cd4069/so_10.normal\(chips)!CD4069!U146!.\chipsView.dat!!!!!!F2!!!!!!!
 S!@adc.root(sch_1):ins497282@opamp.\lm2903/so.normal\(chips)!LM2903/SO_DIP8_3_LM2903/SO!U147!.\chipsView.dat!!!!!!F1!!!!!!!
 S!!LM2903/SO_DIP8_3_LM2903/SO!U147!!!!!!!TF-2!!!!!!!
-S!@adc.root(sch_1):ins508511@adc.\osc14a_0.normal\(chips)!OSC14A_0_DIP8_3_GND=0_OSC14A!Y1!.\chipsView.dat!!!!!!F0!!!!!!!
